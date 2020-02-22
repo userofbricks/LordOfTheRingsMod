@@ -14,12 +14,14 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
+import net.minecraft.item.Food.Builder;
+import net.minecraft.item.Food;
 
 import java.util.List;
 import java.util.Collections;
 
+import net.mcreator.lord_of_the_rings_mod.ItemBase.PlaceableFoodItem;
 import net.mcreator.lord_of_the_rings_mod.blockBase.CustomCakeBlock;
-import net.minecraft.item.Food.Builder;
 
 @Elementslord_of_the_rings_mod.ModElement.Tag
 public class MCreatorTestCakeBlock extends Elementslord_of_the_rings_mod.ModElement {
@@ -34,7 +36,7 @@ public class MCreatorTestCakeBlock extends Elementslord_of_the_rings_mod.ModElem
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items.add(() -> new PlaceableFoodItem(block, new Item.Properties().group(ItemGroup.FOOD)
-						.food((new Food.Builder()).hunger(7).saturation(0.7f).build()).setRegistryName(block.getRegistryName()), 0.0F, false));
+						.food((new Food.Builder()).hunger(7).saturation(0.7f).build()), 0.0F, false).setRegistryName(block.getRegistryName()));
 	}
 
 	public static class CustomBlock extends CustomCakeBlock {

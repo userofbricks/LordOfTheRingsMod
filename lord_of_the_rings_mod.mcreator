@@ -14,6 +14,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
       "block.lord_of_the_rings_mod.testcakeblock": "Test Cake Block"
     }
   },
@@ -30,7 +31,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "1.14.4",
-    "usesProFeatures": true,
+    "usesProFeatures": false,
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202000105419
