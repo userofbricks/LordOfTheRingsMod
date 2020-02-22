@@ -19,6 +19,7 @@ import java.util.List;
 import java.util.Collections;
 
 import net.mcreator.lord_of_the_rings_mod.blockBase.CustomCakeBlock;
+import net.minecraft.item.Food.Builder;
 
 @Elementslord_of_the_rings_mod.ModElement.Tag
 public class MCreatorTestCakeBlock extends Elementslord_of_the_rings_mod.ModElement {
@@ -32,7 +33,8 @@ public class MCreatorTestCakeBlock extends Elementslord_of_the_rings_mod.ModElem
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.FOOD)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new PlaceableFoodItem(block, new Item.Properties().group(ItemGroup.FOOD)
+						.food((new Food.Builder()).hunger(7).saturation(0.7f).build()).setRegistryName(block.getRegistryName()), 0.0F, false));
 	}
 
 	public static class CustomBlock extends CustomCakeBlock {
