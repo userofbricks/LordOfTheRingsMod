@@ -30,7 +30,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "1.14.4",
-    "usesProFeatures": false,
+    "usesProFeatures": true,
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202000105419
