@@ -23,6 +23,10 @@ import java.util.Collections;
 import net.mcreator.lord_of_the_rings_mod.ItemBase.PlaceableFoodItem;
 import net.mcreator.lord_of_the_rings_mod.blockBase.CustomCakeBlock;
 
+/* this class has been turned into a comment as to let it not mess up the rest of the mod.
+ *  All code still works if copied into a premade block element class as shown in the Mcreator-lord of the rings mod turtorial series episodes 2-3.
+ 
+
 @Elementslord_of_the_rings_mod.ModElement.Tag
 public class MCreatorTestCakeBlock extends Elementslord_of_the_rings_mod.ModElement {
 	@ObjectHolder("lord_of_the_rings_mod:testcakeblock")
@@ -59,3 +63,5 @@ public class MCreatorTestCakeBlock extends Elementslord_of_the_rings_mod.ModElem
 		}
 	}
 }
+
+*/
