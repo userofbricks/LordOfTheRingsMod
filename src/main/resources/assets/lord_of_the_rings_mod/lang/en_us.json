@@ -1,3 +1,13 @@
 {
-  "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item"
+  "itemGroup.tablotrstorytab": "LOTR Story",
+  "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
+  "itemGroup.tablotrtoolstab": "LOTR Tools",
+  "itemGroup.tablotrutilitiestab": "LOTR Utilities",
+  "itemGroup.tablotrdecorationstab": "LOTR Decorations",
+  "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
+  "itemGroup.tablotrspawningtab": "LOTR Spawning",
+  "itemGroup.tablotrblockstab": "LOTR Blocks",
+  "itemGroup.tablotrcombattab": "LOTR Combat",
+  "itemGroup.tablotrfoodanddrinktab": "LOTR Food And Drink",
+  "itemGroup.tablotrmaterialstab": "LOTR Materials"
 }

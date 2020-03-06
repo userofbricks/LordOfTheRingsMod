@@ -1,0 +1,11 @@
+{
+  "_fv": 5,
+  "_type": "tab",
+  "definition": {
+    "name": "LOTR Story",
+    "icon": {
+      "value": "Items.WRITTEN_BOOK"
+    },
+    "showSearch": true
+  }
+}

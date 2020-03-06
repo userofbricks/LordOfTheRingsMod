@@ -1,11 +1,102 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "LOTRBlocksTab",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LOTRCombatTab",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LOTRDecorationsTab",
+      "type": "tab",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LOTRFoodAndDrinkTab",
+      "type": "tab",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LOTRMaterialsTab",
+      "type": "tab",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LOTRMiscellaneousTab",
+      "type": "tab",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LOTRSpawningTab",
+      "type": "tab",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LOTRStoryTab",
+      "type": "tab",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LOTRToolsTab",
+      "type": "tab",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LOTRUtilitiesTab",
+      "type": "tab",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item"
+      "itemGroup.tablotrstorytab": "LOTR Story",
+      "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
+      "itemGroup.tablotrtoolstab": "LOTR Tools",
+      "itemGroup.tablotrutilitiestab": "LOTR Utilities",
+      "itemGroup.tablotrdecorationstab": "LOTR Decorations",
+      "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
+      "itemGroup.tablotrspawningtab": "LOTR Spawning",
+      "itemGroup.tablotrblockstab": "LOTR Blocks",
+      "itemGroup.tablotrcombattab": "LOTR Combat",
+      "itemGroup.tablotrfoodanddrinktab": "LOTR Food And Drink",
+      "itemGroup.tablotrmaterialstab": "LOTR Materials"
     }
   },
   "workspaceSettings": {

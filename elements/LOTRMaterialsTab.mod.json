@@ -1,0 +1,11 @@
+{
+  "_fv": 5,
+  "_type": "tab",
+  "definition": {
+    "name": "LOTR Materials",
+    "icon": {
+      "value": "Blocks.IRON_ORE"
+    },
+    "showSearch": true
+  }
+}

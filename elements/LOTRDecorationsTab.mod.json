@@ -1,0 +1,11 @@
+{
+  "_fv": 5,
+  "_type": "tab",
+  "definition": {
+    "name": "LOTR Decorations",
+    "icon": {
+      "value": "Blocks.TALLGRASS#2"
+    },
+    "showSearch": true
+  }
+}

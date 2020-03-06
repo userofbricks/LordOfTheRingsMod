@@ -1,0 +1,11 @@
+{
+  "_fv": 5,
+  "_type": "tab",
+  "definition": {
+    "name": "LOTR Spawning",
+    "icon": {
+      "value": "Blocks.MOB_SPAWNER"
+    },
+    "showSearch": true
+  }
+}
