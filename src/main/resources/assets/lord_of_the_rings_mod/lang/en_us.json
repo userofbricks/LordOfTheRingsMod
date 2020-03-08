@@ -1,13 +1,23 @@
 {
   "itemGroup.tablotrstorytab": "LOTR Story",
   "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
+  "block.lord_of_the_rings_mod.foodmarzipanblock": "Marzipan Block",
+  "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
+  "block.lord_of_the_rings_mod.foodbananacake": "Banana Cake",
+  "block.lord_of_the_rings_mod.foodlemoncake": "Lemon Cake",
+  "block.lord_of_the_rings_mod.fooddate": "Date",
+  "itemGroup.tablotrcombattab": "LOTR Combat",
+  "itemGroup.tablotrmaterialstab": "LOTR Materials",
   "itemGroup.tablotrtoolstab": "LOTR Tools",
   "itemGroup.tablotrutilitiestab": "LOTR Utilities",
   "itemGroup.tablotrdecorationstab": "LOTR Decorations",
-  "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
+  "block.lord_of_the_rings_mod.foodberrypie": "Berry Pie",
   "itemGroup.tablotrspawningtab": "LOTR Spawning",
   "itemGroup.tablotrblockstab": "LOTR Blocks",
-  "itemGroup.tablotrcombattab": "LOTR Combat",
+  "block.lord_of_the_rings_mod.foodapplecrumble": "Apple Crumble",
   "itemGroup.tablotrfoodanddrinktab": "LOTR Food And Drink",
-  "itemGroup.tablotrmaterialstab": "LOTR Materials"
+  "block.lord_of_the_rings_mod.foodbanana": "Banana",
+  "block.lord_of_the_rings_mod.foodcherrypie": "Cherry Pie",
+  "block.lord_of_the_rings_mod.foodkebabblock": "Kebab Block",
+  "block.lord_of_the_rings_mod.fooddalishpastry": "Dalish Pastry"
 }

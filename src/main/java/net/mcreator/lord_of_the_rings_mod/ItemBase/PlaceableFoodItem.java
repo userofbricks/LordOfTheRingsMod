@@ -26,13 +26,6 @@ public class PlaceableFoodItem extends BlockItem{
 	}
 
 	/*
-	 * Returns the unlocalized name of this item.
-	 */
-	public String getTranslationKey() {
-		return this.getDefaultTranslationKey();
-	}
-
-	/*
 	 * returns the action that specifies what animation to play when the items is being used
 	 */
 	@Override

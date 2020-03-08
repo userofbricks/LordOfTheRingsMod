@@ -80,6 +80,86 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "FoodAppleCrumble",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "FoodBananaCake",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "FoodBanana",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "FoodBerryPie",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "FoodCherryPie",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "FoodDalishPastry",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "FoodDate",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "FoodKebabBlock",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "FoodLemonCake",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "FoodMarzipanBlock",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -88,15 +168,25 @@
     "en_us": {
       "itemGroup.tablotrstorytab": "LOTR Story",
       "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
+      "block.lord_of_the_rings_mod.foodmarzipanblock": "Marzipan Block",
+      "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
+      "block.lord_of_the_rings_mod.foodbananacake": "Banana Cake",
+      "block.lord_of_the_rings_mod.foodlemoncake": "Lemon Cake",
+      "block.lord_of_the_rings_mod.fooddate": "Date",
+      "itemGroup.tablotrcombattab": "LOTR Combat",
+      "itemGroup.tablotrmaterialstab": "LOTR Materials",
       "itemGroup.tablotrtoolstab": "LOTR Tools",
       "itemGroup.tablotrutilitiestab": "LOTR Utilities",
       "itemGroup.tablotrdecorationstab": "LOTR Decorations",
-      "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
+      "block.lord_of_the_rings_mod.foodberrypie": "Berry Pie",
       "itemGroup.tablotrspawningtab": "LOTR Spawning",
       "itemGroup.tablotrblockstab": "LOTR Blocks",
-      "itemGroup.tablotrcombattab": "LOTR Combat",
+      "block.lord_of_the_rings_mod.foodapplecrumble": "Apple Crumble",
       "itemGroup.tablotrfoodanddrinktab": "LOTR Food And Drink",
-      "itemGroup.tablotrmaterialstab": "LOTR Materials"
+      "block.lord_of_the_rings_mod.foodbanana": "Banana",
+      "block.lord_of_the_rings_mod.foodcherrypie": "Cherry Pie",
+      "block.lord_of_the_rings_mod.foodkebabblock": "Kebab Block",
+      "block.lord_of_the_rings_mod.fooddalishpastry": "Dalish Pastry"
     }
   },
   "workspaceSettings": {

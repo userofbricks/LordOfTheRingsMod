@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lord_of_the_rings_mod:blocks/marzipanblock_top",
+    "up": "lord_of_the_rings_mod:blocks/marzipanblock_top",
+    "north": "lord_of_the_rings_mod:blocks/marzipanblock_top",
+    "east": "lord_of_the_rings_mod:blocks/marzipanblock_top",
+    "south": "lord_of_the_rings_mod:blocks/marzipanblock_top",
+    "west": "lord_of_the_rings_mod:blocks/marzipanblock_top",
+    "particle": "lord_of_the_rings_mod:blocks/marzipanblock_top"
+  }
+}
