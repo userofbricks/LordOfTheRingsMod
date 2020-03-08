@@ -8,26 +8,23 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
+import net.minecraft.item.Food;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
-import net.minecraft.item.Food.Builder;
-import net.minecraft.item.Food;
+
+import net.mcreator.lord_of_the_rings_mod.blockBase.CustomCakeBlock;
+import net.mcreator.lord_of_the_rings_mod.ItemBase.PlaceableFoodItem;
 
 import java.util.List;
 import java.util.Collections;
 
-import net.mcreator.lord_of_the_rings_mod.ItemBase.PlaceableFoodItem;
-import net.mcreator.lord_of_the_rings_mod.blockBase.CustomCakeBlock;
-
 /* this class has been turned into a comment as to let it not mess up the rest of the mod.
  *  All code still works if copied into a premade block element class as shown in the Mcreator-lord of the rings mod turtorial series episodes 2-3.
- 
-
-@Elementslord_of_the_rings_mod.ModElement.Tag
+ */
+//@Elementslord_of_the_rings_mod.ModElement.Tag
 public class MCreatorTestCakeBlock extends Elementslord_of_the_rings_mod.ModElement {
 	@ObjectHolder("lord_of_the_rings_mod:testcakeblock")
 	public static final Block block = null;
@@ -39,8 +36,9 @@ public class MCreatorTestCakeBlock extends Elementslord_of_the_rings_mod.ModElem
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new PlaceableFoodItem(block, new Item.Properties().group(ItemGroup.FOOD)
-						.food((new Food.Builder()).hunger(7).saturation(0.7f).build()), 0.0F, false).setRegistryName(block.getRegistryName()));
+		elements.items.add(
+				() -> new PlaceableFoodItem(block, new Item.Properties().group(ItemGroup.FOOD).food((new Food.Builder()).hunger(7).saturation(0.7f)
+						.build()), 0.0F, false).setRegistryName(block.getRegistryName()));
 	}
 
 	public static class CustomBlock extends CustomCakeBlock {
@@ -63,5 +61,3 @@ public class MCreatorTestCakeBlock extends Elementslord_of_the_rings_mod.ModElem
 		}
 	}
 }
-
-*/

@@ -3,17 +3,18 @@
         "particle": "lord_of_the_rings_mod:blocks/bananacake_side",
         "bottom": "lord_of_the_rings_mod:blocks/bananacake_bottom",
         "top": "lord_of_the_rings_mod:blocks/bananacake_top",
-        "side": "lord_of_the_rings_mod:blocks/bananacake_side"
+        "side": "lord_of_the_rings_mod:blocks/bananacake_side",
+        "inside": "lord_of_the_rings_mod:blocks/bananacake_inner"
     },
     "elements": [
-        {   "from": [ 1, 0, 1 ],
+        {   "from": [ 7, 0, 1 ],
             "to": [ 15, 8, 15 ],
             "faces": {
                 "down":  { "texture": "#bottom", "cullface": "down" },
                 "up":    { "texture": "#top" },
                 "north": { "texture": "#side" },
                 "south": { "texture": "#side" },
-                "west":  { "texture": "#side" },
+                "west":  { "texture": "#inside" },
                 "east":  { "texture": "#side" }
             }
         }

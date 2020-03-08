@@ -1,7 +1,12 @@
+
 {
-  "variants": {
-    "": {
-      "model": "lord_of_the_rings_mod:block/foodberrypie"
+    "variants": {
+        "bites=0": { "model": "lord_of_the_rings_mod:block/foodberrypie" },
+        "bites=1": { "model": "lord_of_the_rings_mod:block/foodberrypie_slice1" },
+        "bites=2": { "model": "lord_of_the_rings_mod:block/foodberrypie_slice2" },
+        "bites=3": { "model": "lord_of_the_rings_mod:block/foodberrypie_slice3" },
+        "bites=4": { "model": "lord_of_the_rings_mod:block/foodberrypie_slice4" },
+        "bites=5": { "model": "lord_of_the_rings_mod:block/foodberrypie_slice5" },
+        "bites=6": { "model": "lord_of_the_rings_mod:block/foodberrypie_slice6" }
     }
-  }
 }

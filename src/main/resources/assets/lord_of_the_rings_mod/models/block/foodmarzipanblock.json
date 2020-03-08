@@ -1,12 +1,21 @@
 {
-  "parent": "block/cube",
-  "textures": {
-    "down": "lord_of_the_rings_mod:blocks/marzipanblock_top",
-    "up": "lord_of_the_rings_mod:blocks/marzipanblock_top",
-    "north": "lord_of_the_rings_mod:blocks/marzipanblock_top",
-    "east": "lord_of_the_rings_mod:blocks/marzipanblock_top",
-    "south": "lord_of_the_rings_mod:blocks/marzipanblock_top",
-    "west": "lord_of_the_rings_mod:blocks/marzipanblock_top",
-    "particle": "lord_of_the_rings_mod:blocks/marzipanblock_top"
-  }
+    "textures": {
+        "particle": "lord_of_the_rings_mod:blocks/marzipanblock_side",
+        "bottom": "lord_of_the_rings_mod:blocks/marzipanblock_bottom",
+        "top": "lord_of_the_rings_mod:blocks/marzipanblock_top",
+        "side": "lord_of_the_rings_mod:blocks/marzipanblock_side"
+    },
+    "elements": [
+        {   "from": [ 1, 0, 1 ],
+            "to": [ 15, 8, 15 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
 }
