@@ -19,7 +19,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "faceShape": "CENTER_BIG",
+    "faceShape": "SOLID",
     "name": "Kebab Block",
     "specialInfo": [],
     "hardness": 0.5,
@@ -51,7 +51,7 @@
     },
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "SNOW"
+      "value": "CLOTH"
     },
     "luminance": 0.0,
     "unbreakable": false,

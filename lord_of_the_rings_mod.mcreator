@@ -142,7 +142,7 @@
       "type": "block",
       "sortid": 18,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {}
     },
     {

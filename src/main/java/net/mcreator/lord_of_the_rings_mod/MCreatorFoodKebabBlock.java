@@ -14,13 +14,6 @@ import net.minecraft.block.Block;
 import java.util.List;
 import java.util.Collections;
 
-import net.mcreator.lord_of_the_rings_mod.ItemBase.PlaceableFoodItem;
-import net.mcreator.lord_of_the_rings_mod.blockBase.CustomCakeBlock;
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.item.Food.Builder;
-import net.minecraft.item.Food;
-
 @Elementslord_of_the_rings_mod.ModElement.Tag
 public class MCreatorFoodKebabBlock extends Elementslord_of_the_rings_mod.ModElement {
 	@ObjectHolder("lord_of_the_rings_mod:foodkebabblock")
@@ -33,14 +26,13 @@ public class MCreatorFoodKebabBlock extends Elementslord_of_the_rings_mod.ModEle
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new PlaceableFoodItem(block, new Item.Properties().group(MCreatorLOTRFoodAndDrinkTab.tab)
-				.food((new Food.Builder()).hunger(7).saturation(0.7f).build()), 0.0F, false)
-				.setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(MCreatorLOTRFoodAndDrinkTab.tab)).setRegistryName(block
+				.getRegistryName()));
 	}
 
-	public static class CustomBlock extends CustomCakeBlock {
+	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.CAKE).sound(SoundType.SNOW).hardnessAndResistance(0.5f, 1f).lightValue(0), 1, 0.1F);
+			super(Block.Properties.create(Material.CAKE).sound(SoundType.CLOTH).hardnessAndResistance(0.5f, 1f).lightValue(0));
 			setRegistryName("foodkebabblock");
 		}
 

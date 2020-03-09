@@ -40,7 +40,7 @@ public class MCreatorFoodDate extends Elementslord_of_the_rings_mod.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.CAKE).sound(SoundType.SNOW).hardnessAndResistance(0.5f, 1f).lightValue(0));
+			super(Block.Properties.create(Material.CAKE).sound(SoundType.CLOTH).hardnessAndResistance(0.5f, 1f).lightValue(0));
 			setRegistryName("fooddate");
 		}
 

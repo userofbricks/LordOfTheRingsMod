@@ -40,7 +40,7 @@ public class MCreatorFoodBananaCake extends Elementslord_of_the_rings_mod.ModEle
 
 	public static class CustomBlock extends CustomCakeBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.CAKE).sound(SoundType.SNOW).hardnessAndResistance(0.5f, 1f).lightValue(0), 1, 0.1F);
+			super(Block.Properties.create(Material.CAKE).sound(SoundType.CLOTH).hardnessAndResistance(0.5f, 1f).lightValue(0), 1, 0.1F);
 			setRegistryName("foodbananacake");
 		}
 
