@@ -1,10 +1,10 @@
 {
     "textures": {
-        "particle": "lord_of_the_rings_mod:blocks/cake_side",
-        "bottom": "lord_of_the_rings_mod:blocks/cake_bottom",
-        "top": "lord_of_the_rings_mod:blocks/cake_top",
-        "side": "lord_of_the_rings_mod:blocks/cake_side",
-        "inside": "lord_of_the_rings_mod:blocks/cake_inner"
+        "particle": "lord_of_the_rings_mod:blocks/lemoncake_side",
+        "bottom": "lord_of_the_rings_mod:blocks/lemoncake_bottom",
+        "top": "lord_of_the_rings_mod:blocks/lemoncake_top",
+        "side": "lord_of_the_rings_mod:blocks/lemoncake_side",
+        "inside": "lord_of_the_rings_mod:blocks/lemoncake_inner"
     },
     "elements": [
         {   "from": [ 13, 0, 1 ],

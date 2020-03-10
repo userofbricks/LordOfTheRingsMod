@@ -1,10 +1,10 @@
 {
     "textures": {
-        "particle": "lord_of_the_rings_mod:blocks/cake_side",
-        "bottom": "lord_of_the_rings_mod:blocks/cake_bottom",
-        "top": "lord_of_the_rings_mod:blocks/cake_top",
-        "side": "lord_of_the_rings_mod:blocks/cake_side",
-        "inside": "lord_of_the_rings_mod:blocks/cake_inner"
+        "particle": "lord_of_the_rings_mod:blocks/dalishpastry_side",
+        "bottom": "lord_of_the_rings_mod:blocks/dalishpastry_bottom",
+        "top": "lord_of_the_rings_mod:blocks/dalishpastry_top",
+        "side": "lord_of_the_rings_mod:blocks/dalishpastry_side",
+        "inside": "lord_of_the_rings_mod:blocks/dalishpastry_inner"
     },
     "elements": [
         {   "from": [ 9, 0, 1 ],

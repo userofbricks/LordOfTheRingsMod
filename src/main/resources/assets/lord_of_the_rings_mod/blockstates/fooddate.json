@@ -1,7 +1,25 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
+      "model": "lord_of_the_rings_mod:block/fooddate",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "lord_of_the_rings_mod:block/fooddate",
+      "y": 270
+    },
+    "facing=south": {
       "model": "lord_of_the_rings_mod:block/fooddate"
+    },
+    "facing=west": {
+      "model": "lord_of_the_rings_mod:block/fooddate",
+      "y": 90
+    },
+    "facing=up": {
+      "model": "lord_of_the_rings_mod:block/fooddate_down"
+    },
+    "facing=down": {
+      "model": "lord_of_the_rings_mod:block/fooddate_up"
     }
   }
 }
