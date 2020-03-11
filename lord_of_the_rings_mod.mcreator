@@ -192,6 +192,30 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "FoodGammon",
+      "type": "food",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodAppleGreen",
+      "type": "food",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodAppleYellow",
+      "type": "food",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -201,15 +225,18 @@
       "item.lord_of_the_rings_mod.foodlembasbread": "Lembas Bread",
       "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
       "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
+      "item.lord_of_the_rings_mod.foodgammon": "Gammon",
       "block.lord_of_the_rings_mod.foodlemoncake": "Lemon Cake",
       "itemGroup.tablotrcombattab": "LOTR Combat",
       "itemGroup.tablotrmaterialstab": "LOTR Materials",
       "itemGroup.tablotrtoolstab": "LOTR Tools",
       "block.lord_of_the_rings_mod.foodberrypie": "Berry Pie",
+      "item.lord_of_the_rings_mod.foodappleyellow": "Apple Yellow",
       "itemGroup.tablotrblockstab": "LOTR Blocks",
       "block.lord_of_the_rings_mod.foodapplecrumble": "Apple Crumble",
       "block.lord_of_the_rings_mod.foodkebabblock": "Kebab Block",
       "itemGroup.tablotrstorytab": "LOTR Story",
+      "item.lord_of_the_rings_mod.foodapplegreen": "Apple Green",
       "block.lord_of_the_rings_mod.foodmarzipanblock": "Marzipan Block",
       "block.lord_of_the_rings_mod.foodbananacake": "Banana Cake",
       "block.lord_of_the_rings_mod.fooddate": "Date",
