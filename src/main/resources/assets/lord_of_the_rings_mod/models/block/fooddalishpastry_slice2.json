@@ -1,22 +1,23 @@
 {
-    "textures": {
-        "particle": "lord_of_the_rings_mod:blocks/dalishpastry_side",
-        "bottom": "lord_of_the_rings_mod:blocks/dalishpastry_bottom",
-        "top": "lord_of_the_rings_mod:blocks/dalishpastry_top",
-        "side": "lord_of_the_rings_mod:blocks/dalishpastry_side",
-        "inside": "lord_of_the_rings_mod:blocks/dalishpastry_inner"
-    },
-    "elements": [
-        {   "from": [ 5, 0, 1 ],
-            "to": [ 15, 8, 15 ],
-            "faces": {
-                "down":  { "texture": "#bottom", "cullface": "down" },
-                "up":    { "texture": "#top" },
-                "north": { "texture": "#side" },
-                "south": { "texture": "#side" },
-                "west":  { "texture": "#inside" },
-                "east":  { "texture": "#side" }
-            }
-        }
-    ]
+	"credit": "Made by Userofbricks",
+	"textures": {
+		"bottom": "lord_of_the_rings_mod:blocks/dalishpastry_bottom",
+		"top": "lord_of_the_rings_mod:blocks/dalishpastry_top",
+		"particle": "lord_of_the_rings_mod:blocks/dalishpastry_side",
+		"side": "lord_of_the_rings_mod:blocks/dalishpastry_side"
+	},
+	"elements": [
+		{
+			"from": [6, 0, 3],
+			"to": [13, 6, 13],
+			"faces": {
+				"north": {"uv": [6, 10, 13, 16], "texture": "#side"},
+				"east": {"uv": [3, 10, 13, 16], "texture": "#side"},
+				"south": {"uv": [6, 10, 13, 16], "texture": "#side"},
+				"west": {"uv": [3, 10, 13, 16], "texture": "#side"},
+				"up": {"uv": [6, 3, 13, 13], "texture": "#top"},
+				"down": {"uv": [6, 3, 13, 13], "texture": "#bottom", "cullface": "down"}
+			}
+		}
+	]
 }

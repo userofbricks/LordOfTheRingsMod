@@ -20,6 +20,8 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.Food.Builder;
 import net.minecraft.item.Food;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
 
 @Elementslord_of_the_rings_mod.ModElement.Tag
 public class MCreatorFoodDalishPastry extends Elementslord_of_the_rings_mod.ModElement {
@@ -39,10 +41,24 @@ public class MCreatorFoodDalishPastry extends Elementslord_of_the_rings_mod.ModE
 	}
 
 	public static class CustomBlock extends CustomCakeBlock {
+
+		protected static final VoxelShape[] SHAPESA = new VoxelShape[]{Block.makeCuboidShape(3.0D, 0.0D, 3.0D, 13.0D, 6.0D, 13.0D), 
+																	  Block.makeCuboidShape(4.0D, 0.0D, 3.0D, 13.0D, 6.0D, 13.0D), 
+																	  Block.makeCuboidShape(6.0D, 0.0D, 3.0D, 13.0D, 6.0D, 13.0D), 
+																	  Block.makeCuboidShape(8.0D, 0.0D, 3.0D, 13.0D, 6.0D, 13.0D), 
+																	  Block.makeCuboidShape(9.0D, 0.0D, 3.0D, 13.0D, 6.0D, 13.0D), 
+																	  Block.makeCuboidShape(10.0D, 0.0D, 3.0D, 13.0D, 6.0D, 13.0D), 
+																	  Block.makeCuboidShape(11.0D, 0.0D, 3.0D, 13.0D, 6.0D, 13.0D)};
+		
 		public CustomBlock() {
 			super(Block.Properties.create(Material.CAKE).sound(SoundType.CLOTH).hardnessAndResistance(0.5f, 1f).lightValue(0), 1, 0.1F);
 			setRegistryName("fooddalishpastry");
 		}
+
+   @Override
+   public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
+      return SHAPESA[state.get(BITES)];
+   }
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
