@@ -13,7 +13,7 @@ public class MCreatorFoodTurnip extends Elementslord_of_the_rings_mod.ModElement
 	public static final Item block = null;
 
 	public MCreatorFoodTurnip(Elementslord_of_the_rings_mod instance) {
-		super(instance, 47);
+		super(instance, 49);
 	}
 
 	@Override

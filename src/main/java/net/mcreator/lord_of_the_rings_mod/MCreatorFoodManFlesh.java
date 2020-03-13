@@ -13,7 +13,7 @@ public class MCreatorFoodManFlesh extends Elementslord_of_the_rings_mod.ModEleme
 	public static final Item block = null;
 
 	public MCreatorFoodManFlesh(Elementslord_of_the_rings_mod instance) {
-		super(instance, 65);
+		super(instance, 67);
 	}
 
 	@Override

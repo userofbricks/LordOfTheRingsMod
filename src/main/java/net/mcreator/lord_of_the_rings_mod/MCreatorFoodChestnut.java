@@ -13,7 +13,7 @@ public class MCreatorFoodChestnut extends Elementslord_of_the_rings_mod.ModEleme
 	public static final Item block = null;
 
 	public MCreatorFoodChestnut(Elementslord_of_the_rings_mod instance) {
-		super(instance, 36);
+		super(instance, 38);
 	}
 
 	@Override

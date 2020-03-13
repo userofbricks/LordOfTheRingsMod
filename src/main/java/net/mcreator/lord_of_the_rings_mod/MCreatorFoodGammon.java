@@ -13,7 +13,7 @@ public class MCreatorFoodGammon extends Elementslord_of_the_rings_mod.ModElement
 	public static final Item block = null;
 
 	public MCreatorFoodGammon(Elementslord_of_the_rings_mod instance) {
-		super(instance, 51);
+		super(instance, 53);
 	}
 
 	@Override

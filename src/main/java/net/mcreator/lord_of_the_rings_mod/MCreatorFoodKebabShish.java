@@ -13,7 +13,7 @@ public class MCreatorFoodKebabShish extends Elementslord_of_the_rings_mod.ModEle
 	public static final Item block = null;
 
 	public MCreatorFoodKebabShish(Elementslord_of_the_rings_mod instance) {
-		super(instance, 62);
+		super(instance, 64);
 	}
 
 	@Override

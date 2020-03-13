@@ -3,9 +3,9 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "olivebread",
+    "texture": "cornbread",
     "customModelName": "Normal",
-    "name": "Olive Bread",
+    "name": "Corn Bread",
     "creativeTab": {
       "value": "CUSTOM:LOTRFoodAndDrinkTab"
     },

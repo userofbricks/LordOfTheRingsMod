@@ -13,7 +13,7 @@ public class MCreatorFoodPomegranate extends Elementslord_of_the_rings_mod.ModEl
 	public static final Item block = null;
 
 	public MCreatorFoodPomegranate(Elementslord_of_the_rings_mod instance) {
-		super(instance, 32);
+		super(instance, 34);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ public class MCreatorFoodLeek extends Elementslord_of_the_rings_mod.ModElement {
 	public static final Item block = null;
 
 	public MCreatorFoodLeek(Elementslord_of_the_rings_mod instance) {
-		super(instance, 46);
+		super(instance, 48);
 	}
 
 	@Override

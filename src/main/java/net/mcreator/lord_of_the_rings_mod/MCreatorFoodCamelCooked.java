@@ -13,7 +13,7 @@ public class MCreatorFoodCamelCooked extends Elementslord_of_the_rings_mod.ModEl
 	public static final Item block = null;
 
 	public MCreatorFoodCamelCooked(Elementslord_of_the_rings_mod instance) {
-		super(instance, 64);
+		super(instance, 66);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ public class MCreatorFoodLemon extends Elementslord_of_the_rings_mod.ModElement 
 	public static final Item block = null;
 
 	public MCreatorFoodLemon(Elementslord_of_the_rings_mod instance) {
-		super(instance, 40);
+		super(instance, 42);
 	}
 
 	@Override

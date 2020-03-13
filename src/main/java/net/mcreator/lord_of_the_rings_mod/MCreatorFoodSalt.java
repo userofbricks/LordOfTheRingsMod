@@ -13,7 +13,7 @@ public class MCreatorFoodSalt extends Elementslord_of_the_rings_mod.ModElement {
 	public static final Item block = null;
 
 	public MCreatorFoodSalt(Elementslord_of_the_rings_mod instance) {
-		super(instance, 71);
+		super(instance, 75);
 	}
 
 	@Override

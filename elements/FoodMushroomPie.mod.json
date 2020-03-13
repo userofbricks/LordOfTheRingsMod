@@ -3,16 +3,16 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "olivebread",
+    "texture": "mushroompie",
     "customModelName": "Normal",
-    "name": "Olive Bread",
+    "name": "Mushroom Pie",
     "creativeTab": {
       "value": "CUSTOM:LOTRFoodAndDrinkTab"
     },
     "stackSize": 64,
-    "nutritionalValue": 6,
-    "saturation": 0.6,
-    "eatingSpeed": 48,
+    "nutritionalValue": 8,
+    "saturation": 1.3,
+    "eatingSpeed": 32,
     "forDogs": false,
     "isAlwaysEdible": false,
     "animation": "eat",

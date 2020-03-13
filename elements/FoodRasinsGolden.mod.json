@@ -3,16 +3,16 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "olivebread",
+    "texture": "raisins_gold",
     "customModelName": "Normal",
-    "name": "Olive Bread",
+    "name": "Golden Rasins",
     "creativeTab": {
       "value": "CUSTOM:LOTRFoodAndDrinkTab"
     },
     "stackSize": 64,
-    "nutritionalValue": 6,
-    "saturation": 0.6,
-    "eatingSpeed": 48,
+    "nutritionalValue": 5,
+    "saturation": 0.5,
+    "eatingSpeed": 24,
     "forDogs": false,
     "isAlwaysEdible": false,
     "animation": "eat",

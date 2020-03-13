@@ -13,7 +13,7 @@ public class MCreatorFoodHobbitPancakeMapleSyrup extends Elementslord_of_the_rin
 	public static final Item block = null;
 
 	public MCreatorFoodHobbitPancakeMapleSyrup(Elementslord_of_the_rings_mod instance) {
-		super(instance, 34);
+		super(instance, 36);
 	}
 
 	@Override
