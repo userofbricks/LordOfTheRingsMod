@@ -13,7 +13,7 @@ public class MCreatorFoodKebab extends Elementslord_of_the_rings_mod.ModElement 
 	public static final Item block = null;
 
 	public MCreatorFoodKebab(Elementslord_of_the_rings_mod instance) {
-		super(instance, 52);
+		super(instance, 61);
 	}
 
 	@Override

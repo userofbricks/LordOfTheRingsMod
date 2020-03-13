@@ -13,7 +13,7 @@ public class MCreatorFoodWildBerries extends Elementslord_of_the_rings_mod.ModEl
 	public static final Item block = null;
 
 	public MCreatorFoodWildBerries(Elementslord_of_the_rings_mod instance) {
-		super(instance, 73);
+		super(instance, 28);
 	}
 
 	@Override

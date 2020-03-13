@@ -13,7 +13,7 @@ public class MCreatorFoodCram extends Elementslord_of_the_rings_mod.ModElement {
 	public static final Item block = null;
 
 	public MCreatorFoodCram(Elementslord_of_the_rings_mod instance) {
-		super(instance, 33);
+		super(instance, 39);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ public class MCreatorFoodZebra extends Elementslord_of_the_rings_mod.ModElement 
 	public static final Item block = null;
 
 	public MCreatorFoodZebra(Elementslord_of_the_rings_mod instance) {
-		super(instance, 45);
+		super(instance, 54);
 	}
 
 	@Override

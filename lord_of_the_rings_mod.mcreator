@@ -4,7 +4,7 @@
     {
       "name": "LOTRBlocksTab",
       "type": "tab",
-      "sortid": 57,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -12,7 +12,7 @@
     {
       "name": "LOTRCombatTab",
       "type": "tab",
-      "sortid": 58,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -20,7 +20,7 @@
     {
       "name": "LOTRDecorationsTab",
       "type": "tab",
-      "sortid": 59,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -28,7 +28,7 @@
     {
       "name": "LOTRFoodAndDrinkTab",
       "type": "tab",
-      "sortid": 60,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -36,7 +36,7 @@
     {
       "name": "LOTRMaterialsTab",
       "type": "tab",
-      "sortid": 61,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -44,7 +44,7 @@
     {
       "name": "LOTRMiscellaneousTab",
       "type": "tab",
-      "sortid": 62,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -52,7 +52,7 @@
     {
       "name": "LOTRSpawningTab",
       "type": "tab",
-      "sortid": 63,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -60,7 +60,7 @@
     {
       "name": "LOTRStoryTab",
       "type": "tab",
-      "sortid": 64,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -68,7 +68,7 @@
     {
       "name": "LOTRToolsTab",
       "type": "tab",
-      "sortid": 65,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -76,7 +76,7 @@
     {
       "name": "LOTRUtilitiesTab",
       "type": "tab",
-      "sortid": 66,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -140,7 +140,7 @@
     {
       "name": "FoodKebabBlock",
       "type": "block",
-      "sortid": 51,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -188,7 +188,7 @@
     {
       "name": "FoodLettuce",
       "type": "food",
-      "sortid": 39,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -196,7 +196,7 @@
     {
       "name": "FoodGammon",
       "type": "food",
-      "sortid": 42,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -276,7 +276,7 @@
     {
       "name": "FoodMallornNut",
       "type": "food",
-      "sortid": 30,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -284,7 +284,7 @@
     {
       "name": "FoodMaggotyBread",
       "type": "food",
-      "sortid": 56,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -292,7 +292,7 @@
     {
       "name": "FoodHobbitPancake",
       "type": "food",
-      "sortid": 28,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -308,7 +308,7 @@
     {
       "name": "FoodLion",
       "type": "food",
-      "sortid": 43,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -316,7 +316,7 @@
     {
       "name": "FoodLionCooked",
       "type": "food",
-      "sortid": 44,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -324,7 +324,7 @@
     {
       "name": "FoodZebra",
       "type": "food",
-      "sortid": 45,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -332,7 +332,7 @@
     {
       "name": "FoodZebraCooked",
       "type": "food",
-      "sortid": 46,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -340,7 +340,7 @@
     {
       "name": "FoodRino",
       "type": "food",
-      "sortid": 47,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -348,7 +348,7 @@
     {
       "name": "FoodRinoCooked",
       "type": "food",
-      "sortid": 48,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -356,7 +356,7 @@
     {
       "name": "FoodHobbitPancakeMapleSyrup",
       "type": "food",
-      "sortid": 29,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -404,7 +404,7 @@
     {
       "name": "FoodChestnutRoasted",
       "type": "food",
-      "sortid": 32,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -412,7 +412,7 @@
     {
       "name": "FoodChestnut",
       "type": "food",
-      "sortid": 31,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -420,7 +420,7 @@
     {
       "name": "FoodCram",
       "type": "food",
-      "sortid": 33,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -428,7 +428,7 @@
     {
       "name": "FoodLemon",
       "type": "food",
-      "sortid": 34,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -436,7 +436,7 @@
     {
       "name": "FoodOrange",
       "type": "food",
-      "sortid": 35,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -444,7 +444,7 @@
     {
       "name": "FoodLime",
       "type": "food",
-      "sortid": 36,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -452,7 +452,7 @@
     {
       "name": "FoodCorn",
       "type": "food",
-      "sortid": 37,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -460,7 +460,7 @@
     {
       "name": "FoodVenison",
       "type": "food",
-      "sortid": 49,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -468,7 +468,7 @@
     {
       "name": "FoodVenisonCooked",
       "type": "food",
-      "sortid": 50,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -476,7 +476,7 @@
     {
       "name": "FoodKebab",
       "type": "food",
-      "sortid": 52,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -484,7 +484,7 @@
     {
       "name": "FoodCornCooked",
       "type": "food",
-      "sortid": 38,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -492,7 +492,7 @@
     {
       "name": "FoodKebabShish",
       "type": "food",
-      "sortid": 53,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -500,7 +500,7 @@
     {
       "name": "FoodLeek",
       "type": "food",
-      "sortid": 40,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -508,7 +508,7 @@
     {
       "name": "FoodTurnip",
       "type": "food",
-      "sortid": 41,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -516,7 +516,7 @@
     {
       "name": "FoodCamel",
       "type": "food",
-      "sortid": 54,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -524,7 +524,7 @@
     {
       "name": "FoodCamelCooked",
       "type": "food",
-      "sortid": 55,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -548,7 +548,7 @@
     {
       "name": "FoodGrapesRed",
       "type": "food",
-      "sortid": 69,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -556,7 +556,7 @@
     {
       "name": "FoodGrapesGreen",
       "type": "food",
-      "sortid": 70,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -564,7 +564,7 @@
     {
       "name": "FoodTurnipRoasted",
       "type": "food",
-      "sortid": 71,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -572,7 +572,7 @@
     {
       "name": "FoodAlmond",
       "type": "food",
-      "sortid": 72,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -580,7 +580,7 @@
     {
       "name": "FoodWildBerries",
       "type": "food",
-      "sortid": 73,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -588,7 +588,7 @@
     {
       "name": "FoodPlum",
       "type": "food",
-      "sortid": 74,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -596,7 +596,7 @@
     {
       "name": "FoodMarzipan",
       "type": "food",
-      "sortid": 75,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -604,7 +604,7 @@
     {
       "name": "FoodMarzipanChocolate",
       "type": "food",
-      "sortid": 76,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -612,7 +612,7 @@
     {
       "name": "FoodYam",
       "type": "food",
-      "sortid": 77,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -620,7 +620,7 @@
     {
       "name": "FoodYamRoasted",
       "type": "food",
-      "sortid": 78,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -628,7 +628,7 @@
     {
       "name": "FoodPomegranate",
       "type": "food",
-      "sortid": 79,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -636,7 +636,7 @@
     {
       "name": "FoodManFlesh",
       "type": "food",
-      "sortid": 80,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -644,7 +644,7 @@
     {
       "name": "FoodSalt",
       "type": "food",
-      "sortid": 81,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {}

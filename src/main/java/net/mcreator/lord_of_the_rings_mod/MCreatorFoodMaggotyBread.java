@@ -13,7 +13,7 @@ public class MCreatorFoodMaggotyBread extends Elementslord_of_the_rings_mod.ModE
 	public static final Item block = null;
 
 	public MCreatorFoodMaggotyBread(Elementslord_of_the_rings_mod instance) {
-		super(instance, 56);
+		super(instance, 66);
 	}
 
 	@Override

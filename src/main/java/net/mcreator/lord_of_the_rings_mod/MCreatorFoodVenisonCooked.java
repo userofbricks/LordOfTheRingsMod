@@ -13,7 +13,7 @@ public class MCreatorFoodVenisonCooked extends Elementslord_of_the_rings_mod.Mod
 	public static final Item block = null;
 
 	public MCreatorFoodVenisonCooked(Elementslord_of_the_rings_mod instance) {
-		super(instance, 50);
+		super(instance, 59);
 	}
 
 	@Override
