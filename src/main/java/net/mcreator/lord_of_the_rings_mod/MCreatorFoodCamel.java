@@ -8,12 +8,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 
 @Elementslord_of_the_rings_mod.ModElement.Tag
-public class MCreatorFoodZebra extends Elementslord_of_the_rings_mod.ModElement {
-	@ObjectHolder("lord_of_the_rings_mod:foodzebra")
+public class MCreatorFoodCamel extends Elementslord_of_the_rings_mod.ModElement {
+	@ObjectHolder("lord_of_the_rings_mod:foodcamel")
 	public static final Item block = null;
 
-	public MCreatorFoodZebra(Elementslord_of_the_rings_mod instance) {
-		super(instance, 45);
+	public MCreatorFoodCamel(Elementslord_of_the_rings_mod instance) {
+		super(instance, 54);
 	}
 
 	@Override
@@ -25,7 +25,7 @@ public class MCreatorFoodZebra extends Elementslord_of_the_rings_mod.ModElement 
 		public FoodItemCustom() {
 			super(new Item.Properties().group(MCreatorLOTRFoodAndDrinkTab.tab).maxStackSize(64)
 					.food((new Food.Builder()).hunger(3).saturation(0.1f).meat().build()));
-			setRegistryName("foodzebra");
+			setRegistryName("foodcamel");
 		}
 
 		@Override

@@ -1,0 +1,21 @@
+{
+  "_fv": 5,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "grapered",
+    "customModelName": "Normal",
+    "name": "Red Grapes",
+    "creativeTab": {
+      "value": "CUSTOM:LOTRFoodAndDrinkTab"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 4,
+    "saturation": 0.30000000000000004,
+    "eatingSpeed": 24,
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

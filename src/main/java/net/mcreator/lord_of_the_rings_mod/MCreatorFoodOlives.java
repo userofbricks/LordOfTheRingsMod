@@ -8,12 +8,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 
 @Elementslord_of_the_rings_mod.ModElement.Tag
-public class MCreatorFoodZebra extends Elementslord_of_the_rings_mod.ModElement {
-	@ObjectHolder("lord_of_the_rings_mod:foodzebra")
+public class MCreatorFoodOlives extends Elementslord_of_the_rings_mod.ModElement {
+	@ObjectHolder("lord_of_the_rings_mod:foodolives")
 	public static final Item block = null;
 
-	public MCreatorFoodZebra(Elementslord_of_the_rings_mod instance) {
-		super(instance, 45);
+	public MCreatorFoodOlives(Elementslord_of_the_rings_mod instance) {
+		super(instance, 67);
 	}
 
 	@Override
@@ -24,8 +24,13 @@ public class MCreatorFoodZebra extends Elementslord_of_the_rings_mod.ModElement 
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(MCreatorLOTRFoodAndDrinkTab.tab).maxStackSize(64)
-					.food((new Food.Builder()).hunger(3).saturation(0.1f).meat().build()));
-			setRegistryName("foodzebra");
+					.food((new Food.Builder()).hunger(2).saturation(0.3f).build()));
+			setRegistryName("foodolives");
+		}
+
+		@Override
+		public int getUseDuration(ItemStack stack) {
+			return 16;
 		}
 
 		@Override

@@ -10,7 +10,7 @@ import net.minecraft.item.ItemGroup;
 @Elementslord_of_the_rings_mod.ModElement.Tag
 public class MCreatorLOTRStoryTab extends Elementslord_of_the_rings_mod.ModElement {
 	public MCreatorLOTRStoryTab(Elementslord_of_the_rings_mod instance) {
-		super(instance, 61);
+		super(instance, 64);
 	}
 
 	@Override

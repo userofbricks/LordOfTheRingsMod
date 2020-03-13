@@ -13,7 +13,7 @@ public class MCreatorFoodRinoCooked extends Elementslord_of_the_rings_mod.ModEle
 	public static final Item block = null;
 
 	public MCreatorFoodRinoCooked(Elementslord_of_the_rings_mod instance) {
-		super(instance, 47);
+		super(instance, 48);
 	}
 
 	@Override

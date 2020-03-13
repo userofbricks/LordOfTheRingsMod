@@ -1,0 +1,21 @@
+{
+  "_fv": 5,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "manflesh",
+    "customModelName": "Normal",
+    "name": "Man Flesh",
+    "creativeTab": {
+      "value": "CUSTOM:LOTRFoodAndDrinkTab"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 5,
+    "saturation": 0.30000000000000004,
+    "eatingSpeed": 32,
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}
