@@ -21,7 +21,7 @@ For Episode 2 - creating the cake block base:
   * assets/lord_of_the_rings_mod/models/block
   * assets/lord_of_the_rings_mod/models/item
   
-  For Episode 3 - creating the edible block item:
+For Episode 3 - creating the edible block item:
 - if you have trouble finding any of the files listed bellow ping me in my discord server here: https://discord.gg/gqYM4ED
 * The item bases are found in the itemBase folder as in the tutorial.
 * the element used in this tutorial has been relocated to the tutorialelements folder so it doesn't get loaded into the game.
