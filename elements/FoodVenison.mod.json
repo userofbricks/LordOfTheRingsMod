@@ -1,0 +1,21 @@
+{
+  "_fv": 5,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "deerraw",
+    "customModelName": "Normal",
+    "name": "Venison",
+    "creativeTab": {
+      "value": "CUSTOM:LOTRFoodAndDrinkTab"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 3,
+    "saturation": 0.1,
+    "eatingSpeed": 32,
+    "forDogs": true,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

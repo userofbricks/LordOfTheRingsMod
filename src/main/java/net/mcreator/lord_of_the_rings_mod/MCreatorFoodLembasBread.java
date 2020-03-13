@@ -13,7 +13,7 @@ public class MCreatorFoodLembasBread extends Elementslord_of_the_rings_mod.ModEl
 	public static final Item block = null;
 
 	public MCreatorFoodLembasBread(Elementslord_of_the_rings_mod instance) {
-		super(instance, 23);
+		super(instance, 12);
 	}
 
 	@Override

@@ -33,7 +33,7 @@ public class MCreatorFoodDate extends Elementslord_of_the_rings_mod.ModElement {
 	public static final Block block = null;
 
 	public MCreatorFoodDate(Elementslord_of_the_rings_mod instance) {
-		super(instance, 17);
+		super(instance, 7);
 	}
 
 	@Override

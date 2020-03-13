@@ -33,7 +33,7 @@ public class MCreatorFoodBanana extends Elementslord_of_the_rings_mod.ModElement
 	public static final Block block = null;
 
 	public MCreatorFoodBanana(Elementslord_of_the_rings_mod instance) {
-		super(instance, 13);
+		super(instance, 2);
 	}
 
 	@Override

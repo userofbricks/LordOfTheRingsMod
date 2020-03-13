@@ -1,0 +1,21 @@
+{
+  "_fv": 5,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "leek",
+    "customModelName": "Normal",
+    "name": "Leek",
+    "creativeTab": {
+      "value": "CUSTOM:LOTRFoodAndDrinkTab"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 2,
+    "saturation": 0.2,
+    "eatingSpeed": 8,
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

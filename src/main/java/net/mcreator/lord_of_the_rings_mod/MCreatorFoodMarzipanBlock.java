@@ -29,7 +29,7 @@ public class MCreatorFoodMarzipanBlock extends Elementslord_of_the_rings_mod.Mod
 	public static final Block block = null;
 
 	public MCreatorFoodMarzipanBlock(Elementslord_of_the_rings_mod instance) {
-		super(instance, 20);
+		super(instance, 9);
 	}
 
 	@Override

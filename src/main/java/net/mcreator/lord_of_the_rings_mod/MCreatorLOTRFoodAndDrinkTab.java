@@ -10,7 +10,7 @@ import net.minecraft.item.ItemGroup;
 @Elementslord_of_the_rings_mod.ModElement.Tag
 public class MCreatorLOTRFoodAndDrinkTab extends Elementslord_of_the_rings_mod.ModElement {
 	public MCreatorLOTRFoodAndDrinkTab(Elementslord_of_the_rings_mod instance) {
-		super(instance, 4);
+		super(instance, 57);
 	}
 
 	@Override

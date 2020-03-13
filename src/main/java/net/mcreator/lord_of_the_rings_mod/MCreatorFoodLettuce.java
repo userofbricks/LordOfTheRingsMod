@@ -13,7 +13,7 @@ public class MCreatorFoodLettuce extends Elementslord_of_the_rings_mod.ModElemen
 	public static final Item block = null;
 
 	public MCreatorFoodLettuce(Elementslord_of_the_rings_mod instance) {
-		super(instance, 24);
+		super(instance, 39);
 	}
 
 	@Override

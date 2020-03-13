@@ -12,7 +12,7 @@ public class MCreatorFoodPipeweedLeaf extends Elementslord_of_the_rings_mod.ModE
 	public static final Item block = null;
 
 	public MCreatorFoodPipeweedLeaf(Elementslord_of_the_rings_mod instance) {
-		super(instance, 21);
+		super(instance, 10);
 	}
 
 	@Override

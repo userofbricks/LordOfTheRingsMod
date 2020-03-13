@@ -12,7 +12,7 @@ public class MCreatorFoodPipeweed extends Elementslord_of_the_rings_mod.ModEleme
 	public static final Item block = null;
 
 	public MCreatorFoodPipeweed(Elementslord_of_the_rings_mod instance) {
-		super(instance, 22);
+		super(instance, 11);
 	}
 
 	@Override

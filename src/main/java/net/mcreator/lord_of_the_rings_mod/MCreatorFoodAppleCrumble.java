@@ -23,7 +23,7 @@ public class MCreatorFoodAppleCrumble extends Elementslord_of_the_rings_mod.ModE
 	public static final Block block = null;
 
 	public MCreatorFoodAppleCrumble(Elementslord_of_the_rings_mod instance) {
-		super(instance, 11);
+		super(instance, 1);
 	}
 
 	@Override

@@ -4,7 +4,7 @@
     {
       "name": "LOTRBlocksTab",
       "type": "tab",
-      "sortid": 1,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -12,7 +12,7 @@
     {
       "name": "LOTRCombatTab",
       "type": "tab",
-      "sortid": 2,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -20,7 +20,7 @@
     {
       "name": "LOTRDecorationsTab",
       "type": "tab",
-      "sortid": 3,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -28,7 +28,7 @@
     {
       "name": "LOTRFoodAndDrinkTab",
       "type": "tab",
-      "sortid": 4,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -36,7 +36,7 @@
     {
       "name": "LOTRMaterialsTab",
       "type": "tab",
-      "sortid": 5,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -44,7 +44,7 @@
     {
       "name": "LOTRMiscellaneousTab",
       "type": "tab",
-      "sortid": 6,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -52,7 +52,7 @@
     {
       "name": "LOTRSpawningTab",
       "type": "tab",
-      "sortid": 7,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -60,7 +60,7 @@
     {
       "name": "LOTRStoryTab",
       "type": "tab",
-      "sortid": 8,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -68,7 +68,7 @@
     {
       "name": "LOTRToolsTab",
       "type": "tab",
-      "sortid": 9,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -76,7 +76,7 @@
     {
       "name": "LOTRUtilitiesTab",
       "type": "tab",
-      "sortid": 10,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -84,7 +84,7 @@
     {
       "name": "FoodAppleCrumble",
       "type": "block",
-      "sortid": 11,
+      "sortid": 1,
       "compiles": true,
       "locked_code": true,
       "ids": {}
@@ -92,7 +92,7 @@
     {
       "name": "FoodBananaCake",
       "type": "block",
-      "sortid": 12,
+      "sortid": 3,
       "compiles": true,
       "locked_code": true,
       "ids": {}
@@ -100,7 +100,7 @@
     {
       "name": "FoodBanana",
       "type": "block",
-      "sortid": 13,
+      "sortid": 2,
       "compiles": true,
       "locked_code": true,
       "ids": {}
@@ -108,7 +108,7 @@
     {
       "name": "FoodBerryPie",
       "type": "block",
-      "sortid": 14,
+      "sortid": 4,
       "compiles": true,
       "locked_code": true,
       "ids": {}
@@ -116,7 +116,7 @@
     {
       "name": "FoodCherryPie",
       "type": "block",
-      "sortid": 15,
+      "sortid": 5,
       "compiles": true,
       "locked_code": true,
       "ids": {}
@@ -124,7 +124,7 @@
     {
       "name": "FoodDalishPastry",
       "type": "block",
-      "sortid": 16,
+      "sortid": 6,
       "compiles": true,
       "locked_code": true,
       "ids": {}
@@ -132,7 +132,7 @@
     {
       "name": "FoodDate",
       "type": "block",
-      "sortid": 17,
+      "sortid": 7,
       "compiles": true,
       "locked_code": true,
       "ids": {}
@@ -140,7 +140,7 @@
     {
       "name": "FoodKebabBlock",
       "type": "block",
-      "sortid": 18,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -148,7 +148,7 @@
     {
       "name": "FoodLemonCake",
       "type": "block",
-      "sortid": 19,
+      "sortid": 8,
       "compiles": true,
       "locked_code": true,
       "ids": {}
@@ -156,7 +156,7 @@
     {
       "name": "FoodMarzipanBlock",
       "type": "block",
-      "sortid": 20,
+      "sortid": 9,
       "compiles": true,
       "locked_code": true,
       "ids": {}
@@ -164,7 +164,7 @@
     {
       "name": "FoodPipeweedLeaf",
       "type": "item",
-      "sortid": 21,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -172,7 +172,7 @@
     {
       "name": "FoodPipeweed",
       "type": "item",
-      "sortid": 22,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -180,7 +180,7 @@
     {
       "name": "FoodLembasBread",
       "type": "food",
-      "sortid": 23,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -188,7 +188,7 @@
     {
       "name": "FoodLettuce",
       "type": "food",
-      "sortid": 24,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -196,7 +196,7 @@
     {
       "name": "FoodGammon",
       "type": "food",
-      "sortid": 25,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -204,7 +204,7 @@
     {
       "name": "FoodAppleGreen",
       "type": "food",
-      "sortid": 26,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -212,7 +212,7 @@
     {
       "name": "FoodAppleYellow",
       "type": "food",
-      "sortid": 27,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -220,7 +220,7 @@
     {
       "name": "FoodPearGreen",
       "type": "food",
-      "sortid": 28,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -228,7 +228,7 @@
     {
       "name": "FoodPearYellow",
       "type": "food",
-      "sortid": 29,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -236,7 +236,7 @@
     {
       "name": "FoodPearBrown",
       "type": "food",
-      "sortid": 30,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -244,7 +244,7 @@
     {
       "name": "FoodCherriesDark",
       "type": "food",
-      "sortid": 32,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -252,7 +252,7 @@
     {
       "name": "FoodCherriesYellow",
       "type": "food",
-      "sortid": 33,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -260,7 +260,7 @@
     {
       "name": "FoodCherriesOrange",
       "type": "food",
-      "sortid": 34,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -268,7 +268,7 @@
     {
       "name": "FoodCherriesRed",
       "type": "food",
-      "sortid": 35,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -276,7 +276,239 @@
     {
       "name": "FoodMallornNut",
       "type": "food",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodMaggotyBread",
+      "type": "food",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodHobbitPancake",
+      "type": "food",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodMango",
+      "type": "food",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodLion",
+      "type": "food",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodLionCooked",
+      "type": "food",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodZebra",
+      "type": "food",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodZebraCooked",
+      "type": "food",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodRino",
+      "type": "food",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodRinoCooked",
+      "type": "food",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodHobbitPancakeMapleSyrup",
+      "type": "food",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodBlueBerries",
+      "type": "food",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodBlackBerries",
+      "type": "food",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodRasberries",
+      "type": "food",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodCranberries",
+      "type": "food",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodElderBerries",
+      "type": "food",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodChestnutRoasted",
+      "type": "food",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodChestnut",
+      "type": "food",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodCram",
+      "type": "food",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodLemon",
+      "type": "food",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodOrange",
+      "type": "food",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodLime",
+      "type": "food",
       "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodCorn",
+      "type": "food",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodVenison",
+      "type": "food",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodVenisonCooked",
+      "type": "food",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodKebab",
+      "type": "food",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodCornCooked",
+      "type": "food",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodKebabShish",
+      "type": "food",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodLeek",
+      "type": "food",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoodTurnip",
+      "type": "food",
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -286,41 +518,70 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.lord_of_the_rings_mod.foodlembasbread": "Lembas Bread",
       "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
       "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
       "item.lord_of_the_rings_mod.foodgammon": "Gammon",
+      "itemGroup.tablotrcombattab": "LOTR Combat",
+      "itemGroup.tablotrtoolstab": "LOTR Tools",
+      "item.lord_of_the_rings_mod.foodlemon": "Lemon",
+      "itemGroup.tablotrblockstab": "LOTR Blocks",
+      "block.lord_of_the_rings_mod.foodapplecrumble": "Apple Crumble",
+      "item.lord_of_the_rings_mod.foodkebabshish": "Shish Kebab",
+      "item.lord_of_the_rings_mod.foodcherriesdark": "Cherries Dark",
+      "item.lord_of_the_rings_mod.foodapplegreen": "Apple Green",
+      "item.lord_of_the_rings_mod.foodrino": "Rino",
+      "item.lord_of_the_rings_mod.foodcorncooked": "Cooked Corn",
+      "block.lord_of_the_rings_mod.foodbananacake": "Banana Cake",
+      "item.lord_of_the_rings_mod.foodmaggotybread": "Maggoty Bread",
+      "item.lord_of_the_rings_mod.foodpipeweedleaf": "Pipeweed",
+      "item.lord_of_the_rings_mod.foodcram": "Cram",
+      "item.lord_of_the_rings_mod.foodleek": "Leek",
+      "itemGroup.tablotrdecorationstab": "LOTR Decorations",
+      "item.lord_of_the_rings_mod.foodhobbitpancakemaplesyrup": "Hobbit Pancake With Maple Syrup",
+      "item.lord_of_the_rings_mod.foodcherriesorange": "Cherries Orange",
+      "item.lord_of_the_rings_mod.foodkebab": "Kebab",
+      "block.lord_of_the_rings_mod.foodbanana": "Banana",
+      "itemGroup.tablotrfoodanddrinktab": "LOTR Food And Drink",
+      "item.lord_of_the_rings_mod.foodblackberries": "Black Berries",
+      "block.lord_of_the_rings_mod.fooddalishpastry": "Dalish Pastry",
+      "item.lord_of_the_rings_mod.foodlime": "Lime",
+      "item.lord_of_the_rings_mod.foodlembasbread": "Lembas Bread",
+      "item.lord_of_the_rings_mod.foodlioncooked": "Cooked Lion",
+      "item.lord_of_the_rings_mod.foodzebra": "Zebra",
+      "item.lord_of_the_rings_mod.foodchestnutroasted": "Roast Chestnut",
+      "item.lord_of_the_rings_mod.foodchestnut": "Chestnut",
       "block.lord_of_the_rings_mod.foodlemoncake": "Lemon Cake",
       "item.lord_of_the_rings_mod.foodmallornnut": "Mallorn Nut",
-      "itemGroup.tablotrcombattab": "LOTR Combat",
+      "item.lord_of_the_rings_mod.foodmango": "Mango",
+      "item.lord_of_the_rings_mod.foodorange": "Orange",
+      "item.lord_of_the_rings_mod.foodvenisoncooked": "Cooked Venison",
+      "item.lord_of_the_rings_mod.foodhobbitpancake": "Hobbit Pancake",
       "item.lord_of_the_rings_mod.foodpearyellow": "Pear Green",
       "itemGroup.tablotrmaterialstab": "LOTR Materials",
       "item.lord_of_the_rings_mod.foodcherriesyellow": "Cherries Yellow",
-      "itemGroup.tablotrtoolstab": "LOTR Tools",
       "block.lord_of_the_rings_mod.foodberrypie": "Berry Pie",
+      "item.lord_of_the_rings_mod.foodcranberries": "Cranberries",
       "item.lord_of_the_rings_mod.foodappleyellow": "Apple Yellow",
-      "itemGroup.tablotrblockstab": "LOTR Blocks",
-      "block.lord_of_the_rings_mod.foodapplecrumble": "Apple Crumble",
-      "item.lord_of_the_rings_mod.foodcherriesdark": "Cherries Dark",
+      "item.lord_of_the_rings_mod.foodzebracooked": "Cooked Zebra",
+      "item.lord_of_the_rings_mod.foodturnip": "Turnip",
       "block.lord_of_the_rings_mod.foodkebabblock": "Kebab Block",
       "itemGroup.tablotrstorytab": "LOTR Story",
-      "item.lord_of_the_rings_mod.foodapplegreen": "Apple Green",
       "item.lord_of_the_rings_mod.foodpearbrown": "Pear Brown",
+      "item.lord_of_the_rings_mod.foodrinocooked": "Cooked Rino",
       "block.lord_of_the_rings_mod.foodmarzipanblock": "Marzipan Block",
-      "block.lord_of_the_rings_mod.foodbananacake": "Banana Cake",
+      "item.lord_of_the_rings_mod.foodblueberries": "Blue Berries",
+      "item.lord_of_the_rings_mod.foodvenison": "Venison",
       "block.lord_of_the_rings_mod.fooddate": "Date",
-      "item.lord_of_the_rings_mod.foodpipeweedleaf": "Pipeweed",
+      "item.lord_of_the_rings_mod.foodrasberries": "Rasberries",
+      "item.lord_of_the_rings_mod.foodcorn": "Corn",
       "itemGroup.tablotrutilitiestab": "LOTR Utilities",
-      "itemGroup.tablotrdecorationstab": "LOTR Decorations",
+      "item.lord_of_the_rings_mod.foodlion": "Lion",
       "itemGroup.tablotrspawningtab": "LOTR Spawning",
-      "item.lord_of_the_rings_mod.foodcherriesorange": "Cherries Orange",
+      "item.lord_of_the_rings_mod.foodelderberries": "Elder Berries",
       "item.lord_of_the_rings_mod.foodpeargreen": "Pear Green",
-      "itemGroup.tablotrfoodanddrinktab": "LOTR Food And Drink",
-      "block.lord_of_the_rings_mod.foodbanana": "Banana",
       "block.lord_of_the_rings_mod.foodcherrypie": "Cherry Pie",
       "item.lord_of_the_rings_mod.foodpipeweed": "Pipeweed Leaf",
       "item.lord_of_the_rings_mod.foodcherriesred": "Cherries Red",
-      "block.lord_of_the_rings_mod.fooddalishpastry": "Dalish Pastry",
       "item.lord_of_the_rings_mod.foodlettuce": "Lettuce"
     }
   },

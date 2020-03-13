@@ -27,7 +27,7 @@ public class MCreatorFoodLemonCake extends Elementslord_of_the_rings_mod.ModElem
 	public static final Block block = null;
 
 	public MCreatorFoodLemonCake(Elementslord_of_the_rings_mod instance) {
-		super(instance, 19);
+		super(instance, 8);
 	}
 
 	@Override

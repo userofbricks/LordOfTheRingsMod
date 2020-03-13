@@ -29,7 +29,7 @@ public class MCreatorFoodDalishPastry extends Elementslord_of_the_rings_mod.ModE
 	public static final Block block = null;
 
 	public MCreatorFoodDalishPastry(Elementslord_of_the_rings_mod instance) {
-		super(instance, 16);
+		super(instance, 6);
 	}
 
 	@Override

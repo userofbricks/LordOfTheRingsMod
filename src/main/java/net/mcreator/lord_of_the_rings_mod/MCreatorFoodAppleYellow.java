@@ -13,7 +13,7 @@ public class MCreatorFoodAppleYellow extends Elementslord_of_the_rings_mod.ModEl
 	public static final Item block = null;
 
 	public MCreatorFoodAppleYellow(Elementslord_of_the_rings_mod instance) {
-		super(instance, 27);
+		super(instance, 14);
 	}
 
 	@Override
@@ -24,7 +24,7 @@ public class MCreatorFoodAppleYellow extends Elementslord_of_the_rings_mod.ModEl
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(MCreatorLOTRFoodAndDrinkTab.tab).maxStackSize(64)
-					.food((new Food.Builder()).hunger(2).saturation(0.3f).build()));
+					.food((new Food.Builder()).hunger(4).saturation(0.3f).build()));
 			setRegistryName("foodappleyellow");
 		}
 

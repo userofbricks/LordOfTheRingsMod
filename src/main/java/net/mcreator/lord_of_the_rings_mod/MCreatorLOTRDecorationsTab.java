@@ -10,7 +10,7 @@ import net.minecraft.block.Blocks;
 @Elementslord_of_the_rings_mod.ModElement.Tag
 public class MCreatorLOTRDecorationsTab extends Elementslord_of_the_rings_mod.ModElement {
 	public MCreatorLOTRDecorationsTab(Elementslord_of_the_rings_mod instance) {
-		super(instance, 3);
+		super(instance, 56);
 	}
 
 	@Override

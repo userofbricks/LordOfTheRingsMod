@@ -27,7 +27,7 @@ public class MCreatorFoodCherryPie extends Elementslord_of_the_rings_mod.ModElem
 	public static final Block block = null;
 
 	public MCreatorFoodCherryPie(Elementslord_of_the_rings_mod instance) {
-		super(instance, 15);
+		super(instance, 5);
 	}
 
 	@Override

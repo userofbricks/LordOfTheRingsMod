@@ -13,7 +13,7 @@ public class MCreatorFoodCherriesYellow extends Elementslord_of_the_rings_mod.Mo
 	public static final Item block = null;
 
 	public MCreatorFoodCherriesYellow(Elementslord_of_the_rings_mod instance) {
-		super(instance, 33);
+		super(instance, 19);
 	}
 
 	@Override
