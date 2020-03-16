@@ -8,7 +8,7 @@ For Episode 2 - creating the cake block base:
 - if you have trouble finding any of the files listed bellow ping me in my discord server here: https://discord.gg/gqYM4ED
 * The cake block base is found in the blockBase folder as in the tutorial.
 * the element used in this tutorial has been relocated to the tutorialelements folder so it doesn't get loaded into the game.
-* For reference classes that use this tutorials see:
+* For reference classes that use this tutorial see:
   * McreatorFoodAppleCrumble
   * McreatorFoodBananaCake
   * McreatorFoodBerryPie
@@ -25,13 +25,21 @@ For Episode 3 - creating the edible block item:
 - if you have trouble finding any of the files listed bellow ping me in my discord server here: https://discord.gg/gqYM4ED
 * The item bases are found in the itemBase folder as in the tutorial.
 * the element used in this tutorial has been relocated to the tutorialelements folder so it doesn't get loaded into the game.
-* For reference classes that use this tutorials see:
+* For reference classes that use this tutorial see:
   * McreatorFoodAppleCrumble
   * McreatorFoodBananaCake
   * McreatorFoodBerryPie
   * McreatorFoodCherryPie
   * McreatorFoodDalishPastry
   * McreatorFoodLemonCake
+  * McreatorFoodMarzipanBlock
+  * McreatorFoodBanana
+  * McreatorFoodDate
+  
+For Episode 4 - bounding boxes:
+- if you have trouble finding any of the files listed bellow ping me in my discord server here: https://discord.gg/gqYM4ED
+* For the reference classes shown in this tutorial:
+  * McreatorFoodDalishPastry
   * McreatorFoodMarzipanBlock
   * McreatorFoodBanana
   * McreatorFoodDate
