@@ -9,3 +9,4 @@ WARNING: the files in this mod are constantly changeing and my not be 100% what 
 - moved PlaceableFoodItem to block folder and changed name to BasePlaceableFoodItem
 - moved PlaceableDrinkItem to block folder and changed name to BasePlaceableDrinkItem
 - got rid of McreatorTestCakeBlock
+- added world edit to the mods folder https://www.curseforge.com/minecraft/mc-mods/worldedit
