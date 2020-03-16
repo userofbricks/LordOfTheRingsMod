@@ -1,5 +1,5 @@
 {
-  "_fv": 5,
+  "_fv": 6,
   "_type": "block",
   "definition": {
     "texture": "kebabblock",
@@ -43,6 +43,7 @@
       "value": "CAKE"
     },
     "tickRate": 10,
+    "tickRandomly": false,
     "isReplaceable": false,
     "isFlammable": false,
     "colorOnMap": "DEFAULT",
@@ -65,6 +66,7 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasInventory": false,
+    "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,

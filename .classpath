@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
@@ -29,13 +28,14 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Users/jonathandillon/MCreatorWorkspaces/lord_of_the_rings_mod/build/natives"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
-	<classpathentry sourcepath="/Users/jonathandillon/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3-sources.jar" kind="lib" path="/Users/jonathandillon/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3-recomp.jar">
+	<classpathentry sourcepath="/Users/jonathandillon/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3-sources.jar" kind="lib" path="/Users/jonathandillon/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3-recomp.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/Users/jonathandillon/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3-sources.jar" kind="lib" path="/Users/jonathandillon/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.1.117_mapped_snapshot_20190719-1.14.3-launcher.jar">
+	<classpathentry sourcepath="/Users/jonathandillon/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3-sources.jar" kind="lib" path="/Users/jonathandillon/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3/forge-1.14.4-28.2.3_mapped_snapshot_20190719-1.14.3-launcher.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -45,7 +45,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/Users/jonathandillon/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/1.0.1-milestone.0.1+94458e7/a564eab3102b43201c8016003a33e923c69521c9/accesstransformers-1.0.1-milestone.0.1+94458e7-sources.jar" kind="lib" path="/Users/jonathandillon/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/1.0.1-milestone.0.1+94458e7/88bab5e041ae458e6b2cd6bc4de6c3d738def6b6/accesstransformers-1.0.1-milestone.0.1+94458e7-shadowed.jar">
+	<classpathentry sourcepath="/Users/jonathandillon/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/1.0.5/21c385a490fdbfbe78a12628df64f808505c66c7/accesstransformers-1.0.5-sources.jar" kind="lib" path="/Users/jonathandillon/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/1.0.5/1254aa2fe7555253cef286338d936e646c26571c/accesstransformers-1.0.5-shadowed.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
