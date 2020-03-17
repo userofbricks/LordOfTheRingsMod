@@ -26,7 +26,7 @@ public class FoodLembasBreadItem extends LordOfTheRingsModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).maxStackSize(64)
-					.food((new Food.Builder()).hunger(10).saturation(2f).build()));
+					.food((new Food.Builder()).hunger(20).saturation(2f).build()));
 			setRegistryName("foodlembasbread");
 		}
 

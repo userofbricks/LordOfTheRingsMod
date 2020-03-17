@@ -66,4 +66,8 @@ public class BasePlaceableFoodItem extends BlockItem {
 	public float getDamage() {
 		return this.damage;
 	}
+
+	public boolean getMilk() {
+		return this.milk;
+	}
 }
