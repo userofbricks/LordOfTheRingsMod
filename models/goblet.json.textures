@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "gold": {
+      "map": {
+        "0": "goblet_gold"
+      },
+      "name": "gold"
+    },
+    "default": {
+      "map": {
+        "0": "goblet_wood"
+      },
+      "name": "default"
+    },
+    "copper": {
+      "map": {
+        "0": "goblet_copper"
+      },
+      "name": "copper"
+    },
+    "silver": {
+      "map": {
+        "0": "goblet_silver"
+      },
+      "name": "silver"
+    }
+  }
+}

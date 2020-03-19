@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "gold": {
+      "map": {
+        "low": "alehorn_lower_golden",
+        "upper": "alehorn_upper_golden"
+      },
+      "name": "gold"
+    },
+    "default": {
+      "map": {
+        "low": "alehorn_lower",
+        "upper": "alehorn_upper"
+      },
+      "name": "default"
+    }
+  }
+}

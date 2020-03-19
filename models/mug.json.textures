@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "ceramic": {
+      "map": {
+        "0": "mug_clay"
+      },
+      "name": "ceramic"
+    },
+    "default": {
+      "map": {
+        "0": "mug"
+      },
+      "name": "default"
+    }
+  }
+}
