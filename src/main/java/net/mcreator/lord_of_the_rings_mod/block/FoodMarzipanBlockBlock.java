@@ -41,7 +41,7 @@ public class FoodMarzipanBlockBlock extends LordOfTheRingsModElements.ModElement
 	}
 	public static class CustomBlock extends BaseCakeBlock {
 
-		protected static final VoxelShape[] SHAPESB = new VoxelShape[]{Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 6.0D, 15.0D), 
+		protected static final VoxelShape[] SHAPESA = new VoxelShape[]{Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 6.0D, 15.0D), 
 																	  Block.makeCuboidShape(3.0D, 0.0D, 1.0D, 15.0D, 6.0D, 15.0D), 
 																	  Block.makeCuboidShape(5.0D, 0.0D, 1.0D, 15.0D, 6.0D, 15.0D), 
 																	  Block.makeCuboidShape(7.0D, 0.0D, 1.0D, 15.0D, 6.0D, 15.0D), 
