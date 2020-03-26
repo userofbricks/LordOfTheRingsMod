@@ -696,6 +696,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "DrinkInMug",
+      "type": "code",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -704,8 +712,8 @@
     "en_us": {
       "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
       "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
-      "item.lord_of_the_rings_mod.foodgammon": "Gammon",
       "item.lord_of_the_rings_mod.foodgrapesgreen": "White Grapes",
+      "item.lord_of_the_rings_mod.foodgammon": "Gammon",
       "itemGroup.tablotrcombattab": "LOTR Combat",
       "itemGroup.tablotrtoolstab": "LOTR Tools",
       "item.lord_of_the_rings_mod.foodolivebread": "Olive Bread",
@@ -805,7 +813,9 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "1.14.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.lord_of_the_rings_mod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000211618
+  "mcreatorVersion": 202000212518
 }

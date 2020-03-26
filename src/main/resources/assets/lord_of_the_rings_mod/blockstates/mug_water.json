@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "lord_of_the_rings_mod:block/mug_water"
+    },
+    "facing=east": {
+      "model": "lord_of_the_rings_mod:block/mug_water",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "lord_of_the_rings_mod:block/mug_water",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "lord_of_the_rings_mod:block/mug_water",
+      "y": 270
+    }
+  }
+}

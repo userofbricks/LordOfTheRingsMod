@@ -4,8 +4,6 @@ package net.mcreator.lord_of_the_rings_mod.block;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
@@ -33,9 +31,8 @@ public class FoodAppleCrumbleBlock extends LordOfTheRingsModElements.ModElement 
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items.add(() -> new BlockItem(block,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(
-						(new Food.Builder()).hunger(7).saturation(0.7f).build()))
-								.setRegistryName(block.getRegistryName()));
+				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food((new Food.Builder()).hunger(7).saturation(0.7f).build()))
+						.setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends BaseCakeBlock {
 		public CustomBlock() {
