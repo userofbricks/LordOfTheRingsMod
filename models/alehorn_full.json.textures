@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "liquid": "liquid_water",
+        "low": "alehorn_lower",
+        "upper": "alehorn_upper",
+        "missing": "alehorn_upper"
+      },
+      "name": "default"
+    }
+  }
+}

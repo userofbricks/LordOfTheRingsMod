@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "goblet_wood",
+        "liquid": "liquid_water",
+        "missing": "goblet_wood"
+      },
+      "name": "default"
+    }
+  }
+}

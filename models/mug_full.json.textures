@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "mug",
+        "liquid": "liquid_water"
+      },
+      "name": "default"
+    }
+  }
+}

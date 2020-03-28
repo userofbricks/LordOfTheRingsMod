@@ -14,12 +14,16 @@ import net.minecraft.stats.Stats;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.IntegerProperty;
+import net.minecraft.potion.EffectInstance;
 import net.minecraft.pathfinding.PathType;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
+import org.apache.commons.lang3.tuple.Pair;
 
 public class BaseCakeBlock extends Block {
 	public static final IntegerProperty BITES = BlockStateProperties.BITES_0_6;
@@ -42,19 +46,22 @@ public class BaseCakeBlock extends Block {
 
 	public boolean onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
 		if (!worldIn.isRemote) {
-			return this.eatCake(worldIn, pos, state, player);
+			return this.eatCake(worldIn, pos, state, player, worldIn);
 		} else {
 			ItemStack itemstack = player.getHeldItem(handIn);
-			return this.eatCake(worldIn, pos, state, player) || itemstack.isEmpty();
+			return this.eatCake(worldIn, pos, state, player, worldIn) || itemstack.isEmpty();
 		}
 	}
 
-	private boolean eatCake(IWorld worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
+	private boolean eatCake(IWorld worldIn, BlockPos pos, BlockState state, PlayerEntity player, World world2) {
+		LivingEntity entityLiving = player instanceof LivingEntity ? (LivingEntity) player : null;
+		ItemStack stack = new ItemStack(this);
 		if (!player.canEat(false)) {
 			return false;
 		} else {
 			player.addStat(Stats.EAT_CAKE_SLICE);
 			player.getFoodStats().addStats(hunger, saturation);
+			this.applyFoodEffects(stack, world2, entityLiving);
 			int i = state.get(BITES);
 			if (i < 6) {
 				worldIn.setBlockState(pos, state.with(BITES, Integer.valueOf(i + 1)), 3);
@@ -62,6 +69,17 @@ public class BaseCakeBlock extends Block {
 				worldIn.removeBlock(pos, false);
 			}
 			return true;
+		}
+	}
+
+	private void applyFoodEffects(ItemStack stack, World worldIn, LivingEntity entity) {
+		Item item = stack.getItem();
+		if (item.isFood()) {
+			for (Pair<EffectInstance, Float> pair : item.getFood().getEffects()) {
+				if (!worldIn.isRemote && pair.getLeft() != null && worldIn.rand.nextFloat() < pair.getRight()) {
+					entity.addPotionEffect(new EffectInstance(pair.getLeft()));
+				}
+			}
 		}
 	}
 

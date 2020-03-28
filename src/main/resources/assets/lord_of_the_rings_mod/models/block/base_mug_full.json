@@ -1,0 +1,8 @@
+{
+  "parent": "lord_of_the_rings_mod:custom/mug_full",
+  "textures": {
+    "liquid": "#liquid",
+    "particle": "#cup",
+    "0": "#cup"
+  }
+}
