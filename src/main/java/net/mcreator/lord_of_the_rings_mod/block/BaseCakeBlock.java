@@ -61,7 +61,7 @@ public class BaseCakeBlock extends Block {
 		} else {
 			player.addStat(Stats.EAT_CAKE_SLICE);
 			player.getFoodStats().addStats(hunger, saturation);
-			this.applyFoodEffects(stack, world2, entityLiving);
+//doesn't work			this.applyFoodEffects(stack, world2, entityLiving);
 			int i = state.get(BITES);
 			if (i < 6) {
 				worldIn.setBlockState(pos, state.with(BITES, Integer.valueOf(i + 1)), 3);
@@ -72,6 +72,7 @@ public class BaseCakeBlock extends Block {
 		}
 	}
 
+/*doesn't work	
 	private void applyFoodEffects(ItemStack stack, World worldIn, LivingEntity entity) {
 		Item item = stack.getItem();
 		if (item.isFood()) {
@@ -82,7 +83,7 @@ public class BaseCakeBlock extends Block {
 			}
 		}
 	}
-
+*/
 	/**
 	 * Update the provided state given the provided neighbor facing and neighbor
 	 * state, returning a new state. For example, fences make their connections to

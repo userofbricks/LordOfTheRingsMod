@@ -85,7 +85,7 @@
       "name": "FoodAppleCrumble",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {}
     },
@@ -93,7 +93,7 @@
       "name": "FoodBananaCake",
       "type": "block",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {}
     },
@@ -109,7 +109,7 @@
       "name": "FoodBerryPie",
       "type": "block",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {}
     },
@@ -117,7 +117,7 @@
       "name": "FoodCherryPie",
       "type": "block",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {}
     },
@@ -125,7 +125,7 @@
       "name": "FoodDalishPastry",
       "type": "block",
       "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {}
     },
@@ -149,7 +149,7 @@
       "name": "FoodLemonCake",
       "type": "block",
       "sortid": 8,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {}
     },
@@ -157,7 +157,7 @@
       "name": "FoodMarzipanBlock",
       "type": "block",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {}
     },
@@ -701,6 +701,14 @@
       "name": "DrinkInMug",
       "type": "code",
       "sortid": 88,
+      "compiles": false,
+      "locked_code": true,
+      "ids": {}
+    },
+    {
+      "name": "LOTRDrinks",
+      "type": "code",
+      "sortid": 89,
       "compiles": true,
       "locked_code": true,
       "ids": {}
@@ -809,7 +817,9 @@
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
-    "dependencies": [],
+    "dependencies": [
+      "curios"
+    ],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "1.14.4",
@@ -817,5 +827,5 @@
     "modElementsPackage": "net.mcreator.lord_of_the_rings_mod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000213314
+  "mcreatorVersion": 202000214217
 }

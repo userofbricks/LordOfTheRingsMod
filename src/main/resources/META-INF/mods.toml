@@ -7,7 +7,7 @@ version="1.0.0"
 displayName="Lord Of The Rings Mod"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="jonathandillon, MCreator"
+authors="jonathandillon"
 
 [[dependencies.lord_of_the_rings_mod]]
     modId="minecraft"
@@ -17,4 +17,9 @@ authors="jonathandillon, MCreator"
     side="BOTH"
 
 
+[[dependencies.lord_of_the_rings_mod]]
+    modId="curios"
+    mandatory=false
+    ordering="NONE"
+    side="BOTH"
 

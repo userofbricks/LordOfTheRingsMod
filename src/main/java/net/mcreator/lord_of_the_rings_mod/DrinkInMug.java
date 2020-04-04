@@ -45,7 +45,7 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.lord_of_the_rings_mod.util.LOTRDrinks;
+import net.mcreator.lord_of_the_rings_mod.LOTRDrinks;
 import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
 import net.mcreator.lord_of_the_rings_mod.block.DrinkMugBlock;
 import net.mcreator.lord_of_the_rings_mod.block.BasePlaceableDrinkItem;
@@ -158,6 +158,7 @@ public class DrinkInMug {
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_green_grape_juice"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_pomegranate_juice"));
 		// alcohol
+		event.getRegistry().register(new CustomBlock().setRegistryName("mug_ale"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_mead"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_red_wine"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_perry"));
@@ -268,7 +269,7 @@ public class DrinkInMug {
 						false, Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_lemonade"));
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(mug_jungle_remedy,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, false,
+						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, true,
 						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_jungle_remedy"));
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(mug_apple_juice,
@@ -287,6 +288,9 @@ public class DrinkInMug {
 						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, false,
 						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_pomegranate_juice"));
 		// alcohol
+		event.getRegistry()
+				.register(new BasePlaceableDrinkItem(mug_ale, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.ale), 0,
+						false, Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_ale"));
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(mug_mead, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.mead), 0,
 						false, Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_mead"));
