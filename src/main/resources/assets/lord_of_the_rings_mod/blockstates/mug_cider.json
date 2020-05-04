@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "lord_of_the_rings_mod:block/drinkmug"
+      "model": "lord_of_the_rings_mod:block/mug_cider"
     },
     "facing=east": {
-      "model": "lord_of_the_rings_mod:block/drinkmug",
+      "model": "lord_of_the_rings_mod:block/mug_cider",
       "y": 90
     },
     "facing=south": {
-      "model": "lord_of_the_rings_mod:block/drinkmug",
+      "model": "lord_of_the_rings_mod:block/mug_cider",
       "y": 180
     },
     "facing=west": {
-      "model": "lord_of_the_rings_mod:block/drinkmug",
+      "model": "lord_of_the_rings_mod:block/mug_cider",
       "y": 270
     }
   }

@@ -85,7 +85,7 @@
       "name": "FoodAppleCrumble",
       "type": "block",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {}
     },
@@ -93,7 +93,7 @@
       "name": "FoodBananaCake",
       "type": "block",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {}
     },
@@ -109,7 +109,7 @@
       "name": "FoodBerryPie",
       "type": "block",
       "sortid": 4,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {}
     },
@@ -117,7 +117,7 @@
       "name": "FoodCherryPie",
       "type": "block",
       "sortid": 5,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {}
     },
@@ -125,7 +125,7 @@
       "name": "FoodDalishPastry",
       "type": "block",
       "sortid": 6,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {}
     },
@@ -149,7 +149,7 @@
       "name": "FoodLemonCake",
       "type": "block",
       "sortid": 8,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {}
     },
@@ -157,7 +157,7 @@
       "name": "FoodMarzipanBlock",
       "type": "block",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {}
     },
@@ -701,7 +701,7 @@
       "name": "DrinkInMug",
       "type": "code",
       "sortid": 88,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {}
     },
@@ -720,8 +720,8 @@
     "en_us": {
       "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
       "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
-      "item.lord_of_the_rings_mod.foodgammon": "Gammon",
       "item.lord_of_the_rings_mod.foodgrapesgreen": "White Grapes",
+      "item.lord_of_the_rings_mod.foodgammon": "Gammon",
       "itemGroup.tablotrcombattab": "LOTR Combat",
       "itemGroup.tablotrtoolstab": "LOTR Tools",
       "item.lord_of_the_rings_mod.foodolivebread": "Olive Bread",
@@ -817,9 +817,7 @@
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
-    "dependencies": [
-      "curios"
-    ],
+    "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "1.14.4",

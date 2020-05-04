@@ -1,4 +1,4 @@
-package net.mcreator.lord_of_the_rings_mod.block;
+package net.mcreator.lord_of_the_rings_mod_util.block;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
@@ -17,6 +17,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
+import net.mcreator.lord_of_the_rings_mod.block.DrinkMugBlock;
 import net.minecraft.block.Block;
 
 import java.util.Map;

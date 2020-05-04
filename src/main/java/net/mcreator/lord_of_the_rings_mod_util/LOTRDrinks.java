@@ -15,7 +15,7 @@
  * If you change workspace package, modid or prefix, you will need
  * to manually adapt this file to these changes or remake it.
 */
-package net.mcreator.lord_of_the_rings_mod;
+package net.mcreator.lord_of_the_rings_mod_util;
 
 import net.minecraft.item.Food;
 import net.minecraft.potion.EffectInstance;

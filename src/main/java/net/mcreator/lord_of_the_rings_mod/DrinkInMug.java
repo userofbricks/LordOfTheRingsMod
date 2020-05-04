@@ -45,11 +45,11 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.lord_of_the_rings_mod.LOTRDrinks;
+import net.mcreator.lord_of_the_rings_mod_util.LOTRDrinks;
+import net.mcreator.lord_of_the_rings_mod_util.block.BaseCupBlock;
+import net.mcreator.lord_of_the_rings_mod_util.block.BasePlaceableDrinkItem;
 import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
 import net.mcreator.lord_of_the_rings_mod.block.DrinkMugBlock;
-import net.mcreator.lord_of_the_rings_mod.block.BasePlaceableDrinkItem;
-import net.mcreator.lord_of_the_rings_mod.block.BaseCupBlock;
 
 import java.util.List;
 import java.util.Collections;
@@ -81,22 +81,9 @@ public class DrinkInMug {
 	public static final Block mug_perry = null;
 	public static final Block mug_cherry_liqueur = null;
 	public static final Block mug_rum = null;
-	public static final Block mug_dwarven_ale = null;
 	public static final Block mug_vodka = null;
 	public static final Block mug_maple_beer = null;
 	public static final Block mug_arak = null;
-	public static final Block mug_carrot_wine = null;
-	public static final Block mug_bannana_beer = null;
-	public static final Block mug_melon_liqueur = null;
-	public static final Block mug_cactus_liqueur = null;
-	public static final Block mug_lemon_liqueur = null;
-	public static final Block mug_lime_liqueur = null;
-	public static final Block mug_corn_liqueur = null;
-	public static final Block mug_white_wine = null;
-	public static final Block mug_plum_kvass = null;
-	public static final Block mug_termite_tequila = null;
-	public static final Block mug_soured_milk = null;
-	public static final Block mug_pomegranate_wine = null;
 	// miruvor
 	public static final Block mug_miruvor = null;
 	public static final Block mug_miruvor1 = null;
@@ -121,24 +108,12 @@ public class DrinkInMug {
 	public static final Block mug_dwarven_tonic2 = null;
 	public static final Block mug_dwarven_tonic3 = null;
 	public static final Block mug_dwarven_tonic4 = null;
-	// torog draught
-	public static final Block mug_torog_draught = null;
-	public static final Block mug_torog_draught1 = null;
-	public static final Block mug_torog_draught2 = null;
-	public static final Block mug_torog_draught3 = null;
-	public static final Block mug_torog_draught4 = null;
 	// taurethrim cocoa
 	public static final Block mug_taurethrim_cocoa = null;
 	public static final Block mug_taurethrim_cocoa1 = null;
 	public static final Block mug_taurethrim_cocoa2 = null;
 	public static final Block mug_taurethrim_cocoa3 = null;
 	public static final Block mug_taurethrim_cocoa4 = null;
-	// morgul draught
-	public static final Block mug_morgul_draught = null;
-	public static final Block mug_morgul_draught1 = null;
-	public static final Block mug_morgul_draught2 = null;
-	public static final Block mug_morgul_draught3 = null;
-	public static final Block mug_morgul_draught4 = null;
 	@SubscribeEvent
 	public static void registerBlocks(final RegistryEvent.Register<Block> event) {
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_water"));
@@ -164,22 +139,9 @@ public class DrinkInMug {
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_perry"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_cherry_liqueur"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_rum"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_dwarven_ale"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_vodka"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_maple_beer"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_arak"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_carrot_wine"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_bannana_beer"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_melon_liqueur"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_cactus_liqueur"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_lemon_liqueur"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_lime_liqueur"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_corn_liqueur"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_white_wine"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_plum_kvass"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_termite_tequila"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_soured_milk"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_pomegranate_wine"));
 		// miruvor
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_miruvor"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_miruvor1"));
@@ -204,26 +166,15 @@ public class DrinkInMug {
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_dwarven_tonic2"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_dwarven_tonic3"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_dwarven_tonic4"));
-		// torog draught
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_torog_draught"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_torog_draught1"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_torog_draught2"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_torog_draught3"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_torog_draught4"));
 		// taurethrim cocoa
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_taurethrim_cocoa"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_taurethrim_cocoa1"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_taurethrim_cocoa2"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_taurethrim_cocoa3"));
 		event.getRegistry().register(new CustomBlock().setRegistryName("mug_taurethrim_cocoa4"));
-		// morgul draught
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_morgul_draught"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_morgul_draught1"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_morgul_draught2"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_morgul_draught3"));
-		event.getRegistry().register(new CustomBlock().setRegistryName("mug_morgul_draught4"));
 	}
 
+	@SuppressWarnings("deprecation")
 	@SubscribeEvent
 	public static void registerBlockItems(final RegistryEvent.Register<Item> event) {
 		event.getRegistry()
@@ -309,10 +260,6 @@ public class DrinkInMug {
 				.register(new BasePlaceableDrinkItem(mug_rum, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.rum), 0,
 						false, Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_rum"));
 		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_dwarven_ale,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.dwarven_ale), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_dwarven_ale"));
-		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(mug_vodka, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.vodka),
 						0, false, Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_vodka"));
 		event.getRegistry()
@@ -322,54 +269,6 @@ public class DrinkInMug {
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(mug_arak, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.arak), 0,
 						false, Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_arak"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_carrot_wine,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.carrot_wine), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_carrot_wine"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_bannana_beer,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.bannana_beer), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_bannana_beer"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_melon_liqueur,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.melon_liqueur), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_melon_liqueur"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_cactus_liqueur,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.cactus_liqueur), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_cactus_liqueur"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_lemon_liqueur,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.lemon_liqueur), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_lemon_liqueur"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_lime_liqueur,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.lime_liqueur), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_lime_liqueur"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_corn_liqueur,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.corn_liqueur), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_corn_liqueur"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_white_wine,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.white_wine), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_white_wine"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_plum_kvass,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.plum_kvass), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_plum_kvass"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_termite_tequila,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.termite_tequila), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_termite_tequila"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_soured_milk,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.soured_milk), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_soured_milk"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_pomegranate_wine,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.pomegranate_wine), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_pomegranate_wine"));
 		// miruvor
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(mug_miruvor,
@@ -454,27 +353,6 @@ public class DrinkInMug {
 				.register(new BasePlaceableDrinkItem(mug_dwarven_tonic4,
 						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.dwarven_tonic4), 0, false,
 						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_dwarven_tonic4"));
-		// torog draught
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_torog_draught,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.torog_draught), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_torog_draught"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_torog_draught1,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.torog_draught1), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_torog_draught1"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_torog_draught2,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.torog_draught2), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_torog_draught2"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_torog_draught3,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.torog_draught3), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_torog_draught3"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_torog_draught4,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.torog_draught4), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_torog_draught4"));
 		// taurethrim cocoa
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(mug_taurethrim_cocoa,
@@ -496,27 +374,6 @@ public class DrinkInMug {
 				.register(new BasePlaceableDrinkItem(mug_taurethrim_cocoa4,
 						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.taurethrim_cocoa4), 0, false,
 						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_taurethrim_cocoa4"));
-		// morgul draught
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_morgul_draught,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.morgul_draught), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_morgul_draught"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_morgul_draught1,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.morgul_draught1), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_morgul_draught1"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_morgul_draught2,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.morgul_draught2), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_morgul_draught2"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_morgul_draught3,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.morgul_draught3), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_morgul_draught3"));
-		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(mug_morgul_draught4,
-						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.morgul_draught4), 0, false,
-						Item.getItemFromBlock(DrinkMugBlock.block)).setRegistryName("mug_morgul_draught4"));
 	}
 	public static class CustomBlock extends BaseCupBlock {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
@@ -556,6 +413,7 @@ public class DrinkInMug {
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+			@SuppressWarnings("deprecation")
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
