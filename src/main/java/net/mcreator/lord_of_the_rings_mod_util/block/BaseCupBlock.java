@@ -40,7 +40,9 @@ public class BaseCupBlock extends Block {
 		}
 	}
 
-	private ActionResultType drinkCup(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
+	public BlockState TurnsInto() { return DrinkMugBlock.block.getDefaultState(); }
+
+	public ActionResultType drinkCup(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
 		LivingEntity entityLiving = player instanceof LivingEntity ? (LivingEntity) player : null;
 		ItemStack stack = new ItemStack(this);
 		Item item = stack.getItem();
@@ -63,7 +65,7 @@ public class BaseCupBlock extends Block {
 				entityLiving.onFoodEaten(worldIn, stack);
 			}
 			{
-				BlockState mug_state = DrinkMugBlock.block.getDefaultState();
+				BlockState mug_state = this.TurnsInto();
 				BlockState state_original = worldIn.getBlockState(pos);
 				for (Map.Entry<IProperty<?>, Comparable<?>> entry : state_original.getValues().entrySet()) {
 					IProperty _property = mug_state.getBlock().getStateContainer().getProperty(entry.getKey().getName());

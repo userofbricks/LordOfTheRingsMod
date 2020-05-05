@@ -706,12 +706,13 @@
       "ids": {}
     },
     {
-      "name": "LOTRDrinks",
+      "name": "DrinkInGobletWood",
       "type": "code",
       "sortid": 89,
       "compiles": true,
       "locked_code": true,
-      "ids": {}
+      "ids": {},
+      "registry_name": "drink_in_goblet_wood"
     }
   ],
   "variable_elements": [],
@@ -720,8 +721,8 @@
     "en_us": {
       "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
       "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
-      "item.lord_of_the_rings_mod.foodgrapesgreen": "White Grapes",
       "item.lord_of_the_rings_mod.foodgammon": "Gammon",
+      "item.lord_of_the_rings_mod.foodgrapesgreen": "White Grapes",
       "itemGroup.tablotrcombattab": "LOTR Combat",
       "itemGroup.tablotrtoolstab": "LOTR Tools",
       "item.lord_of_the_rings_mod.foodolivebread": "Olive Bread",

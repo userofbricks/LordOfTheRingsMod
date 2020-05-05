@@ -380,6 +380,9 @@ public class DrinkInMug {
 		}
 
 		@Override
+		public BlockState TurnsInto() { return DrinkMugBlock.block.getDefaultState(); }
+
+		@Override
 		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return false;
 		}
