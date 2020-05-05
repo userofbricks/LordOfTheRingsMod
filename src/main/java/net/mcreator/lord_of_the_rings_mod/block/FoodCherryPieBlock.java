@@ -13,8 +13,8 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
 import net.mcreator.lord_of_the_rings_mod_util.block.BaseCakeBlock;
+import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
 import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModElements;
 
 import java.util.List;

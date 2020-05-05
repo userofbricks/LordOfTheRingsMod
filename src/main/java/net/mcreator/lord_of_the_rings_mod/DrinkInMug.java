@@ -22,8 +22,6 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.IBlockReader;
@@ -33,7 +31,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Direction;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.item.ItemStack;
@@ -45,9 +42,9 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.lord_of_the_rings_mod_util.LOTRDrinks;
-import net.mcreator.lord_of_the_rings_mod_util.block.BaseCupBlock;
 import net.mcreator.lord_of_the_rings_mod_util.block.BasePlaceableDrinkItem;
+import net.mcreator.lord_of_the_rings_mod_util.block.BaseCupBlock;
+import net.mcreator.lord_of_the_rings_mod_util.LOTRDrinks;
 import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
 import net.mcreator.lord_of_the_rings_mod.block.DrinkMugBlock;
 
@@ -378,14 +375,13 @@ public class DrinkInMug {
 	public static class CustomBlock extends BaseCupBlock {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 		}
 
-		@OnlyIn(Dist.CLIENT)
 		@Override
-		public BlockRenderLayer getRenderLayer() {
-			return BlockRenderLayer.CUTOUT;
+		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return false;
 		}
 
 		@Override

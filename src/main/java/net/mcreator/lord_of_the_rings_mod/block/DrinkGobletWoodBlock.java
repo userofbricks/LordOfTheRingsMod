@@ -2,15 +2,12 @@
 package net.mcreator.lord_of_the_rings_mod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -41,14 +38,8 @@ public class DrinkGobletWoodBlock extends LordOfTheRingsModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
 			setRegistryName("drinkgobletwood");
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public BlockRenderLayer getRenderLayer() {
-			return BlockRenderLayer.CUTOUT;
 		}
 
 		@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 6,
+  "_fv": 7,
   "_type": "block",
   "definition": {
     "texture": "kebabblock",
@@ -11,15 +11,15 @@
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
-    "hasTransparency": false,
-    "transparencyType": "SOLID",
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "CUTOUT",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "faceShape": "SOLID",
     "name": "Kebab Block",
     "specialInfo": [],
     "hardness": 0.5,
@@ -29,7 +29,6 @@
       "value": "CUSTOM:LOTRFoodAndDrinkTab"
     },
     "destroyTool": "Not specified",
-    "affectedBySilkTouch": true,
     "customDrop": {
       "value": ""
     },
@@ -70,6 +69,7 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasInventory": false,
+    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

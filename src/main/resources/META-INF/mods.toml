@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[28,)"
+loaderVersion="[31,)"
 
 [[mods]]
 modId="lord_of_the_rings_mod"
@@ -12,7 +12,7 @@ authors="jonathandillon"
 [[dependencies.lord_of_the_rings_mod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.14.4]"
+    versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"
 

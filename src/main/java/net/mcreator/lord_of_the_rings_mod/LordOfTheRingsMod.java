@@ -27,7 +27,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.client.model.obj.OBJLoader;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.biome.Biome;
 import net.minecraft.util.ResourceLocation;
@@ -47,7 +48,6 @@ public class LordOfTheRingsMod {
 	public LordOfTheRingsMod() {
 		elements = new LordOfTheRingsModElements();
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -56,13 +56,15 @@ public class LordOfTheRingsMod {
 		elements.getElements().forEach(element -> element.init(event));
 	}
 
-	private void clientSetup(FMLClientSetupEvent event) {
-		OBJLoader.INSTANCE.addDomain("lord_of_the_rings_mod");
-	}
-
 	@SubscribeEvent
 	public void serverLoad(FMLServerStartingEvent event) {
 		elements.getElements().forEach(element -> element.serverLoad(event));
+	}
+
+	@SubscribeEvent
+	@OnlyIn(Dist.CLIENT)
+	public void clientLoad(FMLClientSetupEvent event) {
+		elements.getElements().forEach(element -> element.clientLoad(event));
 	}
 
 	@SubscribeEvent

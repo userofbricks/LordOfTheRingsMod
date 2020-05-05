@@ -2,8 +2,6 @@
 package net.mcreator.lord_of_the_rings_mod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.IBlockReader;
@@ -13,7 +11,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Direction;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.item.ItemStack;
@@ -49,15 +46,14 @@ public class DrinkMugBlock extends LordOfTheRingsModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("drinkmug");
 		}
 
-		@OnlyIn(Dist.CLIENT)
 		@Override
-		public BlockRenderLayer getRenderLayer() {
-			return BlockRenderLayer.CUTOUT;
+		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return false;
 		}
 
 		@Override

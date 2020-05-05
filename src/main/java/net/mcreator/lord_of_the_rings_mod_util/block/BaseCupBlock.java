@@ -21,22 +21,26 @@ import net.mcreator.lord_of_the_rings_mod.block.DrinkMugBlock;
 import net.minecraft.block.Block;
 
 import java.util.Map;
+import net.minecraft.util.ActionResultType;
 
 public class BaseCupBlock extends Block {
 	protected BaseCupBlock(Block.Properties properties) {
 		super(properties);
 	}
 
-	public boolean onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
 		if (!worldIn.isRemote) {
 			return this.drinkCup(worldIn, pos, state, player);
 		} else {
 			ItemStack itemstack = player.getHeldItem(handIn);
-			return this.drinkCup(worldIn, pos, state, player) || itemstack.isEmpty();
+			if (itemstack.isEmpty()) {
+            	return ActionResultType.CONSUME;
+         	}
+			return this.drinkCup(worldIn, pos, state, player);
 		}
 	}
 
-	private boolean drinkCup(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
+	private ActionResultType drinkCup(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
 		LivingEntity entityLiving = player instanceof LivingEntity ? (LivingEntity) player : null;
 		ItemStack stack = new ItemStack(this);
 		Item item = stack.getItem();
@@ -45,7 +49,7 @@ public class BaseCupBlock extends Block {
 		int y = pos.getY();
 		int z = pos.getZ();
 		if (!player.canEat(false)) {
-			return false;
+			return ActionResultType.PASS;
 		} else {
 			if (drinkItem.getDamage() >= 1) {
 				entityLiving.attackEntityFrom(DamageSource.MAGIC, drinkItem.getDamage());
@@ -68,7 +72,7 @@ public class BaseCupBlock extends Block {
 				}
 				worldIn.setBlockState(pos, mug_state, 3);
 			}
-			return true;
+			return ActionResultType.SUCCESS;
 		}
 	}
 
