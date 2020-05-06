@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "lord_of_the_rings_mod:block/mug_miruvor"
+      "model": "lord_of_the_rings_mod:block/mug/miruvor"
     },
     "facing=east": {
-      "model": "lord_of_the_rings_mod:block/mug_miruvor",
+      "model": "lord_of_the_rings_mod:block/mug/miruvor",
       "y": 90
     },
     "facing=south": {
-      "model": "lord_of_the_rings_mod:block/mug_miruvor",
+      "model": "lord_of_the_rings_mod:block/mug/miruvor",
       "y": 180
     },
     "facing=west": {
-      "model": "lord_of_the_rings_mod:block/mug_miruvor",
+      "model": "lord_of_the_rings_mod:block/mug/miruvor",
       "y": 270
     }
   }

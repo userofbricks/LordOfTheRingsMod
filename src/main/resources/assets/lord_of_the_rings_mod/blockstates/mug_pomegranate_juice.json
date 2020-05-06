@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "lord_of_the_rings_mod:block/mug_pomegranate_juice"
+      "model": "lord_of_the_rings_mod:block/mug/pomegranate_juice"
     },
     "facing=east": {
-      "model": "lord_of_the_rings_mod:block/mug_pomegranate_juice",
+      "model": "lord_of_the_rings_mod:block/mug/pomegranate_juice",
       "y": 90
     },
     "facing=south": {
-      "model": "lord_of_the_rings_mod:block/mug_pomegranate_juice",
+      "model": "lord_of_the_rings_mod:block/mug/pomegranate_juice",
       "y": 180
     },
     "facing=west": {
-      "model": "lord_of_the_rings_mod:block/mug_pomegranate_juice",
+      "model": "lord_of_the_rings_mod:block/mug/pomegranate_juice",
       "y": 270
     }
   }

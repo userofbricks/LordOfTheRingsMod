@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "lord_of_the_rings_mod:block/mug_athelas_brew"
+      "model": "lord_of_the_rings_mod:block/mug/athelas_brew"
     },
     "facing=east": {
-      "model": "lord_of_the_rings_mod:block/mug_athelas_brew",
+      "model": "lord_of_the_rings_mod:block/mug/athelas_brew",
       "y": 90
     },
     "facing=south": {
-      "model": "lord_of_the_rings_mod:block/mug_athelas_brew",
+      "model": "lord_of_the_rings_mod:block/mug/athelas_brew",
       "y": 180
     },
     "facing=west": {
-      "model": "lord_of_the_rings_mod:block/mug_athelas_brew",
+      "model": "lord_of_the_rings_mod:block/mug/athelas_brew",
       "y": 270
     }
   }

@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "lord_of_the_rings_mod:block/mug_cherry_liqueur"
+      "model": "lord_of_the_rings_mod:block/mug/cherry_liqueur"
     },
     "facing=east": {
-      "model": "lord_of_the_rings_mod:block/mug_cherry_liqueur",
+      "model": "lord_of_the_rings_mod:block/mug/cherry_liqueur",
       "y": 90
     },
     "facing=south": {
-      "model": "lord_of_the_rings_mod:block/mug_cherry_liqueur",
+      "model": "lord_of_the_rings_mod:block/mug/cherry_liqueur",
       "y": 180
     },
     "facing=west": {
-      "model": "lord_of_the_rings_mod:block/mug_cherry_liqueur",
+      "model": "lord_of_the_rings_mod:block/mug/cherry_liqueur",
       "y": 270
     }
   }
