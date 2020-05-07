@@ -713,6 +713,33 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "drink_in_goblet_wood"
+    },
+    {
+      "name": "DrinkGobletCopper",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "drink_goblet_copper"
+    },
+    {
+      "name": "DrinkGobletSilver",
+      "type": "block",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "drink_goblet_silver"
+    },
+    {
+      "name": "DrinkGobletGold",
+      "type": "block",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "drink_goblet_gold"
     }
   ],
   "variable_elements": [],
@@ -772,8 +799,10 @@
       "item.lord_of_the_rings_mod.foodpearyellow": "Pear Green",
       "itemGroup.tablotrmaterialstab": "LOTR Materials",
       "item.lord_of_the_rings_mod.foodcherriesyellow": "Cherries Yellow",
+      "block.lord_of_the_rings_mod.drink_goblet_gold": "Goblet Gold",
       "item.lord_of_the_rings_mod.foodcranberries": "Cranberries",
       "block.lord_of_the_rings_mod.foodberrypie": "Berry Pie",
+      "block.lord_of_the_rings_mod.drink_goblet_silver": "Goblet Silver",
       "item.lord_of_the_rings_mod.foodappleyellow": "Apple Yellow",
       "item.lord_of_the_rings_mod.foodgrapesred": "Red Grapes",
       "item.lord_of_the_rings_mod.foodzebracooked": "Cooked Zebra",
@@ -806,6 +835,7 @@
       "item.lord_of_the_rings_mod.foodpipeweed": "Pipeweed Leaf",
       "item.lord_of_the_rings_mod.foodcherriesred": "Cherries Red",
       "item.lord_of_the_rings_mod.foodplum": "Plum",
+      "block.lord_of_the_rings_mod.drink_goblet_copper": "Goblet Copper",
       "item.lord_of_the_rings_mod.foodlettuce": "Lettuce"
     }
   },

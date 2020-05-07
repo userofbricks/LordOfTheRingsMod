@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.BlockPos;
@@ -28,11 +29,11 @@ import java.util.List;
 import java.util.Collections;
 
 @LordOfTheRingsModElements.ModElement.Tag
-public class DrinkGobletWoodBlock extends LordOfTheRingsModElements.ModElement {
-	@ObjectHolder("lord_of_the_rings_mod:drinkgobletwood")
+public class DrinkGobletGoldBlock extends LordOfTheRingsModElements.ModElement {
+	@ObjectHolder("lord_of_the_rings_mod:drink_goblet_gold")
 	public static final Block block = null;
-	public DrinkGobletWoodBlock(LordOfTheRingsModElements instance) {
-		super(instance, 87);
+	public DrinkGobletGoldBlock(LordOfTheRingsModElements instance) {
+		super(instance, 92);
 	}
 
 	@Override
@@ -49,8 +50,8 @@ public class DrinkGobletWoodBlock extends LordOfTheRingsModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
-			setRegistryName("drinkgobletwood");
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+			setRegistryName("drink_goblet_gold");
 		}
 
 		@Override

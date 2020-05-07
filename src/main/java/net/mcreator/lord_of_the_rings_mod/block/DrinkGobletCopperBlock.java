@@ -28,11 +28,11 @@ import java.util.List;
 import java.util.Collections;
 
 @LordOfTheRingsModElements.ModElement.Tag
-public class DrinkGobletWoodBlock extends LordOfTheRingsModElements.ModElement {
-	@ObjectHolder("lord_of_the_rings_mod:drinkgobletwood")
+public class DrinkGobletCopperBlock extends LordOfTheRingsModElements.ModElement {
+	@ObjectHolder("lord_of_the_rings_mod:drink_goblet_copper")
 	public static final Block block = null;
-	public DrinkGobletWoodBlock(LordOfTheRingsModElements instance) {
-		super(instance, 87);
+	public DrinkGobletCopperBlock(LordOfTheRingsModElements instance) {
+		super(instance, 90);
 	}
 
 	@Override
@@ -49,8 +49,8 @@ public class DrinkGobletWoodBlock extends LordOfTheRingsModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
-			setRegistryName("drinkgobletwood");
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+			setRegistryName("drink_goblet_copper");
 		}
 
 		@Override

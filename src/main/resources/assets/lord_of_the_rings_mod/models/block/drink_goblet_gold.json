@@ -1,0 +1,8 @@
+{
+  "parent": "lord_of_the_rings_mod:custom/goblet",
+  "textures": {
+    "all": "lord_of_the_rings_mod:blocks/goblet_gold",
+    "particle": "lord_of_the_rings_mod:blocks/goblet_gold",
+    "0": "lord_of_the_rings_mod:blocks/goblet_gold"
+  }
+}

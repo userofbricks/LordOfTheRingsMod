@@ -1,8 +1,8 @@
 {
   "item.lord_of_the_rings_mod.testcakeblock": "Test Cake Item",
   "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
-  "item.lord_of_the_rings_mod.foodgammon": "Gammon",
   "item.lord_of_the_rings_mod.foodgrapesgreen": "White Grapes",
+  "item.lord_of_the_rings_mod.foodgammon": "Gammon",
   "itemGroup.tablotrcombattab": "LOTR Combat",
   "itemGroup.tablotrtoolstab": "LOTR Tools",
   "item.lord_of_the_rings_mod.foodolivebread": "Olive Bread",
@@ -52,8 +52,10 @@
   "item.lord_of_the_rings_mod.foodpearyellow": "Pear Green",
   "itemGroup.tablotrmaterialstab": "LOTR Materials",
   "item.lord_of_the_rings_mod.foodcherriesyellow": "Cherries Yellow",
+  "block.lord_of_the_rings_mod.drink_goblet_gold": "Goblet Wood",
   "item.lord_of_the_rings_mod.foodcranberries": "Cranberries",
   "block.lord_of_the_rings_mod.foodberrypie": "Berry Pie",
+  "block.lord_of_the_rings_mod.drink_goblet_silver": "Goblet Wood",
   "item.lord_of_the_rings_mod.foodappleyellow": "Apple Yellow",
   "item.lord_of_the_rings_mod.foodgrapesred": "Red Grapes",
   "item.lord_of_the_rings_mod.foodzebracooked": "Cooked Zebra",
@@ -86,5 +88,6 @@
   "item.lord_of_the_rings_mod.foodpipeweed": "Pipeweed Leaf",
   "item.lord_of_the_rings_mod.foodcherriesred": "Cherries Red",
   "item.lord_of_the_rings_mod.foodplum": "Plum",
+  "block.lord_of_the_rings_mod.drink_goblet_copper": "Goblet Wood",
   "item.lord_of_the_rings_mod.foodlettuce": "Lettuce"
 }
