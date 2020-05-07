@@ -47,7 +47,6 @@ import net.mcreator.lord_of_the_rings_mod_util.block.BaseCupBlock;
 import net.mcreator.lord_of_the_rings_mod_util.LOTRDrinks;
 import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
 import net.mcreator.lord_of_the_rings_mod.block.DrinkGobletWoodBlock;
-import net.mcreator.lord_of_the_rings_mod.block.DrinkGobletWoodBlock;
 
 import java.util.List;
 import java.util.Collections;
@@ -176,11 +175,13 @@ public class DrinkInGobletWood {
 	@SubscribeEvent
 	public static void registerBlockItems(final RegistryEvent.Register<Item> event) {
 		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(goblet_wood_water, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.water),
-						0, false, Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_water"));
+				.register(new BasePlaceableDrinkItem(goblet_wood_water,
+						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.water), 0, false,
+						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_water"));
 		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(goblet_wood_milk, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.milk), 0,
-						false, Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_milk"));
+				.register(new BasePlaceableDrinkItem(goblet_wood_milk,
+						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.milk), 0, false,
+						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_milk"));
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(goblet_wood_chocolate,
 						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.chocolate), 0, false,
@@ -213,9 +214,10 @@ public class DrinkInGobletWood {
 				.register(new BasePlaceableDrinkItem(goblet_wood_orange_juice,
 						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, false,
 						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_orange_juice"));
-		event.getRegistry().register(
-				new BasePlaceableDrinkItem(goblet_wood_lemonade, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0,
-						false, Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_lemonade"));
+		event.getRegistry()
+				.register(new BasePlaceableDrinkItem(goblet_wood_lemonade,
+						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, false,
+						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_lemonade"));
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(goblet_wood_jungle_remedy,
 						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, true,
@@ -238,35 +240,41 @@ public class DrinkInGobletWood {
 						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_pomegranate_juice"));
 		// alcohol
 		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(goblet_wood_ale, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.ale), 0,
-						false, Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_ale"));
+				.register(new BasePlaceableDrinkItem(goblet_wood_ale,
+						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.ale), 0, false,
+						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_ale"));
 		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(goblet_wood_mead, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.mead), 0,
-						false, Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_mead"));
+				.register(new BasePlaceableDrinkItem(goblet_wood_mead,
+						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.mead), 0, false,
+						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_mead"));
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(goblet_wood_red_wine,
 						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.red_wine), 0, false,
 						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_red_wine"));
 		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(goblet_wood_perry, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.perry),
-						0, false, Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_perry"));
+				.register(new BasePlaceableDrinkItem(goblet_wood_perry,
+						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.perry), 0, false,
+						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_perry"));
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(goblet_wood_cherry_liqueur,
 						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.cherry_liqueur), 0, false,
 						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_cherry_liqueur"));
 		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(goblet_wood_rum, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.rum), 0,
-						false, Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_rum"));
+				.register(new BasePlaceableDrinkItem(goblet_wood_rum,
+						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.rum), 0, false,
+						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_rum"));
 		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(goblet_wood_vodka, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.vodka),
-						0, false, Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_vodka"));
+				.register(new BasePlaceableDrinkItem(goblet_wood_vodka,
+						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.vodka), 0, false,
+						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_vodka"));
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(goblet_wood_maple_beer,
 						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.maple_beer), 0, false,
 						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_maple_beer"));
 		event.getRegistry()
-				.register(new BasePlaceableDrinkItem(goblet_wood_arak, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.arak), 0,
-						false, Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_arak"));
+				.register(new BasePlaceableDrinkItem(goblet_wood_arak,
+						new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.arak), 0, false,
+						Item.getItemFromBlock(DrinkGobletWoodBlock.block)).setRegistryName("goblet_wood_arak"));
 		// miruvor
 		event.getRegistry()
 				.register(new BasePlaceableDrinkItem(goblet_wood_miruvor,

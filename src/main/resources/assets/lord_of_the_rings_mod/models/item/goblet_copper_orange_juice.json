@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "lord_of_the_rings_mod:items/mug_glass_goblet/orange_juice",
+    "layer1": "lord_of_the_rings_mod:items/drink_goblet_copper"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "lord_of_the_rings_mod:block/base_goblet_full",
+  "textures": {
+    "liquid": "lord_of_the_rings_mod:blocks/liquid_blueberry_juice",
+    "cup": "lord_of_the_rings_mod:blocks/goblet_copper"
+  }
+}
