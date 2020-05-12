@@ -6,6 +6,6 @@
     "icon": {
       "value": "Items.DIAMOND_SWORD"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }

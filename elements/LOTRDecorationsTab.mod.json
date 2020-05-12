@@ -6,6 +6,6 @@
     "icon": {
       "value": "Blocks.TALLGRASS#2"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }

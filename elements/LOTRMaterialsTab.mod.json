@@ -6,6 +6,6 @@
     "icon": {
       "value": "Blocks.IRON_ORE"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }

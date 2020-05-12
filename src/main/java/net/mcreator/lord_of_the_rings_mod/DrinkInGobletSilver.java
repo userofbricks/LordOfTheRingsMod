@@ -53,7 +53,12 @@ import java.util.Collections;
 
 @ObjectHolder("lord_of_the_rings_mod")
 @Mod.EventBusSubscriber(modid = "lord_of_the_rings_mod", bus = Bus.MOD)
-public class DrinkInGobletSilver {
+public class DrinkInGobletSilver extends LordOfTheRingsModElements.ModElement {
+
+	public DrinkInGobletSilver(LordOfTheRingsModElements instance) {
+		super(instance, 999998);
+	}
+	
 	public static final Block goblet_silver_water = null;
 	public static final Block goblet_silver_milk = null;
 	public static final Block goblet_silver_chocolate = null;

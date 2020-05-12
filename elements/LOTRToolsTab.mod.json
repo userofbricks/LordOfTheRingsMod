@@ -6,6 +6,6 @@
     "icon": {
       "value": "Items.DIAMOND_PICKAXE"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }

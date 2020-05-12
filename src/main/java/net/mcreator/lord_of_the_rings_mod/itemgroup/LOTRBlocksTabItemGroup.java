@@ -27,9 +27,9 @@ public class LOTRBlocksTabItemGroup extends LordOfTheRingsModElements.ModElement
 
 			@OnlyIn(Dist.CLIENT)
 			public boolean hasSearchBar() {
-				return true;
+				return false;
 			}
-		}.setBackgroundImageName("item_search.png");
+		};
 	}
 	public static ItemGroup tab;
 }

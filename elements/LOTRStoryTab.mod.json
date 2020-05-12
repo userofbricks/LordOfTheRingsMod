@@ -6,6 +6,6 @@
     "icon": {
       "value": "Items.WRITTEN_BOOK"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }
