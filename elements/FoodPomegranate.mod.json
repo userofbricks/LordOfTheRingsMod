@@ -1,11 +1,12 @@
 {
-  "_fv": 7,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 0,
     "texture": "pomegranate",
     "customModelName": "Normal",
     "name": "Pomegranate",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:LOTRFoodAndDrinkTab"
     },

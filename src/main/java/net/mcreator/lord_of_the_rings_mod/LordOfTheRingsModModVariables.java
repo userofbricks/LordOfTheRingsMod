@@ -14,7 +14,7 @@ import net.minecraft.client.Minecraft;
 
 import java.util.function.Supplier;
 
-public class LordOfTheRingsModVariables {
+public class LordOfTheRingsModModVariables {
 	public static class WorldVariables extends WorldSavedData {
 		public static final String DATA_NAME = "lord_of_the_rings_mod_worldvars";
 		public WorldVariables() {
@@ -37,9 +37,9 @@ public class LordOfTheRingsModVariables {
 		public void syncData(World world) {
 			this.markDirty();
 			if (world.isRemote) {
-				LordOfTheRingsMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(1, this));
+				LordOfTheRingsModMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(1, this));
 			} else {
-				LordOfTheRingsMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType),
+				LordOfTheRingsModMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType),
 						new WorldSavedDataSyncMessage(1, this));
 			}
 		}
@@ -75,9 +75,9 @@ public class LordOfTheRingsModVariables {
 		public void syncData(World world) {
 			this.markDirty();
 			if (world.isRemote) {
-				LordOfTheRingsMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(0, this));
+				LordOfTheRingsModMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(0, this));
 			} else {
-				LordOfTheRingsMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new WorldSavedDataSyncMessage(0, this));
+				LordOfTheRingsModMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new WorldSavedDataSyncMessage(0, this));
 			}
 		}
 		static MapVariables clientSide = new MapVariables();
@@ -127,10 +127,10 @@ public class LordOfTheRingsModVariables {
 			if (side.isServer()) {
 				message.data.markDirty();
 				if (message.type == 0) {
-					LordOfTheRingsMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), message);
+					LordOfTheRingsModMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), message);
 					world.getServer().getWorld(DimensionType.OVERWORLD).getSavedData().set(message.data);
 				} else {
-					LordOfTheRingsMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType), message);
+					LordOfTheRingsModMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(world.dimension::getType), message);
 					((ServerWorld) world).getSavedData().set(message.data);
 				}
 			} else {

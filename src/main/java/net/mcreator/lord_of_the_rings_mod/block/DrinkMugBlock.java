@@ -24,16 +24,16 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
-import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModElements;
+import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModModElements;
 
 import java.util.List;
 import java.util.Collections;
 
-@LordOfTheRingsModElements.ModElement.Tag
-public class DrinkMugBlock extends LordOfTheRingsModElements.ModElement {
+@LordOfTheRingsModModElements.ModElement.Tag
+public class DrinkMugBlock extends LordOfTheRingsModModElements.ModElement {
 	@ObjectHolder("lord_of_the_rings_mod:drinkmug")
 	public static final Block block = null;
-	public DrinkMugBlock(LordOfTheRingsModElements instance) {
+	public DrinkMugBlock(LordOfTheRingsModModElements instance) {
 		super(instance, 86);
 	}
 

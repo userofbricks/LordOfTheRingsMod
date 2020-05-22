@@ -17,4 +17,9 @@ authors="jonathandillon"
     side="BOTH"
 
 
+[[dependencies.lord_of_the_rings_mod]]
+    modId="abnormals_core"
+    mandatory=false
+    ordering="NONE"
+    side="BOTH"
 

@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 
 import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
-import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModElements;
+import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModModElements;
 
-@LordOfTheRingsModElements.ModElement.Tag
-public class FoodCornBreadItem extends LordOfTheRingsModElements.ModElement {
+@LordOfTheRingsModModElements.ModElement.Tag
+public class FoodCornBreadItem extends LordOfTheRingsModModElements.ModElement {
 	@ObjectHolder("lord_of_the_rings_mod:foodcornbread")
 	public static final Item block = null;
-	public FoodCornBreadItem(LordOfTheRingsModElements instance) {
+	public FoodCornBreadItem(LordOfTheRingsModModElements instance) {
 		super(instance, 71);
 	}
 

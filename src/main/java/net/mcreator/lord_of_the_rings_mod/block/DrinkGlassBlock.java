@@ -8,7 +8,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.BlockPos;
@@ -23,16 +22,16 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
-import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModElements;
+import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModModElements;
 
 import java.util.List;
 import java.util.Collections;
 
-@LordOfTheRingsModElements.ModElement.Tag
-public class DrinkGlassBlock extends LordOfTheRingsModElements.ModElement {
+@LordOfTheRingsModModElements.ModElement.Tag
+public class DrinkGlassBlock extends LordOfTheRingsModModElements.ModElement {
 	@ObjectHolder("lord_of_the_rings_mod:drink_glass")
 	public static final Block block = null;
-	public DrinkGlassBlock(LordOfTheRingsModElements instance) {
+	public DrinkGlassBlock(LordOfTheRingsModModElements instance) {
 		super(instance, 96);
 	}
 

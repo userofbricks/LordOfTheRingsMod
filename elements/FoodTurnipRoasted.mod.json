@@ -1,11 +1,12 @@
 {
-  "_fv": 7,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 0,
     "texture": "turnipcooked",
     "customModelName": "Normal",
     "name": "Cooked Turnip",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:LOTRFoodAndDrinkTab"
     },

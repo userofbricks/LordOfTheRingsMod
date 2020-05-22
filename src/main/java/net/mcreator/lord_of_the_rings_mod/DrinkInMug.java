@@ -53,12 +53,11 @@ import java.util.Collections;
 
 @ObjectHolder("lord_of_the_rings_mod")
 @Mod.EventBusSubscriber(modid = "lord_of_the_rings_mod", bus = Bus.MOD)
-public class DrinkInMug extends LordOfTheRingsModElements.ModElement {
-
-	public DrinkInMug(LordOfTheRingsModElements instance) {
+@LordOfTheRingsModModElements.ModElement.Tag
+public class DrinkInMug extends LordOfTheRingsModModElements.ModElement {
+	public DrinkInMug(LordOfTheRingsModModElements instance) {
 		super(instance, 999995);
 	}
-	
 	public static final Block mug_water = null;
 	public static final Block mug_milk = null;
 	public static final Block mug_chocolate = null;

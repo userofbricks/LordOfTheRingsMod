@@ -15,16 +15,16 @@ import net.minecraft.block.Block;
 
 import net.mcreator.lord_of_the_rings_mod_util.block.BaseCakeBlock;
 import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
-import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModElements;
+import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModModElements;
 
 import java.util.List;
 import java.util.Collections;
 
-@LordOfTheRingsModElements.ModElement.Tag
-public class FoodLemonCakeBlock extends LordOfTheRingsModElements.ModElement {
+@LordOfTheRingsModModElements.ModElement.Tag
+public class FoodLemonCakeBlock extends LordOfTheRingsModModElements.ModElement {
 	@ObjectHolder("lord_of_the_rings_mod:foodlemoncake")
 	public static final Block block = null;
-	public FoodLemonCakeBlock(LordOfTheRingsModElements instance) {
+	public FoodLemonCakeBlock(LordOfTheRingsModModElements instance) {
 		super(instance, 8);
 	}
 

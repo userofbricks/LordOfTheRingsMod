@@ -43,32 +43,32 @@ import java.util.ArrayList;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
 
-public class LordOfTheRingsModElements {
+public class LordOfTheRingsModModElements {
 	public final List<ModElement> elements = new ArrayList<>();
 	public final List<Supplier<Block>> blocks = new ArrayList<>();
 	public final List<Supplier<Item>> items = new ArrayList<>();
 	public final List<Supplier<Biome>> biomes = new ArrayList<>();
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
-	public LordOfTheRingsModElements() {
+	public LordOfTheRingsModModElements() {
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("lord_of_the_rings_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
 			for (ModFileScanData.AnnotationData annotationData : annotations) {
 				if (annotationData.getAnnotationType().getClassName().equals(ModElement.Tag.class.getName())) {
 					Class<?> clazz = Class.forName(annotationData.getClassType().getClassName());
-					if (clazz.getSuperclass() == LordOfTheRingsModElements.ModElement.class)
-						elements.add((LordOfTheRingsModElements.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
+					if (clazz.getSuperclass() == LordOfTheRingsModModElements.ModElement.class)
+						elements.add((LordOfTheRingsModModElements.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
 				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		Collections.sort(elements);
-		elements.forEach(LordOfTheRingsModElements.ModElement::initElements);
-		this.addNetworkMessage(LordOfTheRingsModVariables.WorldSavedDataSyncMessage.class,
-				LordOfTheRingsModVariables.WorldSavedDataSyncMessage::buffer, LordOfTheRingsModVariables.WorldSavedDataSyncMessage::new,
-				LordOfTheRingsModVariables.WorldSavedDataSyncMessage::handler);
+		elements.forEach(LordOfTheRingsModModElements.ModElement::initElements);
+		this.addNetworkMessage(LordOfTheRingsModModVariables.WorldSavedDataSyncMessage.class,
+				LordOfTheRingsModModVariables.WorldSavedDataSyncMessage::buffer, LordOfTheRingsModModVariables.WorldSavedDataSyncMessage::new,
+				LordOfTheRingsModModVariables.WorldSavedDataSyncMessage::handler);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -80,30 +80,30 @@ public class LordOfTheRingsModElements {
 	@SubscribeEvent
 	public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 		if (!event.getPlayer().world.isRemote) {
-			WorldSavedData mapdata = LordOfTheRingsModVariables.MapVariables.get(event.getPlayer().world);
-			WorldSavedData worlddata = LordOfTheRingsModVariables.WorldVariables.get(event.getPlayer().world);
+			WorldSavedData mapdata = LordOfTheRingsModModVariables.MapVariables.get(event.getPlayer().world);
+			WorldSavedData worlddata = LordOfTheRingsModModVariables.WorldVariables.get(event.getPlayer().world);
 			if (mapdata != null)
-				LordOfTheRingsMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
-						new LordOfTheRingsModVariables.WorldSavedDataSyncMessage(0, mapdata));
+				LordOfTheRingsModMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
+						new LordOfTheRingsModModVariables.WorldSavedDataSyncMessage(0, mapdata));
 			if (worlddata != null)
-				LordOfTheRingsMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
-						new LordOfTheRingsModVariables.WorldSavedDataSyncMessage(1, worlddata));
+				LordOfTheRingsModMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
+						new LordOfTheRingsModModVariables.WorldSavedDataSyncMessage(1, worlddata));
 		}
 	}
 
 	@SubscribeEvent
 	public void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
 		if (!event.getPlayer().world.isRemote) {
-			WorldSavedData worlddata = LordOfTheRingsModVariables.WorldVariables.get(event.getPlayer().world);
+			WorldSavedData worlddata = LordOfTheRingsModModVariables.WorldVariables.get(event.getPlayer().world);
 			if (worlddata != null)
-				LordOfTheRingsMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
-						new LordOfTheRingsModVariables.WorldSavedDataSyncMessage(1, worlddata));
+				LordOfTheRingsModMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) event.getPlayer()),
+						new LordOfTheRingsModModVariables.WorldSavedDataSyncMessage(1, worlddata));
 		}
 	}
 	private int messageID = 0;
 	public <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, PacketBuffer> encoder, Function<PacketBuffer, T> decoder,
 			BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
-		LordOfTheRingsMod.PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
+		LordOfTheRingsModMod.PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
 		messageID++;
 	}
 
@@ -130,9 +130,9 @@ public class LordOfTheRingsModElements {
 		@Retention(RetentionPolicy.RUNTIME)
 		public @interface Tag {
 		}
-		protected final LordOfTheRingsModElements elements;
+		protected final LordOfTheRingsModModElements elements;
 		protected final int sortid;
-		public ModElement(LordOfTheRingsModElements elements, int sortid) {
+		public ModElement(LordOfTheRingsModModElements elements, int sortid) {
 			this.elements = elements;
 			this.sortid = sortid;
 		}

@@ -8,11 +8,11 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModElements;
+import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModModElements;
 
-@LordOfTheRingsModElements.ModElement.Tag
-public class LOTRToolsTabItemGroup extends LordOfTheRingsModElements.ModElement {
-	public LOTRToolsTabItemGroup(LordOfTheRingsModElements instance) {
+@LordOfTheRingsModModElements.ModElement.Tag
+public class LOTRToolsTabItemGroup extends LordOfTheRingsModModElements.ModElement {
+	public LOTRToolsTabItemGroup(LordOfTheRingsModModElements instance) {
 		super(instance, 84);
 	}
 

@@ -1,0 +1,9 @@
+{
+  "parent": "lord_of_the_rings_mod:custom/alehorn",
+  "textures": {
+    "all": "lord_of_the_rings_mod:blocks/alehorn_lower",
+    "particle": "lord_of_the_rings_mod:blocks/alehorn_lower",
+    "low": "lord_of_the_rings_mod:blocks/alehorn_lower",
+    "upper": "lord_of_the_rings_mod:blocks/alehorn_upper"
+  }
+}

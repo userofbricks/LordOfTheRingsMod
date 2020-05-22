@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "lord_of_the_rings_mod:block/drink_ale_horn"
+    },
+    "facing=east": {
+      "model": "lord_of_the_rings_mod:block/drink_ale_horn",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "lord_of_the_rings_mod:block/drink_ale_horn",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "lord_of_the_rings_mod:block/drink_ale_horn",
+      "y": 270
+    }
+  }
+}

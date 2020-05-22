@@ -1,11 +1,12 @@
 {
-  "_fv": 7,
+  "_fv": 8,
   "_type": "food",
   "definition": {
     "renderType": 0,
     "texture": "hobbitpancakemaplesyrup",
     "customModelName": "Normal",
     "name": "Hobbit Pancake With Maple Syrup",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:LOTRFoodAndDrinkTab"
     },
