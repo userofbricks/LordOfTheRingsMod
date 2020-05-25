@@ -17,8 +17,10 @@
 */
 package net.mcreator.lord_of_the_rings_mod;
 
-import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -28,7 +30,6 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
@@ -36,350 +37,136 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.lord_of_the_rings_mod_util.block.BasePlaceableDrinkItem;
+import net.mcreator.lord_of_the_rings_mod_util.registry.LOTRRegistryHelper;
 import net.mcreator.lord_of_the_rings_mod_util.block.BaseCupBlock;
 import net.mcreator.lord_of_the_rings_mod_util.LOTRDrinks;
-import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
 import net.mcreator.lord_of_the_rings_mod.block.DrinkGlassBlock;
 
 import java.util.List;
 import java.util.Collections;
 
-@ObjectHolder("lord_of_the_rings_mod")
-// @Mod.EventBusSubscriber(modid = "lord_of_the_rings_mod", bus = Bus.MOD)
+//@ObjectHolder("lord_of_the_rings_mod")
+@Mod.EventBusSubscriber(modid = "lord_of_the_rings_mod", bus = Bus.MOD)
 @LordOfTheRingsModModElements.ModElement.Tag
 public class DrinkInGlass extends LordOfTheRingsModModElements.ModElement {
 	public DrinkInGlass(LordOfTheRingsModModElements instance) {
 		super(instance, 1000000);
 	}
-	public static final Block glass_water = null;
-	public static final Block glass_milk = null;
-	public static final Block glass_chocolate = null;
-	public static final Block glass_mango_juice = null;
-	public static final Block glass_blueberry_juice = null;
-	public static final Block glass_blackberry_juice = null;
-	public static final Block glass_rasberry_juice = null;
-	public static final Block glass_cranberry_juice = null;
-	public static final Block glass_elderberry_juice = null;
-	public static final Block glass_orange_juice = null;
-	public static final Block glass_lemonade = null;
-	public static final Block glass_jungle_remedy = null; // similar to milk
-	public static final Block glass_apple_juice = null;
-	public static final Block glass_red_grape_juice = null;
-	public static final Block glass_green_grape_juice = null;
-	public static final Block glass_pomegranate_juice = null;
+	public static final LOTRRegistryHelper HELPER = LordOfTheRingsModMod.REGISTRY_HELPER;
+	public static final String type = "glass_";
+	public static final Block turnsInto = DrinkGlassBlock.block;
+	public static final RegistryObject<Block> water = HELPER.createDrinkBlock(type + "water", () -> new CustomBlock(), LOTRDrinks.water, 0, false,turnsInto);
+	public static final RegistryObject<Block> milk = HELPER.createDrinkBlock(type + "milk", () -> new CustomBlock(), LOTRDrinks.milk, 0, false,turnsInto);
+	public static final RegistryObject<Block> chocolate = HELPER.createDrinkBlock(type + "chocolate", () -> new CustomBlock(), LOTRDrinks.chocolate,0, false, turnsInto);
+	public static final RegistryObject<Block> mango_juice = HELPER.createDrinkBlock(type + "mango_juice", () -> new CustomBlock(), LOTRDrinks.juice,0, false, turnsInto);
+	public static final RegistryObject<Block> blueberry_juice = HELPER.createDrinkBlock(type + "blueberry_juice", () -> new CustomBlock(),LOTRDrinks.juice_berry, 0, false, turnsInto);
+	public static final RegistryObject<Block> blackberry_juice = HELPER.createDrinkBlock(type + "blackberry_juice", () -> new CustomBlock(),LOTRDrinks.juice_berry, 0, false, turnsInto);
+	public static final RegistryObject<Block> rasberry_juice = HELPER.createDrinkBlock(type + "rasberry_juice", () -> new CustomBlock(),LOTRDrinks.juice_berry, 0, false, turnsInto);
+	public static final RegistryObject<Block> cranberry_juice = HELPER.createDrinkBlock(type + "cranberry_juice", () -> new CustomBlock(),LOTRDrinks.juice_berry, 0, false, turnsInto);
+	public static final RegistryObject<Block> elderberry_juice = HELPER.createDrinkBlock(type + "elderberry_juice", () -> new CustomBlock(),LOTRDrinks.juice_berry, 0, false, turnsInto);
+	public static final RegistryObject<Block> orange_juice = HELPER.createDrinkBlock(type + "orange_juice", () -> new CustomBlock(), LOTRDrinks.juice,0, false, turnsInto);
+	public static final RegistryObject<Block> lemonade = HELPER.createDrinkBlock(type + "lemonade", () -> new CustomBlock(), LOTRDrinks.juice, 0,false, turnsInto);
+	public static final RegistryObject<Block> jungle_remedy = HELPER.createDrinkBlock(type + "jungle_remedy", () -> new CustomBlock(),LOTRDrinks.juice, 0, true, turnsInto); // similar to milk
+	public static final RegistryObject<Block> apple_juice = HELPER.createDrinkBlock(type + "apple_juice", () -> new CustomBlock(), LOTRDrinks.juice,0, false, turnsInto);
+	public static final RegistryObject<Block> red_grape_juice = HELPER.createDrinkBlock(type + "red_grape_juice", () -> new CustomBlock(),LOTRDrinks.juice, 0, false, turnsInto);
+	public static final RegistryObject<Block> green_grape_juice = HELPER.createDrinkBlock(type + "green_grape_juice", () -> new CustomBlock(),LOTRDrinks.juice, 0, false, turnsInto);
+	public static final RegistryObject<Block> pomegranate_juice = HELPER.createDrinkBlock(type + "pomegranate_juice", () -> new CustomBlock(),LOTRDrinks.juice, 0, false, turnsInto);
 	// alcohol
-	public static final Block glass_ale = null;
-	public static final Block glass_mead = null;
-	public static final Block glass_red_wine = null;
-	public static final Block glass_perry = null;
-	public static final Block glass_cherry_liqueur = null;
-	public static final Block glass_rum = null;
-	public static final Block glass_vodka = null;
-	public static final Block glass_maple_beer = null;
-	public static final Block glass_arak = null;
+	public static final RegistryObject<Block> ale = HELPER.createDrinkBlock(type + "ale", () -> new CustomBlock(), LOTRDrinks.ale, 0, false,turnsInto);
+	public static final RegistryObject<Block> mead = HELPER.createDrinkBlock(type + "mead", () -> new CustomBlock(), LOTRDrinks.mead, 0, false,turnsInto);
+	public static final RegistryObject<Block> red_wine = HELPER.createDrinkBlock(type + "red_wine", () -> new CustomBlock(), LOTRDrinks.red_wine, 0,false, turnsInto);
+	public static final RegistryObject<Block> cider = HELPER.createDrinkBlock(type + "cider", () -> new CustomBlock(), LOTRDrinks.cider, 0, false,turnsInto);
+	public static final RegistryObject<Block> perry = HELPER.createDrinkBlock(type + "perry", () -> new CustomBlock(), LOTRDrinks.perry, 0, false,turnsInto);
+	public static final RegistryObject<Block> cherry_liqueur = HELPER.createDrinkBlock(type + "cherry_liqueur", () -> new CustomBlock(),LOTRDrinks.cherry_liqueur, 0, false, turnsInto);
+	public static final RegistryObject<Block> rum = HELPER.createDrinkBlock(type + "rum", () -> new CustomBlock(), LOTRDrinks.rum, 0, false,turnsInto);
+	public static final RegistryObject<Block> vodka = HELPER.createDrinkBlock(type + "vodka", () -> new CustomBlock(), LOTRDrinks.vodka, 0, false,turnsInto);
+	public static final RegistryObject<Block> maple_beer = HELPER.createDrinkBlock(type + "maple_beer", () -> new CustomBlock(),LOTRDrinks.maple_beer, 0, false, turnsInto);
+	public static final RegistryObject<Block> arak = HELPER.createDrinkBlock(type + "arak", () -> new CustomBlock(), LOTRDrinks.arak, 0, false,turnsInto);
 	// miruvor
-	public static final Block glass_miruvor = null;
-	public static final Block glass_miruvor1 = null;
-	public static final Block glass_miruvor2 = null;
-	public static final Block glass_miruvor3 = null;
-	public static final Block glass_miruvor4 = null;
+	public static final RegistryObject<Block> miruvor = HELPER.createDrinkBlock(type + "miruvor", () -> new CustomBlock(), LOTRDrinks.miruvor, 0,false, turnsInto);
+	public static final RegistryObject<Block> miruvor1 = HELPER.createDrinkBlock(type + "miruvor1", () -> new CustomBlock(), LOTRDrinks.miruvor1, 0,false, turnsInto);
+	public static final RegistryObject<Block> miruvor2 = HELPER.createDrinkBlock(type + "miruvor2", () -> new CustomBlock(), LOTRDrinks.miruvor2, 0,false, turnsInto);
+	public static final RegistryObject<Block> miruvor3 = HELPER.createDrinkBlock(type + "miruvor3", () -> new CustomBlock(), LOTRDrinks.miruvor3, 0,false, turnsInto);
+	public static final RegistryObject<Block> miruvor4 = HELPER.createDrinkBlock(type + "miruvor4", () -> new CustomBlock(), LOTRDrinks.miruvor4, 0,false, turnsInto);
 	// orc draught
-	public static final Block glass_orc_draught = null;
-	public static final Block glass_orc_draught1 = null;
-	public static final Block glass_orc_draught2 = null;
-	public static final Block glass_orc_draught3 = null;
-	public static final Block glass_orc_draught4 = null;
+	public static final RegistryObject<Block> orc_draught = HELPER.createDrinkBlock(type + "orc_draught", () -> new CustomBlock(),LOTRDrinks.orc_draught, 0, false, turnsInto);
+	public static final RegistryObject<Block> orc_draught1 = HELPER.createDrinkBlock(type + "orc_draught1", () -> new CustomBlock(),LOTRDrinks.orc_draught1, 0, false, turnsInto);
+	public static final RegistryObject<Block> orc_draught2 = HELPER.createDrinkBlock(type + "orc_draught2", () -> new CustomBlock(),LOTRDrinks.orc_draught2, 0, false, turnsInto);
+	public static final RegistryObject<Block> orc_draught3 = HELPER.createDrinkBlock(type + "orc_draught3", () -> new CustomBlock(),LOTRDrinks.orc_draught3, 0, false, turnsInto);
+	public static final RegistryObject<Block> orc_draught4 = HELPER.createDrinkBlock(type + "orc_draught4", () -> new CustomBlock(),LOTRDrinks.orc_draught4, 0, false, turnsInto);
 	// athelas brew
-	public static final Block glass_athelas_brew = null;
-	public static final Block glass_athelas_brew1 = null;
-	public static final Block glass_athelas_brew2 = null;
-	public static final Block glass_athelas_brew3 = null;
-	public static final Block glass_athelas_brew4 = null;
+	public static final RegistryObject<Block> athelas_brew = HELPER.createDrinkBlock(type + "athelas_brew", () -> new CustomBlock(),LOTRDrinks.athelas_brew, 0, false, turnsInto);
+	public static final RegistryObject<Block> athelas_brew1 = HELPER.createDrinkBlock(type + "athelas_brew1", () -> new CustomBlock(),LOTRDrinks.athelas_brew1, 0, false, turnsInto);
+	public static final RegistryObject<Block> athelas_brew2 = HELPER.createDrinkBlock(type + "athelas_brew2", () -> new CustomBlock(),LOTRDrinks.athelas_brew2, 0, false, turnsInto);
+	public static final RegistryObject<Block> athelas_brew3 = HELPER.createDrinkBlock(type + "athelas_brew3", () -> new CustomBlock(),LOTRDrinks.athelas_brew3, 0, false, turnsInto);
+	public static final RegistryObject<Block> athelas_brew4 = HELPER.createDrinkBlock(type + "athelas_brew4", () -> new CustomBlock(),LOTRDrinks.athelas_brew4, 0, false, turnsInto);
 	// dwarven tonic
-	public static final Block glass_dwarven_tonic = null;
-	public static final Block glass_dwarven_tonic1 = null;
-	public static final Block glass_dwarven_tonic2 = null;
-	public static final Block glass_dwarven_tonic3 = null;
-	public static final Block glass_dwarven_tonic4 = null;
+	public static final RegistryObject<Block> dwarven_tonic = HELPER.createDrinkBlock(type + "dwarven_tonic", () -> new CustomBlock(),LOTRDrinks.dwarven_tonic, 0, false, turnsInto);
+	public static final RegistryObject<Block> dwarven_tonic1 = HELPER.createDrinkBlock(type + "dwarven_tonic1", () -> new CustomBlock(),LOTRDrinks.dwarven_tonic1, 0, false, turnsInto);
+	public static final RegistryObject<Block> dwarven_tonic2 = HELPER.createDrinkBlock(type + "dwarven_tonic2", () -> new CustomBlock(),LOTRDrinks.dwarven_tonic2, 0, false, turnsInto);
+	public static final RegistryObject<Block> dwarven_tonic3 = HELPER.createDrinkBlock(type + "dwarven_tonic3", () -> new CustomBlock(),LOTRDrinks.dwarven_tonic3, 0, false, turnsInto);
+	public static final RegistryObject<Block> dwarven_tonic4 = HELPER.createDrinkBlock(type + "dwarven_tonic4", () -> new CustomBlock(),LOTRDrinks.dwarven_tonic4, 0, false, turnsInto);
 	// taurethrim cocoa
-	public static final Block glass_taurethrim_cocoa = null;
-	public static final Block glass_taurethrim_cocoa1 = null;
-	public static final Block glass_taurethrim_cocoa2 = null;
-	public static final Block glass_taurethrim_cocoa3 = null;
-	public static final Block glass_taurethrim_cocoa4 = null;
-	@Override
-	public void initElements() {
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_water"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_milk"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_chocolate"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_mango_juice"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_blueberry_juice"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_blackberry_juice"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_rasberry_juice"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_cranberry_juice"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_elderberry_juice"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_orange_juice"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_lemonade"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_jungle_remedy"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_apple_juice"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_red_grape_juice"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_green_grape_juice"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_pomegranate_juice"));
-		// alcohol
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_ale"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_mead"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_red_wine"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_perry"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_cherry_liqueur"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_rum"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_vodka"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_maple_beer"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_arak"));
-		// miruvor
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_miruvor"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_miruvor1"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_miruvor2"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_miruvor3"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_miruvor4"));
-		// orc draught
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_orc_draught"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_orc_draught1"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_orc_draught2"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_orc_draught3"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_orc_draught4"));
-		// athelas brew
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_athelas_brew"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_athelas_brew1"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_athelas_brew2"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_athelas_brew3"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_athelas_brew4"));
-		// dwarven tonic
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_dwarven_tonic"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_dwarven_tonic1"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_dwarven_tonic2"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_dwarven_tonic3"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_dwarven_tonic4"));
-		// taurethrim cocoa
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_taurethrim_cocoa"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_taurethrim_cocoa1"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_taurethrim_cocoa2"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_taurethrim_cocoa3"));
-		elements.blocks.add(() -> new CustomBlock().setRegistryName("glass_taurethrim_cocoa4"));
-		/*
-		 * items
-		 */
-		elements.items.add(
-				() -> new BasePlaceableDrinkItem(glass_water, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.water), 0,
-						false, Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_water"));
-		elements.items
-				.add(() -> new BasePlaceableDrinkItem(glass_milk, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.milk),
-						0, false, Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_milk"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_chocolate,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.chocolate), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_chocolate"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_mango_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_mango_juice"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_blueberry_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice_berry), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_blueberry_juice"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_blackberry_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice_berry), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_blackberry_juice"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_rasberry_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice_berry), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_rasberry_juice"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_cranberry_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice_berry), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_cranberry_juice"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_elderberry_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice_berry), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_elderberry_juice"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_orange_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_orange_juice"));
-		elements.items.add(
-				() -> new BasePlaceableDrinkItem(glass_lemonade, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice),
-						0, false, Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_lemonade"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_jungle_remedy,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, true,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_jungle_remedy"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_apple_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_apple_juice"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_red_grape_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_red_grape_juice"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_green_grape_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_green_grape_juice"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_pomegranate_juice,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.juice), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_pomegranate_juice"));
-		// alcohol
-		elements.items
-				.add(() -> new BasePlaceableDrinkItem(glass_ale, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.ale),
-						0, false, Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_ale"));
-		elements.items
-				.add(() -> new BasePlaceableDrinkItem(glass_mead, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.mead),
-						0, false, Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_mead"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_red_wine,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.red_wine), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_red_wine"));
-		elements.items.add(
-				() -> new BasePlaceableDrinkItem(glass_perry, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.perry), 0,
-						false, Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_perry"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_cherry_liqueur,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.cherry_liqueur), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_cherry_liqueur"));
-		elements.items
-				.add(() -> new BasePlaceableDrinkItem(glass_rum, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.rum),
-						0, false, Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_rum"));
-		elements.items.add(
-				() -> new BasePlaceableDrinkItem(glass_vodka, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.vodka), 0,
-						false, Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_vodka"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_maple_beer,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.maple_beer), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_maple_beer"));
-		elements.items
-				.add(() -> new BasePlaceableDrinkItem(glass_arak, new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.arak),
-						0, false, Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_arak"));
-		// miruvor
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_miruvor,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.miruvor), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_miruvor"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_miruvor1,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.miruvor1), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_miruvor1"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_miruvor2,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.miruvor2), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_miruvor2"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_miruvor3,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.miruvor3), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_miruvor3"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_miruvor4,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.miruvor4), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_miruvor4"));
-		// orc draught
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_orc_draught,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.orc_draught), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_orc_draught"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_orc_draught1,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.orc_draught1), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_orc_draught1"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_orc_draught2,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.orc_draught2), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_orc_draught2"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_orc_draught3,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.orc_draught3), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_orc_draught3"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_orc_draught4,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.orc_draught4), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_orc_draught4"));
-		// athelas brew
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_athelas_brew,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.athelas_brew), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_athelas_brew"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_athelas_brew1,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.athelas_brew1), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_athelas_brew1"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_athelas_brew2,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.athelas_brew2), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_athelas_brew2"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_athelas_brew3,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.athelas_brew3), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_athelas_brew3"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_athelas_brew4,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.athelas_brew4), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_athelas_brew4"));
-		// dwarven tonic
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_dwarven_tonic,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.dwarven_tonic), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_dwarven_tonic"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_dwarven_tonic1,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.dwarven_tonic1), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_dwarven_tonic1"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_dwarven_tonic2,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.dwarven_tonic2), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_dwarven_tonic2"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_dwarven_tonic3,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.dwarven_tonic3), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_dwarven_tonic3"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_dwarven_tonic4,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.dwarven_tonic4), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_dwarven_tonic4"));
-		// taurethrim cocoa
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_taurethrim_cocoa,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.taurethrim_cocoa), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_taurethrim_cocoa"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_taurethrim_cocoa1,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.taurethrim_cocoa1), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_taurethrim_cocoa1"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_taurethrim_cocoa2,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.taurethrim_cocoa2), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_taurethrim_cocoa2"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_taurethrim_cocoa3,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.taurethrim_cocoa3), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_taurethrim_cocoa3"));
-		elements.items.add(() -> new BasePlaceableDrinkItem(glass_taurethrim_cocoa4,
-				new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).food(LOTRDrinks.taurethrim_cocoa4), 0, false,
-				Item.getItemFromBlock(DrinkGlassBlock.block)).setRegistryName("glass_taurethrim_cocoa4"));
-	}
-
+	public static final RegistryObject<Block> taurethrim_cocoa = HELPER.createDrinkBlock(type + "taurethrim_cocoa", () -> new CustomBlock(),LOTRDrinks.taurethrim_cocoa, 0, false, turnsInto);
+	public static final RegistryObject<Block> taurethrim_cocoa1 = HELPER.createDrinkBlock(type + "taurethrim_cocoa1", () -> new CustomBlock(),LOTRDrinks.taurethrim_cocoa1, 0, false, turnsInto);
+	public static final RegistryObject<Block> taurethrim_cocoa2 = HELPER.createDrinkBlock(type + "taurethrim_cocoa2", () -> new CustomBlock(),LOTRDrinks.taurethrim_cocoa2, 0, false, turnsInto);
+	public static final RegistryObject<Block> taurethrim_cocoa3 = HELPER.createDrinkBlock(type + "taurethrim_cocoa3", () -> new CustomBlock(),LOTRDrinks.taurethrim_cocoa3, 0, false, turnsInto);
+	public static final RegistryObject<Block> taurethrim_cocoa4 = HELPER.createDrinkBlock(type + "taurethrim_cocoa4", () -> new CustomBlock(),LOTRDrinks.taurethrim_cocoa4, 0, false, turnsInto);
+	
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void clientLoad(FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(glass_water, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_milk, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_chocolate, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_mango_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_blueberry_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_blackberry_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_rasberry_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_cranberry_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_elderberry_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_orange_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_lemonade, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_jungle_remedy, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_apple_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_red_grape_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_green_grape_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_pomegranate_juice, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_ale, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_mead, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_red_wine, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_perry, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_cherry_liqueur, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_rum, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_vodka, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_maple_beer, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_arak, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_miruvor, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_miruvor1, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_miruvor2, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_miruvor3, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_miruvor4, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_orc_draught, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_orc_draught1, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_orc_draught2, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_orc_draught3, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_orc_draught4, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_athelas_brew, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_athelas_brew1, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_athelas_brew2, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_athelas_brew3, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_athelas_brew4, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_dwarven_tonic, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_dwarven_tonic1, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_dwarven_tonic2, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_dwarven_tonic3, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_dwarven_tonic4, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_taurethrim_cocoa, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_taurethrim_cocoa1, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_taurethrim_cocoa2, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_taurethrim_cocoa3, RenderType.getTranslucent());
-		RenderTypeLookup.setRenderLayer(glass_taurethrim_cocoa4, RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(water.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(milk.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(chocolate.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(mango_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(blueberry_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(blackberry_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(rasberry_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(cranberry_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(elderberry_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(orange_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(lemonade.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(jungle_remedy.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(apple_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(red_grape_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(green_grape_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(pomegranate_juice.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(ale.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(mead.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(red_wine.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(cider.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(perry.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(cherry_liqueur.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(rum.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(vodka.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(maple_beer.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(arak.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(miruvor.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(miruvor1.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(miruvor2.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(miruvor3.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(miruvor4.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(orc_draught.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(orc_draught1.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(orc_draught2.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(orc_draught3.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(orc_draught4.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(athelas_brew.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(athelas_brew1.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(athelas_brew2.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(athelas_brew3.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(athelas_brew4.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(dwarven_tonic.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(dwarven_tonic1.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(dwarven_tonic2.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(dwarven_tonic3.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(dwarven_tonic4.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(taurethrim_cocoa.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(taurethrim_cocoa1.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(taurethrim_cocoa2.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(taurethrim_cocoa3.get(), RenderType.getTranslucent());
+		RenderTypeLookup.setRenderLayer(taurethrim_cocoa4.get(), RenderType.getTranslucent());
 	}
 	public static class CustomBlock extends BaseCupBlock {
 		public CustomBlock() {

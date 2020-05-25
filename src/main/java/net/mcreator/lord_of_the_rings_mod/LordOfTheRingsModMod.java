@@ -25,6 +25,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -36,19 +37,32 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.EntityType;
 import net.minecraft.block.Block;
 
+import net.mcreator.lord_of_the_rings_mod_util.registry.LOTRRegistryHelper;
+
 import java.util.function.Supplier;
 
-@Mod("lord_of_the_rings_mod")
+@Mod(value = LordOfTheRingsModMod.MOD_ID)
 public class LordOfTheRingsModMod {
+	public static final String MOD_ID = "lord_of_the_rings_mod";
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(
-			new ResourceLocation("lord_of_the_rings_mod", "lord_of_the_rings_mod"), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals,
+			new ResourceLocation(MOD_ID, MOD_ID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals,
 			PROTOCOL_VERSION::equals);
 	public LordOfTheRingsModModElements elements;
+	public static final LOTRRegistryHelper REGISTRY_HELPER = new LOTRRegistryHelper(MOD_ID);
+	/*
+	 * 
+	 */
 	public LordOfTheRingsModMod() {
 		elements = new LordOfTheRingsModModElements();
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+		REGISTRY_HELPER.getDeferredItemRegister().register(modEventBus);
+		REGISTRY_HELPER.getDeferredBlockRegister().register(modEventBus);
+		// REGISTRY_HELPER.getDeferredSoundRegister().register(modEventBus);
+		// REGISTRY_HELPER.getDeferredTileEntityRegister().register(modEventBus);
+		// REGISTRY_HELPER.getDeferredEntityRegister().register(modEventBus);
+		modEventBus.addListener(this::init);
+		modEventBus.register(this);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
