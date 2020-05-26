@@ -40,8 +40,8 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.lord_of_the_rings_mod_util.registry.LOTRRegistryHelper;
-import net.mcreator.lord_of_the_rings_mod_util.block.BaseCupBlock;
 import net.mcreator.lord_of_the_rings_mod_util.LOTRDrinks;
+import net.mcreator.lord_of_the_rings_mod_util.bases.BaseCupBlock;
 import net.mcreator.lord_of_the_rings_mod.block.DrinkMugBlock;
 
 import java.util.List;

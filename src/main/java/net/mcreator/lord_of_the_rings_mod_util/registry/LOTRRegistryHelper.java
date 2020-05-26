@@ -5,9 +5,8 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.block.Block;
-
-import net.mcreator.lord_of_the_rings_mod_util.block.BasePlaceableDrinkItem;
 import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup;
+import net.mcreator.lord_of_the_rings_mod_util.bases.BasePlaceableDrinkItem;
 
 import java.util.function.Supplier;
 

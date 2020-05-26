@@ -1,4 +1,4 @@
-package net.mcreator.lord_of_the_rings_mod_util.block;
+package net.mcreator.lord_of_the_rings_mod_util.bases;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;

@@ -1,4 +1,4 @@
-package net.mcreator.lord_of_the_rings_mod_util.block;
+package net.mcreator.lord_of_the_rings_mod_util.bases;
 
 import net.minecraftforge.common.property.Properties;
 
