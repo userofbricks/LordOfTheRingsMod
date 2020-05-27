@@ -26,7 +26,7 @@ public class FoodGammonItem extends LordOfTheRingsModModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).maxStackSize(64)
-					.food((new Food.Builder()).hunger(4).saturation(0.3f).build()));
+					.food((new Food.Builder()).hunger(8).saturation(1.3f).build()));
 			setRegistryName("foodgammon");
 		}
 

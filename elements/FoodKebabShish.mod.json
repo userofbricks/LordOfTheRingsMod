@@ -11,8 +11,8 @@
       "value": "CUSTOM:LOTRFoodAndDrinkTab"
     },
     "stackSize": 64,
-    "nutritionalValue": 11,
-    "saturation": 1.2000000000000002,
+    "nutritionalValue": 8,
+    "saturation": 1.3,
     "eatingSpeed": 32,
     "forDogs": true,
     "isAlwaysEdible": false,

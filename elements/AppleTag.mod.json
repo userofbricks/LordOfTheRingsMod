@@ -1,0 +1,22 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:FoodAppleGreen"
+      },
+      {
+        "value": "CUSTOM:FoodAppleYellow"
+      },
+      {
+        "value": "Items.APPLE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "apple",
+    "namespace": "mod"
+  }
+}

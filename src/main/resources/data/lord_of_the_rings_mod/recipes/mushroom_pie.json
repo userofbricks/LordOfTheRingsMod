@@ -1,0 +1,23 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    " 3"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:egg"
+    },
+    "1": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "3": {
+      "item": "minecraft:red_mushroom"
+    }
+  },
+  "result": {
+    "item": "lord_of_the_rings_mod:foodmushroompie",
+    "count": 1
+  }
+}

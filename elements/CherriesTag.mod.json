@@ -1,0 +1,25 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:FoodCherriesRed"
+      },
+      {
+        "value": "CUSTOM:FoodCherriesOrange"
+      },
+      {
+        "value": "CUSTOM:FoodCherriesYellow"
+      },
+      {
+        "value": "CUSTOM:FoodCherriesDark"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "cherries",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "lord_of_the_rings_mod:foodblueberries",
+    "lord_of_the_rings_mod:foodblackberries",
+    "lord_of_the_rings_mod:foodrasberries",
+    "lord_of_the_rings_mod:foodcranberries",
+    "lord_of_the_rings_mod:foodelderberries",
+    "lord_of_the_rings_mod:foodwildberries",
+    "minecraft:sweet_berries"
+  ]
+}

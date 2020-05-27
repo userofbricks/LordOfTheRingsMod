@@ -1,0 +1,16 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_porkchop"
+    },
+    {
+      "item": "lord_of_the_rings_mod:foodsalt"
+    }
+  ],
+  "result": {
+    "item": "lord_of_the_rings_mod:foodgammon",
+    "count": 1
+  }
+}

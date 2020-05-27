@@ -1,0 +1,42 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "lord_of_the_rings_mod:food_maple_syrup"
+    },
+    "1": {
+      "item": "minecraft:milk_bucket"
+    },
+    "2": {
+      "item": "lord_of_the_rings_mod:food_maple_syrup"
+    },
+    "3": {
+      "item": "lord_of_the_rings_mod:foodrasins"
+    },
+    "4": {
+      "item": "minecraft:egg"
+    },
+    "5": {
+      "item": "lord_of_the_rings_mod:foodrasins"
+    },
+    "6": {
+      "item": "minecraft:wheat"
+    },
+    "7": {
+      "item": "minecraft:wheat"
+    },
+    "8": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "lord_of_the_rings_mod:foodbananacake",
+    "count": 1
+  }
+}

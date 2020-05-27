@@ -1,0 +1,42 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:milk_bucket"
+    },
+    "1": {
+      "tag": "lord_of_the_rings_mod:apple"
+    },
+    "2": {
+      "item": "minecraft:milk_bucket"
+    },
+    "3": {
+      "item": "minecraft:sugar"
+    },
+    "4": {
+      "tag": "lord_of_the_rings_mod:apple"
+    },
+    "5": {
+      "item": "minecraft:sugar"
+    },
+    "6": {
+      "item": "minecraft:wheat"
+    },
+    "7": {
+      "tag": "lord_of_the_rings_mod:apple"
+    },
+    "8": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "lord_of_the_rings_mod:foodapplecrumble",
+    "count": 1
+  }
+}

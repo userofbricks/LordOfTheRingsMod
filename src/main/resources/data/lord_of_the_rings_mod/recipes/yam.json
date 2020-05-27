@@ -1,0 +1,12 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:smoking",
+  "experience": 1,
+  "cookingtime": 80,
+  "ingredient": {
+    "item": "lord_of_the_rings_mod:foodyam"
+  },
+  "result": {
+    "item": "lord_of_the_rings_mod:foodyamroasted"
+  }
+}

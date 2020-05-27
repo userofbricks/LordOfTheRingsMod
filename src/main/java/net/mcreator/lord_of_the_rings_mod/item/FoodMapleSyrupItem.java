@@ -12,11 +12,11 @@ import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRFoodAndDrinkTabItemGroup
 import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModModElements;
 
 @LordOfTheRingsModModElements.ModElement.Tag
-public class FoodKebabShishItem extends LordOfTheRingsModModElements.ModElement {
-	@ObjectHolder("lord_of_the_rings_mod:foodkebabshish")
+public class FoodMapleSyrupItem extends LordOfTheRingsModModElements.ModElement {
+	@ObjectHolder("lord_of_the_rings_mod:food_maple_syrup")
 	public static final Item block = null;
-	public FoodKebabShishItem(LordOfTheRingsModModElements instance) {
-		super(instance, 64);
+	public FoodMapleSyrupItem(LordOfTheRingsModModElements instance) {
+		super(instance, 107);
 	}
 
 	@Override
@@ -25,14 +25,19 @@ public class FoodKebabShishItem extends LordOfTheRingsModModElements.ModElement 
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).maxStackSize(64)
-					.food((new Food.Builder()).hunger(8).saturation(1.3f).meat().build()));
-			setRegistryName("foodkebabshish");
+			super(new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).maxStackSize(8)
+					.food((new Food.Builder()).hunger(2).saturation(0.4f).build()));
+			setRegistryName("food_maple_syrup");
+		}
+
+		@Override
+		public int getUseDuration(ItemStack stack) {
+			return 16;
 		}
 
 		@Override
 		public UseAction getUseAction(ItemStack par1ItemStack) {
-			return UseAction.EAT;
+			return UseAction.DRINK;
 		}
 	}
 }

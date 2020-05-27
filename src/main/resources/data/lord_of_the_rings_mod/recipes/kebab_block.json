@@ -1,0 +1,42 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "lord_of_the_rings_mod:foodkebab"
+    },
+    "1": {
+      "item": "lord_of_the_rings_mod:foodkebab"
+    },
+    "2": {
+      "item": "lord_of_the_rings_mod:foodkebab"
+    },
+    "3": {
+      "item": "lord_of_the_rings_mod:foodkebab"
+    },
+    "4": {
+      "item": "lord_of_the_rings_mod:foodkebab"
+    },
+    "5": {
+      "item": "lord_of_the_rings_mod:foodkebab"
+    },
+    "6": {
+      "item": "lord_of_the_rings_mod:foodkebab"
+    },
+    "7": {
+      "item": "lord_of_the_rings_mod:foodkebab"
+    },
+    "8": {
+      "item": "lord_of_the_rings_mod:foodkebab"
+    }
+  },
+  "result": {
+    "item": "lord_of_the_rings_mod:foodkebabblock",
+    "count": 1
+  }
+}

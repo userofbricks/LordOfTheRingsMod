@@ -1,0 +1,42 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "lord_of_the_rings_mod:foodhobbitpancake"
+    },
+    "1": {
+      "item": "lord_of_the_rings_mod:foodhobbitpancake"
+    },
+    "2": {
+      "item": "lord_of_the_rings_mod:foodhobbitpancake"
+    },
+    "3": {
+      "item": "lord_of_the_rings_mod:foodhobbitpancake"
+    },
+    "4": {
+      "item": "lord_of_the_rings_mod:food_maple_syrup"
+    },
+    "5": {
+      "item": "lord_of_the_rings_mod:foodhobbitpancake"
+    },
+    "6": {
+      "item": "lord_of_the_rings_mod:foodhobbitpancake"
+    },
+    "7": {
+      "item": "lord_of_the_rings_mod:foodhobbitpancake"
+    },
+    "8": {
+      "item": "lord_of_the_rings_mod:foodhobbitpancake"
+    }
+  },
+  "result": {
+    "item": "lord_of_the_rings_mod:foodhobbitpancakemaplesyrup",
+    "count": 8
+  }
+}

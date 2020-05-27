@@ -26,7 +26,7 @@ public class FoodKebabItem extends LordOfTheRingsModModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(LOTRFoodAndDrinkTabItemGroup.tab).maxStackSize(64)
-					.food((new Food.Builder()).hunger(6).saturation(0.7f).meat().build()));
+					.food((new Food.Builder()).hunger(8).saturation(1.3f).meat().build()));
 			setRegistryName("foodkebab");
 		}
 

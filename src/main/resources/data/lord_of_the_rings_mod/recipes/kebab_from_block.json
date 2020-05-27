@@ -1,0 +1,16 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "lord_of_the_rings_mod:foodkebabblock"
+    }
+  },
+  "result": {
+    "item": "lord_of_the_rings_mod:foodkebab",
+    "count": 9
+  }
+}

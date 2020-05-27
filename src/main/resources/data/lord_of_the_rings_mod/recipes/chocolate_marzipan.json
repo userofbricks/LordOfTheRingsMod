@@ -1,0 +1,16 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "lord_of_the_rings_mod:foodmarzipan"
+    }
+  ],
+  "result": {
+    "item": "lord_of_the_rings_mod:foodmarzipanchocolate",
+    "count": 1
+  }
+}

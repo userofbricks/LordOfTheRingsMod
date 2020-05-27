@@ -1,0 +1,12 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:smoking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "lord_of_the_rings_mod:foodrino"
+  },
+  "result": {
+    "item": "lord_of_the_rings_mod:foodrinocooked"
+  }
+}

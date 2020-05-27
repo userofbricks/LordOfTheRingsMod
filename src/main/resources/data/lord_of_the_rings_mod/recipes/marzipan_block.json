@@ -1,0 +1,22 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "lord_of_the_rings_mod:foodmarzipan"
+    },
+    "1": {
+      "item": "lord_of_the_rings_mod:foodmarzipan"
+    },
+    "2": {
+      "item": "lord_of_the_rings_mod:foodmarzipan"
+    }
+  },
+  "result": {
+    "item": "lord_of_the_rings_mod:foodmarzipanblock",
+    "count": 1
+  }
+}

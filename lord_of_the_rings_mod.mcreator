@@ -803,6 +803,392 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "drink_ale_horn_gold"
+    },
+    {
+      "name": "AppleTag",
+      "type": "tag",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apple_tag"
+    },
+    {
+      "name": "AppleCrumble",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apple_crumble"
+    },
+    {
+      "name": "BannanaCake",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bannana_cake"
+    },
+    {
+      "name": "BerryTag",
+      "type": "tag",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berry_tag"
+    },
+    {
+      "name": "BerryPie",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "berry_pie"
+    },
+    {
+      "name": "CherriesTag",
+      "type": "tag",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cherries_tag"
+    },
+    {
+      "name": "CherryPie",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cherry_pie"
+    },
+    {
+      "name": "DalishPastry",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dalish_pastry"
+    },
+    {
+      "name": "FoodMapleSyrup",
+      "type": "food",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "food_maple_syrup"
+    },
+    {
+      "name": "KebabBlock",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kebab_block"
+    },
+    {
+      "name": "KebabFromBlock",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kebab_from_block"
+    },
+    {
+      "name": "ShishKebab",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shish_kebab"
+    },
+    {
+      "name": "LemonCake",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lemon_cake"
+    },
+    {
+      "name": "Marzipan",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "marzipan"
+    },
+    {
+      "name": "ChocolateMarzipan",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chocolate_marzipan"
+    },
+    {
+      "name": "MarzipanBlock",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "marzipan_block"
+    },
+    {
+      "name": "Mug",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mug"
+    },
+    {
+      "name": "WoodenGoblet",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wooden_goblet"
+    },
+    {
+      "name": "GoldenGoblet",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_goblet"
+    },
+    {
+      "name": "WineGlass",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wine_glass"
+    },
+    {
+      "name": "Gammon",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gammon"
+    },
+    {
+      "name": "FoodBread",
+      "type": "food",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "food_bread"
+    },
+    {
+      "name": "BreadItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bread_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pancake",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pancake"
+    },
+    {
+      "name": "PancakeWithSyrup",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pancake_with_syrup"
+    },
+    {
+      "name": "Lion",
+      "type": "recipe",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lion"
+    },
+    {
+      "name": "Zebra",
+      "type": "recipe",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "zebra"
+    },
+    {
+      "name": "Rino",
+      "type": "recipe",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rino"
+    },
+    {
+      "name": "Chestnut",
+      "type": "recipe",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestnut"
+    },
+    {
+      "name": "Cram",
+      "type": "recipe",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cram"
+    },
+    {
+      "name": "Venison",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "venison"
+    },
+    {
+      "name": "Corn",
+      "type": "recipe",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "corn"
+    },
+    {
+      "name": "Camel",
+      "type": "recipe",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "camel"
+    },
+    {
+      "name": "Olivebread",
+      "type": "recipe",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "olivebread"
+    },
+    {
+      "name": "Turnip",
+      "type": "recipe",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turnip"
+    },
+    {
+      "name": "Yam",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yam"
+    },
+    {
+      "name": "Cornbread",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cornbread"
+    },
+    {
+      "name": "Rasins",
+      "type": "recipe",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rasins"
+    },
+    {
+      "name": "GoldenRasins",
+      "type": "recipe",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_rasins"
+    },
+    {
+      "name": "MushroomPie",
+      "type": "recipe",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mushroom_pie"
+    },
+    {
+      "name": "Bread",
+      "type": "recipe",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bread"
+    },
+    {
+      "name": "Pipeweed",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pipeweed"
     }
   ],
   "variable_elements": [],
@@ -819,8 +1205,8 @@
       "block.lord_of_the_rings_mod.goblet_silver_red_wine": "Red Wine",
       "block.lord_of_the_rings_mod.goblet_gold_arak": "Arak",
       "block.lord_of_the_rings_mod.goblet_gold_vodka": "Vodka",
-      "block.lord_of_the_rings_mod.goblet_gold_milk": "Milk",
       "block.lord_of_the_rings_mod.goblet_silver_dwarven_tonic": "Dwarven Tonic Weak",
+      "block.lord_of_the_rings_mod.goblet_gold_milk": "Milk",
       "block.lord_of_the_rings_mod.mug_lemonade": "Lemonade",
       "block.lord_of_the_rings_mod.glass_miruvor": "Miruvor Weak",
       "block.lord_of_the_rings_mod.goblet_copper_red_grape_juice": "Red Grape Juice",
@@ -830,8 +1216,8 @@
       "block.lord_of_the_rings_mod.drink_goblet_silver": "Goblet Silver",
       "block.lord_of_the_rings_mod.goblet_silver_rum": "Rum",
       "block.lord_of_the_rings_mod.goblet_copper_jungle_remedy": "Jungle Remedy",
-      "itemGroup.tablotrstorytab": "LOTR Story",
       "block.lord_of_the_rings_mod.goblet_silver_athelas_brew2": "Athelas Brew Moderate",
+      "itemGroup.tablotrstorytab": "LOTR Story",
       "block.lord_of_the_rings_mod.glass_milk": "Milk",
       "block.lord_of_the_rings_mod.glass_red_wine": "Red Wine",
       "block.lord_of_the_rings_mod.goblet_silver_athelas_brew3": "Athelas Brew Strong",
@@ -849,8 +1235,8 @@
       "block.lord_of_the_rings_mod.goblet_gold_orc_draught": "Orc Draught Weak",
       "block.lord_of_the_rings_mod.goblet_silver_maple_beer": "Maple Beer",
       "block.lord_of_the_rings_mod.glass_arak": "Arak",
-      "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
       "block.lord_of_the_rings_mod.glass_orc_draught1": "Orc Draught Mild",
+      "itemGroup.tablotrmiscellaneoustab": "LOTR Miscellaneous",
       "block.lord_of_the_rings_mod.goblet_copper_apple_juice": "Apple Juice",
       "block.lord_of_the_rings_mod.glass_miruvor4": "Miruvor Pure",
       "block.lord_of_the_rings_mod.glass_miruvor3": "Miruvor Strong",
@@ -877,8 +1263,8 @@
       "item.lord_of_the_rings_mod.foodchestnutroasted": "Roast Chestnut",
       "block.lord_of_the_rings_mod.goblet_gold_blueberry": "Blueberry Juice",
       "block.lord_of_the_rings_mod.mug_apple_juice": "Apple Juice",
-      "block.lord_of_the_rings_mod.goblet_wood_elderberry_juice": "Elderberry Juice",
       "block.lord_of_the_rings_mod.mug_dwarven_tonic": "Dwarven Tonic Weak",
+      "block.lord_of_the_rings_mod.goblet_wood_elderberry_juice": "Elderberry Juice",
       "block.lord_of_the_rings_mod.mug_dwarven_tonic4": "Dwarven Tonic Pure",
       "item.lord_of_the_rings_mod.foodappleyellow": "Yellow Apple",
       "block.lord_of_the_rings_mod.glass_perry": "Perry",
@@ -887,8 +1273,8 @@
       "item.lord_of_the_rings_mod.foodpearbrown": "Brown Pear",
       "block.lord_of_the_rings_mod.goblet_wood_mango_juice": "Mango Juice",
       "block.lord_of_the_rings_mod.goblet_silver_dwarven_tonic2": "Dwarven Tonic Moderate",
-      "block.lord_of_the_rings_mod.goblet_wood_blackberry_juice": "Blackberry Juice",
       "block.lord_of_the_rings_mod.goblet_silver_dwarven_tonic3": "Dwarven Tonic Strong",
+      "block.lord_of_the_rings_mod.goblet_wood_blackberry_juice": "Blackberry Juice",
       "block.lord_of_the_rings_mod.goblet_silver_dwarven_tonic1": "Dwarven Tonic Mild",
       "block.lord_of_the_rings_mod.mug_dwarven_tonic1": "Dwarven Tonic Mild",
       "block.lord_of_the_rings_mod.mug_dwarven_tonic2": "Dwarven Tonic Moderate",
@@ -911,17 +1297,17 @@
       "block.lord_of_the_rings_mod.mug_miruvor1": "Miruvor Mild",
       "itemGroup.tablotrblockstab": "LOTR Blocks",
       "block.lord_of_the_rings_mod.glass_dwarven_tonic2": "Dwarven Tonic Moderate",
-      "block.lord_of_the_rings_mod.goblet_gold_cranberry_juice": "Cranberry Juice",
       "block.lord_of_the_rings_mod.glass_dwarven_tonic1": "Dwarven Tonic Mild",
+      "block.lord_of_the_rings_mod.goblet_gold_cranberry_juice": "Cranberry Juice",
       "block.lord_of_the_rings_mod.glass_dwarven_tonic4": "Dwarven Tonic Pure",
-      "block.lord_of_the_rings_mod.glass_dwarven_tonic3": "Dwarven Tonic Strong",
       "block.lord_of_the_rings_mod.glass_rasberry_juice": "Rasberry Juice",
+      "block.lord_of_the_rings_mod.glass_dwarven_tonic3": "Dwarven Tonic Strong",
       "block.lord_of_the_rings_mod.goblet_gold_taurethrim_cocoa": "Taurethrim Cocoa Weak",
       "item.lord_of_the_rings_mod.foodrino": "Rino",
       "block.lord_of_the_rings_mod.goblet_copper_pomegranate_juice": "Pomegranate Juice",
       "block.lord_of_the_rings_mod.glass_cider": "Cider",
-      "block.lord_of_the_rings_mod.goblet_wood_green_grape_juice": "White Grape Juice",
       "block.lord_of_the_rings_mod.mug_taurethrim_cocoa": "Taurethrim Cocoa Weak",
+      "block.lord_of_the_rings_mod.goblet_wood_green_grape_juice": "White Grape Juice",
       "block.lord_of_the_rings_mod.goblet_copper_orc_draught": "Orc Draught Weak",
       "item.lord_of_the_rings_mod.foodcherriesorange": "Orange Cherries",
       "item.lord_of_the_rings_mod.foodyamroasted": "Cooked Yam",
@@ -930,22 +1316,23 @@
       "block.lord_of_the_rings_mod.mug_jungle_remedy": "Jungle Remedy",
       "block.lord_of_the_rings_mod.goblet_wood_milk": "Milk",
       "block.lord_of_the_rings_mod.goblet_gold_mango_juice": "Mango Juice",
-      "block.lord_of_the_rings_mod.glass_water": "Water",
       "block.lord_of_the_rings_mod.goblet_wood_arak": "Arak",
-      "block.lord_of_the_rings_mod.glass_lemonade": "Lemonade",
+      "block.lord_of_the_rings_mod.glass_water": "Water",
       "block.lord_of_the_rings_mod.goblet_silver_ale": "Ale",
+      "block.lord_of_the_rings_mod.glass_lemonade": "Lemonade",
       "block.lord_of_the_rings_mod.glass_apple_juice": "Apple Juice",
+      "item.lord_of_the_rings_mod.food_bread": "Bread",
       "block.lord_of_the_rings_mod.glass_dwarven_tonic": "Dwarven Tonic Weak",
       "item.lord_of_the_rings_mod.foodcranberries": "Cranberries",
       "block.lord_of_the_rings_mod.goblet_gold_orc_draught1": "Orc Draught Mild",
       "block.lord_of_the_rings_mod.goblet_silver_mead": "Mead",
       "block.lord_of_the_rings_mod.goblet_gold_orc_draught3": "Orc Draught Strong",
       "block.lord_of_the_rings_mod.goblet_gold_orc_draught2": "Orc Draught Moderate",
-      "block.lord_of_the_rings_mod.goblet_wood_dwarven_tonic3": "Dwarven Tonic Strong",
       "block.lord_of_the_rings_mod.goblet_gold_dwarven_tonic2": "Dwarven Tonic Moderate",
-      "block.lord_of_the_rings_mod.goblet_wood_dwarven_tonic2": "Dwarven Tonic Moderate",
-      "block.lord_of_the_rings_mod.goblet_gold_orc_draught4": "Orc Draught Pure",
+      "block.lord_of_the_rings_mod.goblet_wood_dwarven_tonic3": "Dwarven Tonic Strong",
       "block.lord_of_the_rings_mod.goblet_gold_dwarven_tonic1": "Dwarven Tonic Mild",
+      "block.lord_of_the_rings_mod.goblet_gold_orc_draught4": "Orc Draught Pure",
+      "block.lord_of_the_rings_mod.goblet_wood_dwarven_tonic2": "Dwarven Tonic Moderate",
       "block.lord_of_the_rings_mod.goblet_wood_dwarven_tonic1": "Dwarven Tonic Mild",
       "block.lord_of_the_rings_mod.goblet_wood_dwarven_tonic4": "Dwarven Tonic Pure",
       "block.lord_of_the_rings_mod.goblet_wood_rasberry_juice": "Rasberry Juice",
@@ -1167,6 +1554,7 @@
       "item.lord_of_the_rings_mod.foodolivebread": "Olive Bread",
       "block.lord_of_the_rings_mod.glass_rum": "Rum",
       "block.lord_of_the_rings_mod.goblet_gold_rasberry_juice": "Rasberry Juice",
+      "item.lord_of_the_rings_mod.food_maple_syrup": "Maple Syrup",
       "block.lord_of_the_rings_mod.goblet_wood_blueberry": "Blueberry Juice",
       "block.lord_of_the_rings_mod.mug_red_grape_juice": "Red Grape Juice",
       "block.lord_of_the_rings_mod.goblet_copper_chocolate": "Chocolate",

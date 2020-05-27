@@ -394,6 +394,6 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/jonathandillon/Desktop/Abnormals-Core-1.15.2-v1.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/jonathandillon/Desktop/Abnormals-Core-1.15.2-v1.0.4.jar" sourcepath="/Users/jonathandillon/Desktop/Abnormals-Core-master"/>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>

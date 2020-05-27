@@ -1,0 +1,34 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:FoodBlueBerries"
+      },
+      {
+        "value": "CUSTOM:FoodBlackBerries"
+      },
+      {
+        "value": "CUSTOM:FoodRasberries"
+      },
+      {
+        "value": "CUSTOM:FoodCranberries"
+      },
+      {
+        "value": "CUSTOM:FoodElderBerries"
+      },
+      {
+        "value": "CUSTOM:FoodWildBerries"
+      },
+      {
+        "value": "Items.SWEET_BERRIES"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "berries",
+    "namespace": "mod"
+  }
+}

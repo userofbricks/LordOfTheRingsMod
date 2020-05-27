@@ -1,0 +1,23 @@
+{
+  "group": "lord_of_the_rings_mod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "2 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:egg"
+    },
+    "1": {
+      "item": "minecraft:wheat"
+    },
+    "2": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "lord_of_the_rings_mod:foodhobbitpancake",
+    "count": 1
+  }
+}
