@@ -45,9 +45,8 @@ import java.util.function.Supplier;
 public class LordOfTheRingsModMod {
 	public static final String MOD_ID = "lord_of_the_rings_mod";
 	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(
-			new ResourceLocation(MOD_ID, MOD_ID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals,
-			PROTOCOL_VERSION::equals);
+	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MOD_ID, MOD_ID), () -> PROTOCOL_VERSION,
+			PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	public LordOfTheRingsModModElements elements;
 	public static final LOTRRegistryHelper REGISTRY_HELPER = new LOTRRegistryHelper(MOD_ID);
 	/*
