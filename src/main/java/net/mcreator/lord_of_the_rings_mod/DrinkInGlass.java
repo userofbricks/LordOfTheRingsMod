@@ -259,10 +259,10 @@ public class DrinkInGlass extends LordOfTheRingsModModElements.ModElement {
 
 		@Override
 		public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
-			Block before = DrinkAleHornGoldBlock.block;
+			Block before = DrinkGlassBlock.block;
 			if (ItemStackUtils.isInGroup(this.asItem(), group)) {
 				if (this.asItem() == water.get().asItem()) {
-					before = DrinkInGobletGold.taurethrim_cocoa4.get();
+					before = DrinkGlassBlock.block;
 				} else if (this.asItem() == milk.get().asItem()) {
 					before = water.get();
 				} else if (this.asItem() == chocolate.get().asItem()) {

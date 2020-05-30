@@ -226,7 +226,7 @@ public class DrinkInGobletSilver extends LordOfTheRingsModModElements.ModElement
 			Block before = DrinkAleHornGoldBlock.block;
 			if (ItemStackUtils.isInGroup(this.asItem(), group)) {
 				if (this.asItem() == water.get().asItem()) {
-					before = DrinkInGobletCopper.taurethrim_cocoa4.get();
+					before = DrinkGobletSilverBlock.block;
 				} else if (this.asItem() == milk.get().asItem()) {
 					before = water.get();
 				} else if (this.asItem() == chocolate.get().asItem()) {
