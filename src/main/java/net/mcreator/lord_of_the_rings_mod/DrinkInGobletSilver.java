@@ -228,155 +228,106 @@ public class DrinkInGobletSilver extends LordOfTheRingsModModElements.ModElement
 				if (this.asItem() == water.get().asItem()) {
 					before = DrinkGobletSilverBlock.block;
 				} else if (this.asItem() == milk.get().asItem()) {
-					//before = water.get();
-					before = DrinkGobletSilverBlock.block;
+					before = water.get();
 				} else if (this.asItem() == chocolate.get().asItem()) {
-					//before = milk.get();
-					before = DrinkGobletSilverBlock.block;
+					before = milk.get();
 				} else if (this.asItem() == mango_juice.get().asItem()) {
-					//before = chocolate.get();
-					before = DrinkGobletSilverBlock.block;
+					before = chocolate.get();
 				} else if (this.asItem() == blueberry_juice.get().asItem()) {
-					//before = mango_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = mango_juice.get();
 				} else if (this.asItem() == blackberry_juice.get().asItem()) {
-					//before = blueberry_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = blueberry_juice.get();
 				} else if (this.asItem() == rasberry_juice.get().asItem()) {
-					//before = blackberry_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = blackberry_juice.get();
 				} else if (this.asItem() == cranberry_juice.get().asItem()) {
-					//before = rasberry_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = rasberry_juice.get();
 				} else if (this.asItem() == elderberry_juice.get().asItem()) {
-					//before = cranberry_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = cranberry_juice.get();
 				} else if (this.asItem() == orange_juice.get().asItem()) {
-					//before = elderberry_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = elderberry_juice.get();
 				} else if (this.asItem() == lemonade.get().asItem()) {
-					//before = orange_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = orange_juice.get();
 				} else if (this.asItem() == jungle_remedy.get().asItem()) {
-					//before = lemonade.get();
-					before = DrinkGobletSilverBlock.block;
+					before = lemonade.get();
 				} else if (this.asItem() == apple_juice.get().asItem()) {
-					//before = jungle_remedy.get();
-					before = DrinkGobletSilverBlock.block;
+					before = jungle_remedy.get();
 				} else if (this.asItem() == red_grape_juice.get().asItem()) {
-					//before = apple_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = apple_juice.get();
 				} else if (this.asItem() == green_grape_juice.get().asItem()) {
-					//before = red_grape_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = red_grape_juice.get();
 				} else if (this.asItem() == pomegranate_juice.get().asItem()) {
-					//before = green_grape_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = green_grape_juice.get();
 				} else if (this.asItem() == ale.get().asItem()) {
-					//before = pomegranate_juice.get();
-					before = DrinkGobletSilverBlock.block;
+					before = pomegranate_juice.get();
 				} else if (this.asItem() == mead.get().asItem()) {
-					//before = ale.get();
-					before = DrinkGobletSilverBlock.block;
+					before = ale.get();
 				} else if (this.asItem() == red_wine.get().asItem()) {
-					//before = mead.get();
-					before = DrinkGobletSilverBlock.block;
+					before = mead.get();
 				} else if (this.asItem() == cider.get().asItem()) {
-					//before = red_wine.get();
-					before = DrinkGobletSilverBlock.block;
+					before = red_wine.get();
 				} else if (this.asItem() == perry.get().asItem()) {
-					//before = cider.get();
-					before = DrinkGobletSilverBlock.block;
+					//
+					before = red_wine.get();
 				} else if (this.asItem() == cherry_liqueur.get().asItem()) {
-					//before = perry.get();
-					before = DrinkGobletSilverBlock.block;
+					before = perry.get();
 				} else if (this.asItem() == rum.get().asItem()) {
-					//before = cherry_liqueur.get();
-					before = DrinkGobletSilverBlock.block;
+					before = cherry_liqueur.get();
 				} else if (this.asItem() == vodka.get().asItem()) {
-					//before = rum.get();
-					before = DrinkGobletSilverBlock.block;
+					before = rum.get();
 				} else if (this.asItem() == maple_beer.get().asItem()) {
-					//before = vodka.get();
-					before = DrinkGobletSilverBlock.block;
+					before = vodka.get();
 				} else if (this.asItem() == arak.get().asItem()) {
-					//before = maple_beer.get();
-					before = DrinkGobletSilverBlock.block;
+					before = maple_beer.get();
 				} else if (this.asItem() == miruvor.get().asItem()) {
-					//before = arak.get();
-					before = DrinkGobletSilverBlock.block;
+					before = arak.get();
 				} else if (this.asItem() == miruvor1.get().asItem()) {
-					//before = miruvor.get();
-					before = DrinkGobletSilverBlock.block;
+					before = miruvor.get();
 				} else if (this.asItem() == miruvor2.get().asItem()) {
-					//before = miruvor1.get();
-					before = DrinkGobletSilverBlock.block;
+					before = miruvor1.get();
 				} else if (this.asItem() == miruvor3.get().asItem()) {
-					//before = miruvor2.get();
-					before = DrinkGobletSilverBlock.block;
+					before = miruvor2.get();
 				} else if (this.asItem() == miruvor4.get().asItem()) {
-					//before = miruvor3.get();
-					before = DrinkGobletSilverBlock.block;
+					before = miruvor3.get();
 				} else if (this.asItem() == orc_draught.get().asItem()) {
-					//before = miruvor4.get();
-					before = DrinkGobletSilverBlock.block;
+					before = miruvor4.get();
 				} else if (this.asItem() == orc_draught1.get().asItem()) {
-					//before = orc_draught.get();
-					before = DrinkGobletSilverBlock.block;
+					before = orc_draught.get();
 				} else if (this.asItem() == orc_draught2.get().asItem()) {
-					//before = orc_draught1.get();
-					before = DrinkGobletSilverBlock.block;
+					before = orc_draught1.get();
 				} else if (this.asItem() == orc_draught3.get().asItem()) {
-					//before = orc_draught2.get();
-					before = DrinkGobletSilverBlock.block;
+					before = orc_draught2.get();
 				} else if (this.asItem() == orc_draught4.get().asItem()) {
-					//before = orc_draught3.get();
-					before = DrinkGobletSilverBlock.block;
+					before = orc_draught3.get();
 				} else if (this.asItem() == athelas_brew.get().asItem()) {
-					//before = orc_draught4.get();
-					before = DrinkGobletSilverBlock.block;
+					before = orc_draught4.get();
 				} else if (this.asItem() == athelas_brew1.get().asItem()) {
-					//before = athelas_brew.get();
-					before = DrinkGobletSilverBlock.block;
+					before = athelas_brew.get();
 				} else if (this.asItem() == athelas_brew2.get().asItem()) {
-					//before = athelas_brew1.get();
-					before = DrinkGobletSilverBlock.block;
+					before = athelas_brew1.get();
 				} else if (this.asItem() == athelas_brew3.get().asItem()) {
-					//before = athelas_brew2.get();
-					before = DrinkGobletSilverBlock.block;
+					before = athelas_brew2.get();
 				} else if (this.asItem() == athelas_brew4.get().asItem()) {
-					//before = athelas_brew3.get();
-					before = DrinkGobletSilverBlock.block;
+					before = athelas_brew3.get();
 				} else if (this.asItem() == dwarven_tonic.get().asItem()) {
-					//before = athelas_brew4.get();
-					before = DrinkGobletSilverBlock.block;
+					before = athelas_brew4.get();
 				} else if (this.asItem() == dwarven_tonic1.get().asItem()) {
-					//before = dwarven_tonic.get();
-					before = DrinkGobletSilverBlock.block;
+					before = dwarven_tonic.get();
 				} else if (this.asItem() == dwarven_tonic2.get().asItem()) {
-					//before = dwarven_tonic1.get();
-					before = DrinkGobletSilverBlock.block;
+					before = dwarven_tonic1.get();
 				} else if (this.asItem() == dwarven_tonic3.get().asItem()) {
-					//before = dwarven_tonic2.get();
-					before = DrinkGobletSilverBlock.block;
+					before = dwarven_tonic2.get();
 				} else if (this.asItem() == dwarven_tonic4.get().asItem()) {
-					//before = dwarven_tonic3.get();
-					before = DrinkGobletSilverBlock.block;
+					before = dwarven_tonic3.get();
 				} else if (this.asItem() == taurethrim_cocoa.get().asItem()) {
-					//before = dwarven_tonic4.get();
-					before = DrinkGobletSilverBlock.block;
+					before = dwarven_tonic4.get();
 				} else if (this.asItem() == taurethrim_cocoa1.get().asItem()) {
-					//before = taurethrim_cocoa.get();
-					before = DrinkGobletSilverBlock.block;
+					before = taurethrim_cocoa.get();
 				} else if (this.asItem() == taurethrim_cocoa2.get().asItem()) {
-					//before = taurethrim_cocoa1.get();
-					before = DrinkGobletSilverBlock.block;
+					before = taurethrim_cocoa1.get();
 				} else if (this.asItem() == taurethrim_cocoa3.get().asItem()) {
-					//before = taurethrim_cocoa2.get();
-					before = DrinkGobletSilverBlock.block;
+					before = taurethrim_cocoa2.get();
 				} else if (this.asItem() == taurethrim_cocoa4.get().asItem()) {
-					//before = taurethrim_cocoa3.get();
-					before = DrinkGobletSilverBlock.block;
+					before = taurethrim_cocoa3.get();
 				}
 				int targetIndex = ItemStackUtils.findIndexOfItem(before.asItem(), items);
 				if (targetIndex != -1) {
