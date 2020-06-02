@@ -3,7 +3,7 @@ loaderVersion="[31,)"
 
 [[mods]]
 modId="lord_of_the_rings_mod"
-version="1.0.0"
+version="0.1.0"
 displayName="Lord Of The Rings Mod"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"

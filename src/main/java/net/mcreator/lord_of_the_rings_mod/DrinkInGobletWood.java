@@ -230,63 +230,81 @@ public class DrinkInGobletWood extends LordOfTheRingsModModElements.ModElement {
 				} else if (this.asItem() == milk.get().asItem()) {
 					before = water.get();
 				} else if (this.asItem() == chocolate.get().asItem()) {
-					before = milk.get();
+					//
+					before = water.get();
 				} else if (this.asItem() == mango_juice.get().asItem()) {
-					before = chocolate.get();
+					//
+					before = DrinkGobletWoodBlock.block;
 				} else if (this.asItem() == blueberry_juice.get().asItem()) {
-					before = mango_juice.get();
+					//
+					before = DrinkGobletWoodBlock.block;
 				} else if (this.asItem() == blackberry_juice.get().asItem()) {
 					before = blueberry_juice.get();
 				} else if (this.asItem() == rasberry_juice.get().asItem()) {
-					before = blackberry_juice.get();
+					//
+					before = blueberry_juice.get();
 				} else if (this.asItem() == cranberry_juice.get().asItem()) {
 					before = rasberry_juice.get();
 				} else if (this.asItem() == elderberry_juice.get().asItem()) {
-					before = cranberry_juice.get();
+					//
+					before = rasberry_juice.get();
 				} else if (this.asItem() == orange_juice.get().asItem()) {
 					before = elderberry_juice.get();
 				} else if (this.asItem() == lemonade.get().asItem()) {
 					before = orange_juice.get();
 				} else if (this.asItem() == jungle_remedy.get().asItem()) {
-					before = lemonade.get();
+					//
+					before = blueberry_juice.get();
 				} else if (this.asItem() == apple_juice.get().asItem()) {
 					before = jungle_remedy.get();
 				} else if (this.asItem() == red_grape_juice.get().asItem()) {
-					before = apple_juice.get();
+					//
+					before = jungle_remedy.get();
 				} else if (this.asItem() == green_grape_juice.get().asItem()) {
 					before = red_grape_juice.get();
 				} else if (this.asItem() == pomegranate_juice.get().asItem()) {
-					before = green_grape_juice.get();
+					//
+					before = jungle_remedy.get();
 				} else if (this.asItem() == ale.get().asItem()) {
 					before = pomegranate_juice.get();
 				} else if (this.asItem() == mead.get().asItem()) {
-					before = ale.get();
+					//
+					before = blueberry_juice.get();
 				} else if (this.asItem() == red_wine.get().asItem()) {
-					before = mead.get();
+					//
+					before = DrinkGobletWoodBlock.block;
 				} else if (this.asItem() == cider.get().asItem()) {
 					before = red_wine.get();
 				} else if (this.asItem() == perry.get().asItem()) {
-					before = cider.get();
+					//
+					before = red_wine.get();
 				} else if (this.asItem() == cherry_liqueur.get().asItem()) {
 					before = perry.get();
 				} else if (this.asItem() == rum.get().asItem()) {
-					before = cherry_liqueur.get();
+					//
+					before = red_wine.get();
 				} else if (this.asItem() == vodka.get().asItem()) {
 					before = rum.get();
 				} else if (this.asItem() == maple_beer.get().asItem()) {
-					before = vodka.get();
+					//
+					before = red_wine.get();
 				} else if (this.asItem() == arak.get().asItem()) {
 					before = maple_beer.get();
 				} else if (this.asItem() == miruvor.get().asItem()) {
-					before = arak.get();
+					//
+					before = maple_beer.get();
 				} else if (this.asItem() == miruvor1.get().asItem()) {
-					before = miruvor.get();
+					//
+					before = red_wine.get();
 				} else if (this.asItem() == miruvor2.get().asItem()) {
-					before = miruvor1.get();
+					//
+					before = red_wine.get();
 				} else if (this.asItem() == miruvor3.get().asItem()) {
-					before = miruvor2.get();
+					//
+					before = red_wine.get();
 				} else if (this.asItem() == miruvor4.get().asItem()) {
-					before = miruvor3.get();
+					//
+					before = red_wine.get();
 				} else if (this.asItem() == orc_draught.get().asItem()) {
 					before = miruvor4.get();
 				} else if (this.asItem() == orc_draught1.get().asItem()) {
@@ -298,15 +316,19 @@ public class DrinkInGobletWood extends LordOfTheRingsModModElements.ModElement {
 				} else if (this.asItem() == orc_draught4.get().asItem()) {
 					before = orc_draught3.get();
 				} else if (this.asItem() == athelas_brew.get().asItem()) {
-					before = orc_draught4.get();
+					//start
+					before = orc_draught.get();
 				} else if (this.asItem() == athelas_brew1.get().asItem()) {
-					before = athelas_brew.get();
+					//
+					before = miruvor4.get();
 				} else if (this.asItem() == athelas_brew2.get().asItem()) {
-					before = athelas_brew1.get();
+					//
+					before = miruvor4.get();
 				} else if (this.asItem() == athelas_brew3.get().asItem()) {
 					before = athelas_brew2.get();
 				} else if (this.asItem() == athelas_brew4.get().asItem()) {
-					before = athelas_brew3.get();
+					//
+					before = athelas_brew2.get();
 				} else if (this.asItem() == dwarven_tonic.get().asItem()) {
 					before = athelas_brew4.get();
 				} else if (this.asItem() == dwarven_tonic1.get().asItem()) {
