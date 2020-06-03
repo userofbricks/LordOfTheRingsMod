@@ -41,9 +41,13 @@ import net.mcreator.lord_of_the_rings_mod_util.registry.LOTRRegistryHelper;
 
 import java.util.function.Supplier;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 @Mod(value = LordOfTheRingsModMod.MOD_ID)
 public class LordOfTheRingsModMod {
 	public static final String MOD_ID = "lord_of_the_rings_mod";
+	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MOD_ID, MOD_ID), () -> PROTOCOL_VERSION,
 			PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
