@@ -233,7 +233,8 @@ public class DrinkInGobletCopper extends LordOfTheRingsModModElements.ModElement
 				} else if (this.asItem() == chocolate.get().asItem()) {
 					before = milk.get();
 				} else if (this.asItem() == mango_juice.get().asItem()) {
-					before = chocolate.get();
+					//before = chocolate.get();
+					before = DrinkGobletCopperBlock.block;
 				} else if (this.asItem() == blueberry_juice.get().asItem()) {
 					//before = mango_juice.get();
 					before = DrinkGobletCopperBlock.block;
