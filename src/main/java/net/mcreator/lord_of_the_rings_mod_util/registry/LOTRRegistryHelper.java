@@ -17,6 +17,7 @@ public class LOTRRegistryHelper extends RegistryHelper {
 		super(modId);
 	}
 
+	@SuppressWarnings("deprecation")
 	public <B extends Block> RegistryObject<B> createDrinkBlock(String name, Supplier<? extends B> supplier, Food food, int damage, boolean isMilk,
 			Block turnsInto) {
 		RegistryObject<B> block = this.getDeferredBlockRegister().register(name, supplier);
