@@ -29,7 +29,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRMiscellaneousTabItemGroup;
-import net.mcreator.lord_of_the_rings_mod.gui.GUIPouchSmallGui;
+import net.mcreator.lord_of_the_rings_mod.gui.GUIPouchMediumGui;
 import net.mcreator.lord_of_the_rings_mod.LordOfTheRingsModModElements;
 
 import javax.annotation.Nullable;
@@ -38,11 +38,11 @@ import javax.annotation.Nonnull;
 import io.netty.buffer.Unpooled;
 
 @LordOfTheRingsModModElements.ModElement.Tag
-public class PouchSmallItem extends LordOfTheRingsModModElements.ModElement {
-	@ObjectHolder("lord_of_the_rings_mod:pouch_small")
+public class PouchMediumItem extends LordOfTheRingsModModElements.ModElement {
+	@ObjectHolder("lord_of_the_rings_mod:pouch_medium")
 	public static final Item block = null;
-	public PouchSmallItem(LordOfTheRingsModModElements instance) {
-		super(instance, 141);
+	public PouchMediumItem(LordOfTheRingsModModElements instance) {
+		super(instance, 142);
 	}
 
 	@Override
@@ -52,7 +52,7 @@ public class PouchSmallItem extends LordOfTheRingsModModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(LOTRMiscellaneousTabItemGroup.tab).maxStackSize(1));
-			setRegistryName("pouch_small");
+			setRegistryName("pouch_medium");
 		}
 
 		@Override
@@ -81,7 +81,7 @@ public class PouchSmallItem extends LordOfTheRingsModModElements.ModElement {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Small Pouch");
+						return new StringTextComponent("Medium Pouch");
 					}
 
 					@Override
@@ -89,7 +89,7 @@ public class PouchSmallItem extends LordOfTheRingsModModElements.ModElement {
 						PacketBuffer packetBuffer = new PacketBuffer(Unpooled.buffer());
 						packetBuffer.writeBlockPos(new BlockPos(x, y, z));
 						packetBuffer.writeByte(hand == Hand.MAIN_HAND ? 0 : 1);
-						return new GUIPouchSmallGui.GuiContainerMod(id, inventory, packetBuffer);
+						return new GUIPouchMediumGui.GuiContainerMod(id, inventory, packetBuffer);
 					}
 				}, buf -> {
 					buf.writeBlockPos(new BlockPos(x, y, z));
@@ -123,7 +123,7 @@ public class PouchSmallItem extends LordOfTheRingsModModElements.ModElement {
 		}
 
 		private ItemStackHandler createItemHandler() {
-			return new ItemStackHandler(9) {
+			return new ItemStackHandler(18) {
 				@Override
 				public int getSlotLimit(int slot) {
 					return 64;
