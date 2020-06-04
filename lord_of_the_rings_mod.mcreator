@@ -1189,6 +1189,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pipeweed"
+    },
+    {
+      "name": "GUIPouchSmall",
+      "type": "gui",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gui_pouch_small"
+    },
+    {
+      "name": "PouchSmall",
+      "type": "item",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "pouch_small"
     }
   ],
   "variable_elements": [],
@@ -1352,6 +1370,7 @@
       "block.lord_of_the_rings_mod.goblet_gold_miruvor": "Miruvor Weak",
       "block.lord_of_the_rings_mod.goblet_wood_dwarven_tonic": "Dwarven Tonic Weak",
       "item.lord_of_the_rings_mod.foodcherriesdark": "Dark Cherries",
+      "item.lord_of_the_rings_mod.pouch_small": "Small Pouch",
       "block.lord_of_the_rings_mod.mug_miruvor": "Miruvor Weak",
       "block.lord_of_the_rings_mod.goblet_gold_maple_beer": "Maple Beer",
       "block.lord_of_the_rings_mod.mug_taurethrim_cocoa1": "Taurethrim Cocoa Mild",
