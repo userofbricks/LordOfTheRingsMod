@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "lord_of_the_rings_mod:blocks/leaves_apple",
+    "particle": "lord_of_the_rings_mod:blocks/leaves_apple"
+  }
+}
