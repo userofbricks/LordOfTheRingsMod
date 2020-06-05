@@ -1,0 +1,37 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:LogApple"
+      },
+      {
+        "value": "CUSTOM:LogCherry"
+      },
+      {
+        "value": "CUSTOM:LogMango"
+      },
+      {
+        "value": "CUSTOM:LogPear"
+      },
+      {
+        "value": "CUSTOM:WoodApple"
+      },
+      {
+        "value": "CUSTOM:WoodCherry"
+      },
+      {
+        "value": "CUSTOM:WoodMango"
+      },
+      {
+        "value": "CUSTOM:WoodPear"
+      }
+    ],
+    "functions": [],
+    "name": "logs",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "lord_of_the_rings_mod:log_apple",
+    "lord_of_the_rings_mod:log_cherry",
+    "lord_of_the_rings_mod:log_mango",
+    "lord_of_the_rings_mod:log_pear",
+    "lord_of_the_rings_mod:wood_apple",
+    "lord_of_the_rings_mod:wood_cherry",
+    "lord_of_the_rings_mod:wood_mango",
+    "lord_of_the_rings_mod:wood_pear"
+  ]
+}

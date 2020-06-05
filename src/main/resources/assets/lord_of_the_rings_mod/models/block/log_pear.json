@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lord_of_the_rings_mod:blocks/fruitwood_pear_top",
+    "up": "lord_of_the_rings_mod:blocks/fruitwood_pear_top",
+    "north": "lord_of_the_rings_mod:blocks/fruitwood_pear_side",
+    "east": "lord_of_the_rings_mod:blocks/fruitwood_pear_side",
+    "south": "lord_of_the_rings_mod:blocks/fruitwood_pear_side",
+    "west": "lord_of_the_rings_mod:blocks/fruitwood_pear_side",
+    "particle": "lord_of_the_rings_mod:blocks/fruitwood_pear_top"
+  }
+}
