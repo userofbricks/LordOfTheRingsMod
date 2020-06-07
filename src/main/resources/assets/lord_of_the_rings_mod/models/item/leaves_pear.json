@@ -1,5 +1,5 @@
 {
-  "parent": "lord_of_the_rings_mod:block/leaves/apple",
+  "parent": "lord_of_the_rings_mod:block/leaves/pear",
   "display": {
     "thirdperson": {
       "rotation": [

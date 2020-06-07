@@ -1,0 +1,6 @@
+{
+  "parent": "lord_of_the_rings_mod:block/leaves/leaves",
+  "textures": {
+    "leaf": "lord_of_the_rings_mod:blocks/leaves/mango"
+  }
+}

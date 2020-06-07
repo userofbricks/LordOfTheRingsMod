@@ -1,5 +1,21 @@
-
-package net.mcreator.lord_of_the_rings_mod.block;
+/**
+ * This mod element is always locked. Enter your code in the methods below.
+ * If you don't need some of these methods, you can remove them as they
+ * are overrides of the base class LordOfTheRingsModModElements.ModElement.
+ *
+ * You can register new events in this class too.
+ *
+ * As this class is loaded into mod element list, it NEEDS to extend
+ * ModElement class. If you remove this extend statement or remove the
+ * constructor, the compilation will fail.
+ *
+ * If you want to make a plain independent class, create it in
+ * "Workspace" -> "Source" menu.
+ *
+ * If you change workspace package, modid or prefix, you will need
+ * to manually adapt this file to these changes or remake it.
+*/
+package net.mcreator.lord_of_the_rings_mod;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -38,7 +54,7 @@ public class LeavesAppleBlock extends LordOfTheRingsModModElements.ModElement {
 	public static final Block leaves_pear_green = null;
 	public static final Block leaves_pear_yellow = null;
 	public LeavesAppleBlock(LordOfTheRingsModModElements instance) {
-		super(instance, 155);
+		super(instance, 999994);
 	}
 
 	@Override
@@ -67,7 +83,7 @@ public class LeavesAppleBlock extends LordOfTheRingsModModElements.ModElement {
 		elements.items.add(() -> item(leaves_pear_yellow));
 	}
 
-	private BlockItem item(Block block) {
+	private Item item(Block block) {
 		return new BlockItem(block, new Item.Properties().group(LOTRBlocksTabItemGroup.tab)).setRegistryName(block.getRegistryName());
 	}
 	
