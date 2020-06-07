@@ -41,7 +41,7 @@ import java.util.Collections;
 
 @ObjectHolder("lord_of_the_rings_mod")
 @LordOfTheRingsModModElements.ModElement.Tag
-public class LeavesAppleBlock extends LordOfTheRingsModModElements.ModElement {
+public class LeavesFruit extends LordOfTheRingsModModElements.ModElement {
 	public static final Block leaves_apple = null;
 	public static final Block leaves_apple_red = null;
 	public static final Block leaves_apple_green = null;
@@ -53,7 +53,7 @@ public class LeavesAppleBlock extends LordOfTheRingsModModElements.ModElement {
 	public static final Block leaves_pear_brown = null;
 	public static final Block leaves_pear_green = null;
 	public static final Block leaves_pear_yellow = null;
-	public LeavesAppleBlock(LordOfTheRingsModModElements instance) {
+	public LeavesFruit(LordOfTheRingsModModElements instance) {
 		super(instance, 999994);
 	}
 
