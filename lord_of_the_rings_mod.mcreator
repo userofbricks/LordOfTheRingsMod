@@ -1342,6 +1342,15 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "saplings_fruit"
+    },
+    {
+      "name": "LeafReplacables",
+      "type": "tag",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leaf_replacables"
     }
   ],
   "variable_elements": [],

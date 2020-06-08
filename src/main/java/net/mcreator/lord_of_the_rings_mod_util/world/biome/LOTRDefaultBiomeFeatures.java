@@ -25,11 +25,10 @@ public class LOTRDefaultBiomeFeatures {
 	private static final BlockState PEAR_LEAVES = LeavesFruit.leaves_pear.getDefaultState();
 	//features
 	public static final TreeFeatureConfig FANCY_APPLE_TREE_CONFIG = fancy_tree(APPLE_LOG, APPLE_LEAVES, SaplingsFruit.sapling_apple);
-	/*
 	public static final TreeFeatureConfig FANCY_CHERRY_TREE_CONFIG = fancy_tree(CHERRY_LOG, CHERRY_LEAVES, SaplingsFruit.sapling_cherry);
 	public static final TreeFeatureConfig FANCY_MANGO_TREE_CONFIG = fancy_tree(MANGO_LOG, MANGO_LEAVES, SaplingsFruit.sapling_mango);
 	public static final TreeFeatureConfig FANCY_PEAR_TREE_CONFIG = fancy_tree(PEAR_LOG, PEAR_LEAVES, SaplingsFruit.sapling_pear);
-*/
+
 	private static TreeFeatureConfig fancy_tree(BlockState log, BlockState leaf, Block sapling) {
 		return (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(log), new SimpleBlockStateProvider(leaf), new BlobFoliagePlacer(0, 0))).setSapling((net.minecraftforge.common.IPlantable)sapling).build();
 	}

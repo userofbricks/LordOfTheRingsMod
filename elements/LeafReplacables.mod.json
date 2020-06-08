@@ -1,0 +1,19 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.TALLGRASS#1"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#2"
+      }
+    ],
+    "functions": [],
+    "name": "leaf_replacables",
+    "namespace": "forge"
+  }
+}
