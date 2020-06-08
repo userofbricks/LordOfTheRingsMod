@@ -7,7 +7,7 @@ import net.minecraft.world.World;
 
 public class TreeUtil {
 	
-	public void leavesSphere(BlockPos pos, Block block, World worldIn, double radius) {
+	public static void leavesSphere(BlockPos pos, Block block, World worldIn, double radius) {
 		BlockUtil.makeSphere(pos, block, worldIn, radius + 1, radius, radius, false, "forge:leaf_replacables");
 	}
 }
