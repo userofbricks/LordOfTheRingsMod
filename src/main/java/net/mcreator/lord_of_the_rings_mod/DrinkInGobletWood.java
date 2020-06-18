@@ -316,7 +316,7 @@ public class DrinkInGobletWood extends LordOfTheRingsModModElements.ModElement {
 				} else if (this.asItem() == orc_draught4.get().asItem()) {
 					before = orc_draught3.get();
 				} else if (this.asItem() == athelas_brew.get().asItem()) {
-					//start
+					// start
 					before = orc_draught.get();
 				} else if (this.asItem() == athelas_brew1.get().asItem()) {
 					//

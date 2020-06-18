@@ -1,18 +1,16 @@
 package net.mcreator.lord_of_the_rings_mod_util.bases;
 
-import net.minecraftforge.common.property.Properties;
-
-import net.minecraft.world.World;
-import net.minecraft.util.DamageSource;
-import net.minecraft.stats.Stats;
-import net.minecraft.item.UseAction;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.block.Block;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.block.Block;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.UseAction;
+import net.minecraft.stats.Stats;
+import net.minecraft.util.DamageSource;
+import net.minecraft.world.World;
 
 public class BasePlaceableDrinkItem extends BasePlaceableFoodItem {
 	private final Item item;

@@ -2,33 +2,33 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "kebabblock",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
-    "rotationMode": 0,
-    "hasTransparency": true,
+    "texture": "wood6_olive_top",
+    "textureTop": "wood6_olive_top",
+    "textureLeft": "wood6_olive_side",
+    "textureFront": "wood6_olive_side",
+    "textureRight": "wood6_olive_side",
+    "textureBack": "wood6_olive_side",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 5,
+    "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "TRANSLUCENT",
+    "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Kebab Block",
+    "name": "Olive Log",
     "specialInfo": [],
-    "hardness": 0.5,
-    "resistance": 1.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:LOTRFoodAndDrinkTab"
+      "value": "CUSTOM:LOTRBlocksTab"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "axe",
     "customDrop": {
       "value": ""
     },
@@ -37,27 +37,27 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 100,
+    "lightOpacity": 255,
     "material": {
-      "value": "CAKE"
+      "value": "WOOD"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "WOOD",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
+    "flammability": 5,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "CLOTH"
+      "value": "WOOD"
     },
     "luminance": 0.0,
     "unbreakable": false,

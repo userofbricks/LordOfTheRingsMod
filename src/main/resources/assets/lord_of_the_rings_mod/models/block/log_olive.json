@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lord_of_the_rings_mod:blocks/wood6_olive_top",
+    "up": "lord_of_the_rings_mod:blocks/wood6_olive_top",
+    "north": "lord_of_the_rings_mod:blocks/wood6_olive_side",
+    "east": "lord_of_the_rings_mod:blocks/wood6_olive_side",
+    "south": "lord_of_the_rings_mod:blocks/wood6_olive_side",
+    "west": "lord_of_the_rings_mod:blocks/wood6_olive_side",
+    "particle": "lord_of_the_rings_mod:blocks/wood6_olive_top"
+  }
+}

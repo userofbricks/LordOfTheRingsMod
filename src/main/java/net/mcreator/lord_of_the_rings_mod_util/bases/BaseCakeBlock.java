@@ -1,30 +1,26 @@
 package net.mcreator.lord_of_the_rings_mod_util.bases;
 
-import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.ISelectionContext;
-import net.minecraft.util.math.BlockRayTraceResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Hand;
-import net.minecraft.util.Direction;
-import net.minecraft.stats.Stats;
-import net.minecraft.state.properties.BlockStateProperties;
-import net.minecraft.state.StateContainer;
-import net.minecraft.state.IntegerProperty;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.pathfinding.PathType;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
-import org.apache.commons.lang3.tuple.Pair;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.pathfinding.PathType;
+import net.minecraft.state.IntegerProperty;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.stats.Stats;
 import net.minecraft.util.ActionResultType;
+import net.minecraft.util.Direction;
+import net.minecraft.util.Hand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.world.IWorld;
+import net.minecraft.world.IWorldReader;
+import net.minecraft.world.World;
 
 public class BaseCakeBlock extends Block {
 	public static final IntegerProperty BITES = BlockStateProperties.BITES_0_6;
@@ -32,8 +28,8 @@ public class BaseCakeBlock extends Block {
 			Block.makeCuboidShape(3.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D), Block.makeCuboidShape(5.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D),
 			Block.makeCuboidShape(7.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D), Block.makeCuboidShape(9.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D),
 			Block.makeCuboidShape(11.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D), Block.makeCuboidShape(13.0D, 0.0D, 1.0D, 15.0D, 8.0D, 15.0D)};
-	public static int hunger;
-	public static float saturation;
+	public int hunger;
+	public float saturation;
 	protected BaseCakeBlock(Block.Properties properties, int hungerIn, float saturationIn) {
 		super(properties);
 		this.setDefaultState(this.stateContainer.getBaseState().with(BITES, Integer.valueOf(0)));
@@ -82,6 +78,7 @@ public class BaseCakeBlock extends Block {
 	 * its solidified counterpart. Note that this method should ideally consider
 	 * only the specific face passed in.
 	 */
+	@SuppressWarnings("deprecation")
 	public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos,
 			BlockPos facingPos) {
 		return facing == Direction.DOWN && !stateIn.isValidPosition(worldIn, currentPos)

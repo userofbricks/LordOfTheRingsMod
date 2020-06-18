@@ -42,14 +42,12 @@ public class BaseCupBlock extends Block {
 
 	public BlockState TurnsInto() { return DrinkMugBlock.block.getDefaultState(); }
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public ActionResultType drinkCup(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
 		LivingEntity entityLiving = player instanceof LivingEntity ? (LivingEntity) player : null;
 		ItemStack stack = new ItemStack(this);
 		Item item = stack.getItem();
 		BasePlaceableDrinkItem drinkItem = item instanceof BasePlaceableDrinkItem ? (BasePlaceableDrinkItem) item : null;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
 		if (!player.canEat(false)) {
 			return ActionResultType.PASS;
 		} else {
@@ -85,6 +83,7 @@ public class BaseCupBlock extends Block {
 	 * its solidified counterpart. Note that this method should ideally consider
 	 * only the specific face passed in.
 	 */
+	@SuppressWarnings("deprecation")
 	public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos,
 			BlockPos facingPos) {
 		return facing == Direction.DOWN && !stateIn.isValidPosition(worldIn, currentPos)

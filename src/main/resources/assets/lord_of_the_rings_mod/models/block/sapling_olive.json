@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "lord_of_the_rings_mod:blocks/sapling6_olive",
+    "particle": "lord_of_the_rings_mod:blocks/sapling6_olive"
+  }
+}

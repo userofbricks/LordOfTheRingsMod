@@ -43,7 +43,6 @@ import net.mcreator.lord_of_the_rings_mod_util.registry.LOTRRegistryHelper;
 import net.mcreator.lord_of_the_rings_mod_util.bases.BaseCupBlock;
 import net.mcreator.lord_of_the_rings_mod_util.LOTRDrinks;
 import net.mcreator.lord_of_the_rings_mod.block.DrinkGlassBlock;
-import net.mcreator.lord_of_the_rings_mod.block.DrinkAleHornGoldBlock;
 
 import java.util.List;
 import java.util.Collections;

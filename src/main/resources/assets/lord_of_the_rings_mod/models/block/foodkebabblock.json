@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "lord_of_the_rings_mod:blocks/kebabblock",
-    "up": "lord_of_the_rings_mod:blocks/kebabblock",
-    "north": "lord_of_the_rings_mod:blocks/kebabblock",
-    "east": "lord_of_the_rings_mod:blocks/kebabblock",
-    "south": "lord_of_the_rings_mod:blocks/kebabblock",
-    "west": "lord_of_the_rings_mod:blocks/kebabblock",
+    "all": "lord_of_the_rings_mod:blocks/kebabblock",
     "particle": "lord_of_the_rings_mod:blocks/kebabblock"
   }
 }

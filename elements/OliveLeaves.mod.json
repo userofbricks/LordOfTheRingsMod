@@ -2,7 +2,7 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "kebabblock",
+    "texture": "leaves6_olive",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -11,24 +11,25 @@
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
-    "hasTransparency": true,
+    "blockBase": "Leaves",
+    "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "TRANSLUCENT",
+    "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Kebab Block",
+    "name": "Olive Leaves",
     "specialInfo": [],
-    "hardness": 0.5,
+    "hardness": 0.1,
     "resistance": 1.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:LOTRFoodAndDrinkTab"
+      "value": "CUSTOM:LOTRBlocksTab"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "axe",
     "customDrop": {
       "value": ""
     },
@@ -37,27 +38,27 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 100,
+    "lightOpacity": 1,
     "material": {
-      "value": "CAKE"
+      "value": "LEAVES"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "FOLIAGE",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
+    "flammability": 10,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "CLOTH"
+      "value": "PLANT"
     },
     "luminance": 0.0,
     "unbreakable": false,

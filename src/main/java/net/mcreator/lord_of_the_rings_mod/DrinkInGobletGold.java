@@ -301,7 +301,7 @@ public class DrinkInGobletGold extends LordOfTheRingsModModElements.ModElement {
 					//
 					before = miruvor2.get();
 				} else if (this.asItem() == orc_draught.get().asItem()) {
-					//test
+					// test
 					before = miruvor4.get();
 				} else if (this.asItem() == orc_draught1.get().asItem()) {
 					//
@@ -346,7 +346,7 @@ public class DrinkInGobletGold extends LordOfTheRingsModModElements.ModElement {
 					//
 					before = taurethrim_cocoa1.get();
 				} else if (this.asItem() == taurethrim_cocoa4.get().asItem()) {
-					//test
+					// test
 					before = taurethrim_cocoa.get();
 				}
 				int targetIndex = ItemStackUtils.findIndexOfItem(before.asItem(), items);

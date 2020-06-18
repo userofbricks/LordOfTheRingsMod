@@ -24,16 +24,19 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.trees.Tree;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.SaplingBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRBlocksTabItemGroup;
+import net.mcreator.lord_of_the_rings_mod_util.block.trees.PearTree;
+import net.mcreator.lord_of_the_rings_mod_util.block.trees.MangoTree;
+import net.mcreator.lord_of_the_rings_mod_util.block.trees.CherryTree;
 import net.mcreator.lord_of_the_rings_mod_util.block.trees.AppleTree;
+import net.mcreator.lord_of_the_rings_mod.itemgroup.LOTRBlocksTabItemGroup;
 
 @ObjectHolder("lord_of_the_rings_mod")
 @LordOfTheRingsModModElements.ModElement.Tag
@@ -50,14 +53,12 @@ public class SaplingsFruit extends LordOfTheRingsModModElements.ModElement {
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock(new AppleTree()).setRegistryName("sapling_apple"));
 		elements.items.add(() -> item(sapling_apple));
-		/*
-		elements.blocks.add(() -> new CustomBlock(null).setRegistryName("sapling_cherry"));
+		elements.blocks.add(() -> new CustomBlock(new CherryTree()).setRegistryName("sapling_cherry"));
 		elements.items.add(() -> item(sapling_cherry));
-		elements.blocks.add(() -> new CustomBlock(null).setRegistryName("sapling_mango"));
+		elements.blocks.add(() -> new CustomBlock(new MangoTree()).setRegistryName("sapling_mango"));
 		elements.items.add(() -> item(sapling_mango));
-		elements.blocks.add(() -> new CustomBlock(null).setRegistryName("sapling_pear"));
+		elements.blocks.add(() -> new CustomBlock(new PearTree()).setRegistryName("sapling_pear"));
 		elements.items.add(() -> item(sapling_pear));
-		*/
 	}
 
 	private Item item(Block block) {

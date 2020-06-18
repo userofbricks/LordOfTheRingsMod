@@ -2,31 +2,31 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "kebabblock",
+    "texture": "sapling6_olive",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "renderType": 12,
+    "customModelName": "Cross model",
     "rotationMode": 0,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "TRANSLUCENT",
-    "mx": 0.0,
+    "transparencyType": "CUTOUT",
+    "mx": 0.2,
     "my": 0.0,
-    "mz": 0.0,
-    "Mx": 1.0,
-    "My": 1.0,
-    "Mz": 1.0,
-    "name": "Kebab Block",
+    "mz": 0.2,
+    "Mx": 0.8,
+    "My": 0.7,
+    "Mz": 0.8,
+    "name": "Olive Sapling",
     "specialInfo": [],
-    "hardness": 0.5,
+    "hardness": 0.1,
     "resistance": 1.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:LOTRFoodAndDrinkTab"
+      "value": "CUSTOM:LOTRBlocksTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -37,27 +37,27 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 100,
+    "lightOpacity": 0,
     "material": {
-      "value": "CAKE"
+      "value": "PLANTS"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "AIR",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
+    "aiPathNodeType": "OPEN",
+    "flammability": 7,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "DESTROY",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "CLOTH"
+      "value": "PLANT"
     },
     "luminance": 0.0,
     "unbreakable": false,

@@ -10,11 +10,11 @@ import net.minecraft.block.trees.Tree;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.TreeFeatureConfig;
 
-public class AppleTree extends Tree {
+public class PearTree extends Tree {
 
 	@Nullable
 	protected ConfiguredFeature<TreeFeatureConfig, ?> getTreeFeature(Random randomIn, boolean booleanIn) {
-		return new BasicLOTRTreeFeature().withConfiguration(LOTRDefaultBiomeFeatures.FANCY_APPLE_TREE_CONFIG);
+		return new BasicLOTRTreeFeature().withConfiguration(LOTRDefaultBiomeFeatures.FANCY_PEAR_TREE_CONFIG);
 	}
 
 }

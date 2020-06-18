@@ -17,6 +17,9 @@
  */
 package net.mcreator.lord_of_the_rings_mod;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import net.minecraftforge.fml.network.simple.SimpleChannel;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -41,9 +44,6 @@ import net.mcreator.lord_of_the_rings_mod_util.registry.LOTRRegistryHelper;
 
 import java.util.function.Supplier;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 @Mod(value = LordOfTheRingsModMod.MOD_ID)
 public class LordOfTheRingsModMod {
 	public static final String MOD_ID = "lord_of_the_rings_mod";
@@ -61,9 +61,9 @@ public class LordOfTheRingsModMod {
 		final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		REGISTRY_HELPER.getDeferredItemRegister().register(modEventBus);
 		REGISTRY_HELPER.getDeferredBlockRegister().register(modEventBus);
-		// REGISTRY_HELPER.getDeferredSoundRegister().register(modEventBus);
-		// REGISTRY_HELPER.getDeferredTileEntityRegister().register(modEventBus);
-		// REGISTRY_HELPER.getDeferredEntityRegister().register(modEventBus);
+		REGISTRY_HELPER.getDeferredSoundRegister().register(modEventBus);
+		REGISTRY_HELPER.getDeferredTileEntityRegister().register(modEventBus);
+		REGISTRY_HELPER.getDeferredEntityRegister().register(modEventBus);
 		modEventBus.addListener(this::init);
 		modEventBus.register(this);
 		MinecraftForge.EVENT_BUS.register(this);
